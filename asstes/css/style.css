@@ -372,6 +372,7 @@
   padding: 5px 10px;
   border: 1px solid var(--them-colour);
   margin-left: 10px;
+  cursor: pointer;
 }
 .xzoom_part .xzoom_details .btn-body .btn-views:hover {
   background-color: var(--them-colour);
@@ -824,6 +825,14 @@
 .cart-section .my-cart-contain .my-cart-list p {
   margin-bottom: 5px;
 }
+.cart-section .my-cart-contain .my-cart-rs {
+  text-align: center;
+}
+.cart-section .my-cart-contain .my-cart-rs .form-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 .cart-section .my-cart-contain .my-cart-rs .form-control {
   width: 45%;
   height: 30px;
@@ -868,15 +877,79 @@
   padding: 10px 0px;
 }
 
+.delivery-section {
+  padding: 30px 0px;
+}
+.delivery-section .address-body .Address-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.delivery-section .address-body .Address-head p:nth-child(2) {
+  color: var(--them-colour);
+}
+.delivery-section .address-body .delivery-contain {
+  background-color: var(--light);
+  padding: 10px 20px;
+}
+.delivery-section .address-body .delivery-contain .delivery-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.delivery-section .address-body .delivery-contain .delivery-name input {
+  border: 1px solid var(--them-colour);
+  color: var(--them-colour);
+}
+.delivery-section .address-body .delivery-contain .delivery-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delivery-section .address-body .delivery-contain .delivery-btn p {
+  background-color: var(--them-colour);
+  padding: 8px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.delivery-section .address-body .delivery-contain .delivery-btn p a {
+  color: var(--black);
+  font-size: 15px;
+  font-weight: 500;
+}
+.delivery-section .total-body .total-body-head {
+  font-size: 17px;
+}
+.delivery-section .total-body .total-body-contain {
+  background-color: var(--light);
+  padding: 10px 30px;
+}
+.delivery-section .total-body .total-body-contain .total-pro-price {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #959090;
+}
+.delivery-section .total-body .total-body-contain .all-total-pri {
+  display: flex;
+  justify-content: space-between;
+}
+
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Poppins";
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -1644,10 +1717,12 @@ p {
 /* ============= Blog section End ================= */
 /* ================= footer section start =================  */
 footer {
+  margin-top: auto;
   background-color: #000000 !important;
   padding: 80px 20px;
   display: flex;
   align-items: center;
+  bottom: 0px !important;
 }
 
 footer .footer-left-body .footer-icon-box {

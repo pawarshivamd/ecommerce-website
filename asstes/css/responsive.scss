@@ -311,7 +311,7 @@
         font-size: 18px;
     }
     footer .footer-left-body .footer-icon-box img {
-        width: 10%;
+        width: 8%;
     }
     /* ======================  footer section End ======================== */
 
@@ -521,6 +521,7 @@
     }
 
     /*  ================  rating and reviews page start =================== */
+    /* ================= whish list page section start ===================== */
     .my-whish-section .my-whish-head {
         h1 {
             font-size: 20px;
@@ -574,11 +575,30 @@
             color: black;
         }
     }
+    /* ================= whish list page section start ===================== */
 
-
-
+/* ============== cart page section start ================== */
     .cart-section{
+        .my-cart-head{
+            h1 {
+                font-size: 22px;
+                &::after {
+                    top: 10px;
+                    /* left: 0px; */
+                }
+    
+            }
+        }
         .my-cart-contain .my-cart-rs {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            .form-box{
+                margin-top: 0px !important;
+                padding-left: 10px;
+                justify-content: flex-start;
+                align-items: center;
+            }
             .form-control {
                 width: 15%;
                 
@@ -586,7 +606,28 @@
         }
     
     }
-   
+/* ============== cart page section End ================== */
+/* ===============  delivery-addres page start =============*/
+.delivery-section {
+    padding: 10px 0px;
+    .address-body {
+        .Address-head p{
+            font-size: 15px;
+        }
+        .address-write{
+            font-size: 15px ;
+            line-height: 22px;
+        }
+    }
+    .total-body {
+        margin-top: 30px;
+        .total-body-head {
+            font-size: 16px;
+        }
+    }
+}
+/* ===============  delivery-addres page End =============*/
+
 }
 
 @media (min-width: 1200px) {
