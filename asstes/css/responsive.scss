@@ -627,6 +627,60 @@
     }
 }
 /* ===============  delivery-addres page End =============*/
+/* ================ Blog page start ===================*/
+.blog-section{
+    .blog-section-header{
+        h1 {
+            font-size: 24px !important;
+
+            // padding-left: 5px;
+            &::after {
+                top: 18px !important;
+                height: 15px;
+                width: 70px;
+            }
+        }
+        a{
+            font-size: 15px;
+        }
+    }
+}
+/* ================ Blog page End ===================*/
+
+/* =============== single-blog-page- start =============== */
+.single-blog-section{
+    padding: 5px 0px;
+    padding-bottom: 10px;
+    .singal-blog-head{
+        h1 {
+            font-size: 24px !important;
+
+            // padding-left: 5px;
+            &::after {
+                top: 18px !important;
+                height: 15px;
+                width: 70px;
+            }
+        }
+        a{
+            font-size: 15px;
+        }
+    }
+    .blog-body{
+        padding-bottom: 20px;
+        .blog-contain{
+            padding: 10px 0px;
+            h4{
+                font-size: 17px;
+            }
+            p{
+                font-size: 15px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+/* =============== single-blog-page- End =============== */
 
 }
 
