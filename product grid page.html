@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- font-awesome icon link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+  <!-- font dowlond  link -->
+  <link rel="stylesheet" href="asstes/fonts/transfonter.org-20230210-103519/stylesheet.css">
+
+
+
+  <link rel="stylesheet" href="asstes/css/style.css">
+  <link rel="stylesheet" href="asstes/css/responsive.css">
+</head>
+
+<body style="background-color:  #F4F6F5;">
+  <!-- ================ header section strat ===================== -->
+  <div class="header">
+    <nav class="navbar navbar-expand-lg nav-section">
+      <div class="container">
+        <a class="navbar-brand img-nav" href="index.html"><img src="asstes/img/logo/vector black.png" alt=""
+            class="pe-3">GymCart
+        </a>
+        <button class="navbar-toggler btn-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_1"
+          aria-controls="navbar_1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbar_1">
+          <ul class="navbar-nav ms-auto  nav-ul">
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-mdb-toggle="dropdown"
+                aria-expanded="false">
+                Category
+              </a>
+              <!-- Dropdown menu -->
+              <div class="dropdown-menu  mt-0  mydropudowan" aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row my-4">
+                    <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                      <div class="list-group ">
+                        <h4 class="mb-0 list-group-item ">
+                          Lorem ipsum
+                        </h4>
+                        <a href="#" class="list-group-item ">Dolor sit</a>
+                        <a href="#" class="list-group-item ">Amet consectetur</a>
+                        <a href="#" class="list-group-item ">Cras justo odio</a>
+                        <a href="#" class="list-group-item ">Adipisicing elit</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                      <div class="list-group ">
+                        <h4 class="mb-0 list-group-item ">
+                          Explicabo voluptas
+                        </h4>
+                        <a href="#" class="list-group-item ">Perspiciatis quo</a>
+                        <a href="#" class="list-group-item ">Cras justo odio</a>
+                        <a href="#" class="list-group-item ">Laudantium maiores</a>
+                        <a href="#" class="list-group-item ">Provident dolor</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3 mb-md-0">
+                      <div class="list-group">
+                        <h4 class="mb-0 list-group-item">
+                          Iste quaerato
+                        </h4>
+                        <a href="#" class="list-group-item ">Cras justo odio</a>
+                        <a href="#" class="list-group-item ">Est iure</a>
+                        <a href="#" class="list-group-item ">Praesentium</a>
+                        <a href="#" class="list-group-item ">Laboriosam</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Left links -->
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#">
+                Brand
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Privacy-Policy</a></li>
+                <li><a class="dropdown-item" href="#">Refund-Policy</a></li>
+                <li><a class="dropdown-item" href="#">shipping-policy</a></li>
+                <li><a class="dropdown-item" href="#">terms-of-use-policy</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- ================ header section End ===================== -->
+  <!-- ================= min-hed section start ===============  -->
+  <div class="min-hed">
+    <div class="container">
+      <div class="head-section">
+        <div class=" col-md-3  col-sm-0 ">
+          <!-- <button class="btn Toggle-section " type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"> <i class="fas fa-bars px-4"></i>All
+          category</button>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+          id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+              <p class="login-btn-1"><a href="#">Login</a></p>
+            </h5>
+            <a  type="button" class=" btn-close-nav " data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></a>
+            <!-- <button  type="button" class="btn-close btn-close-nav " data-bs-dismiss="offcanvas" aria-label="Close"></button> 
+          </div>
+          <div class="offcanvas-body">
+            <ul >
+              <li><a href="#">sdtdsd</a></li>
+              <li><a href="#">sdtdsd</a></li>
+              <li><a href="#">sdtdsd</a></li>
+            </ul>
+          </div>
+        </div> -->
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <form action="" method="post" class="inputcontainer">
+            <input type="text" placeholder="Search for product">
+            <button type="submit"><!--<i class="fas fa-search"></i> --><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+        <div class="col-md-3 col-sm-3 ">
+          <div class=" login-section">
+            <p class="login-btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a href="#">Login</a></p>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="text-end"> <button type="button" class="btn-close " data-bs-dismiss="modal"
+                      aria-label="Close"></button></div>
+                  <div class="modal-header">
+                    <div>
+                      <h4 class="modal-title  text-center col-md-12" id="staticBackdropLabel">Login</h4>
+                      <p>Please login using account detail bellow.</p>
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                    <form method="post">
+                      <input type="number" placeholder="Contact Number">
+                      <input type="number" placeholder="OTP">
+                      <p class="resend-p ">Didn’t Receive? <span> Resend </span></p>
+                      <button type="submit"> Verify</button>
+
+                    </form>
+                    <p class="text-center">Don’t have an Account? Create account</p>
+                  </div>
+                  <!-- <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Understood</button>
+    </div> -->
+                </div>
+              </div>
+            </div>
+            <p class="shoping-cart"><i class="bi bi-cart2"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ================= min-hed section End ===============  -->
+  <div class=" container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-md-2 col-sm-12" style="border-right: 1px solid #DEE2E7;">
+        <div class="sidebar-produtespage " style="display: none;">
+          <div class="side-menu-box">
+            <div class="accordion">
+              <!-- one -->
+              <div class="accordion-contentBx active">
+                <div class="accordion-label">Brand <span><i class="fas fa-angle-up"></i></span></div>
+                <div class="accordion-content">
+                  <div class="accordion-openbody">
+                    <p><a href="#"><input type="checkbox" name="checkbox" value="checkbox" class="me-3"> Complain</a>
+                    </p>
+                    <p><a href="#"><input type="checkbox" name="checkbox" value="checkbox" class="me-3"> Complain</a>
+                    </p>
+                    <p><a href="#"><input type="checkbox" name="checkbox" value="checkbox" class="me-3"> Complain</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- two -->
+              <div class="accordion-contentBx">
+                <div class="accordion-label">Rating <span><i class="fas fa-angle-up"></i></span></div>
+                <div class="accordion-content">
+                  <p><a href="#"><input type="checkbox" class="me-3"><span class="star"><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i></span></a></p>
+                  <p><a href="#"><input type="checkbox" class="me-3"><span class="star"><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                          class="fas fa-star   no-colour"></i></span></a></p>
+                  <p><a href="#"><input type="checkbox" class="me-3"><span class="star"><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star  no-colour"></i><i
+                          class="fas fa-star no-colour"></i></span></a></p>
+                  <p><a href="#"><input type="checkbox" class="me-3"><span class="star"><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star  no-colour"></i><i
+                          class="fas fa-star no-colour"></i><i class="fas fa-star  no-colour"></i></span></a></p>
+                  <p><a href="#"><input type="checkbox" class="me-3"><span class="star"><i class="fas fa-star"></i><i
+                          class="fas fa-star  no-colour"></i><i class="fas fa-star  no-colour"></i><i
+                          class="fas fa-star  no-colour"></i><i class="fas fa-star  no-colour"></i></span></a></p>
+                </div>
+              </div>
+              <!-- three -->
+              <div class="accordion-contentBx">
+                <div class="accordion-label">Sort By <span><i class="fas fa-angle-up"></i></span></div>
+                <div class="accordion-content">
+                  <p class="accordion-icon"><a href="#"><iconify-icon
+                        icon="eva:checkmark-circle-outline"></iconify-icon><span class="ms-3">Popularity</span> </a></p>
+                  <p class="accordion-icon"><a href="#"><iconify-icon
+                        icon="eva:checkmark-circle-outline"></iconify-icon><span class="ms-3">Rating: Low To High</span>
+                    </a></p>
+                  <p class="accordion-icon"><a href="#"><iconify-icon
+                        icon="eva:checkmark-circle-outline"></iconify-icon><span class="ms-3">Cost: High to Low</span>
+                    </a></p>
+                  <p class="accordion-icon"><a href="#"><iconify-icon
+                        icon="eva:checkmark-circle-outline"></iconify-icon><span class="ms-3">Cost: Low To High</span>
+                    </a></p>
+
+                </div>
+              </div>
+              <!-- four -->
+            </div>
+          </div>
+        </div>
+        <div class="pt-5 ps-0">
+          <ul>
+            <ul class="pt-4">Brands
+              <li class="ps-4">Complain</li>
+              <li class="ps-4">Complain</li>
+              <li class="ps-4">Complain</li>
+              <li class="ps-4">Complain</li>
+            </ul>
+
+
+
+
+            <ul class="pt-4">Rating</ul>
+            <li class="ps-4"><a href="#"><input type="checkbox" class="me-3"><span class="star"><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i></span></a></li>
+            <li class="ps-4"><a href="#"><input type="checkbox" class="me-3"><span class="star"><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i></span></a></li>
+            <li class="ps-4"><a href="#"><input type="checkbox" class="me-3"><span class="star"><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i></span></a></li>
+            <li class="ps-4"><a href="#"><input type="checkbox" class="me-3"><span class="star"><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i></span></a></li>
+            <li class="ps-4"><a href="#"><input type="checkbox" class="me-3"><span class="star"><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i></span></a></li>
+            <a href=""></a>
+            <dd></dd>
+            <ul class="pt-4">Sort By
+              <li class="ps-4">Popularity</li>
+              <li class="ps-4">Popularity</li>
+              <li class="ps-4">Popularity</li>
+
+            </ul>
+          </ul>
+        </div>
+      </div>
+      <div class=" col-lg-10 col-md-10 col-sm-12">
+
+        <div class="products-grid-body">
+          <!-- 1 -->
+          <div class="swiper-slide  box-card ">
+            <!-- <div class="box-card"> -->
+
+            <div class=" head-stars">
+              <sapn class=" reviews"> <i class="fas fa-star  me-1"></i>4.5</sapn>
+              <sapn class="false-seal "><a href="#">
+                  <svg class="heart" width="17" height="20" viewBox="0 0 24 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.0162 2.62457L11.733 3.36138L12.4498 2.62457C15.1694 -0.171114 20.0664 0.825498 21.8274 4.2646C22.6749 5.91956 22.8251 8.24441 21.368 11.1192C19.9471 13.9225 17.0001 17.228 11.7329 20.7968C6.46578 17.2284 3.51885 13.923 2.09797 11.1198C0.640872 8.24511 0.791039 5.92021 1.63851 4.26513C3.39962 0.825768 8.29658 -0.171037 11.0162 2.62457Z"
+                      fill="#000000" stroke="black" stroke-width="2" />
+                  </svg></a>
+              </sapn>
+            </div>
+            <div class="card-img">
+              <a href="productsviewdetailes.html"><img src="asstes/img/tranding/4.png" alt="" class=""></a>
+            </div>
+
+            <div class="card-body">
+              <div class="card-con">
+                <h1>Health Essential </h1>
+                <h6>The specific products included</h6>
+                <p href="#" class="card-price">
+                  <span class="px-1">&#8377 3389</span>
+                  <span class="px-1">MRP<del>:&#8377 3699</del></span>
+                </p>
+                <a href="product grid page.html" class="">
+                  <p class="shpoing-btn"><i class="bi bi-cart2"></i>Add to Cart</p>
+                </a>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <!-- 2 -->
+          <div class="swiper-slide  box-card ">
+            <!-- <div class="box-card"> -->
+
+            <div class=" head-stars">
+              <sapn class=" reviews"> <i class="fas fa-star  me-1"></i>4.5</sapn>
+              <sapn class="false-seal "><a href="#">
+                  <svg class="heart" width="17" height="20" viewBox="0 0 24 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.0162 2.62457L11.733 3.36138L12.4498 2.62457C15.1694 -0.171114 20.0664 0.825498 21.8274 4.2646C22.6749 5.91956 22.8251 8.24441 21.368 11.1192C19.9471 13.9225 17.0001 17.228 11.7329 20.7968C6.46578 17.2284 3.51885 13.923 2.09797 11.1198C0.640872 8.24511 0.791039 5.92021 1.63851 4.26513C3.39962 0.825768 8.29658 -0.171037 11.0162 2.62457Z"
+                      fill="#000000" stroke="black" stroke-width="2" />
+                  </svg></a>
+              </sapn>
+            </div>
+            <div class="card-img">
+              <a href="productsviewdetailes.html"><img src="asstes/img/tranding/4.png" alt="" class=""></a>
+            </div>
+
+            <div class="card-body">
+              <div class="card-con">
+                <h1>Health Essential </h1>
+                <h6>The specific products included</h6>
+                <p href="#" class="card-price">
+                  <span class="px-1">&#8377 3389</span>
+                  <span class="px-1">MRP<del>:&#8377 3699</del></span>
+                </p>
+                <a href="product grid page.html" class="">
+                  <p class="shpoing-btn"><i class="bi bi-cart2"></i>Add to Cart</p>
+                </a>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <!-- 3 -->
+          <div class="swiper-slide  box-card ">
+            <!-- <div class="box-card"> -->
+
+            <div class=" head-stars">
+              <sapn class=" reviews"> <i class="fas fa-star  me-1"></i>4.5</sapn>
+              <sapn class="false-seal "><a href="#">
+                  <svg class="heart" width="17" height="20" viewBox="0 0 24 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.0162 2.62457L11.733 3.36138L12.4498 2.62457C15.1694 -0.171114 20.0664 0.825498 21.8274 4.2646C22.6749 5.91956 22.8251 8.24441 21.368 11.1192C19.9471 13.9225 17.0001 17.228 11.7329 20.7968C6.46578 17.2284 3.51885 13.923 2.09797 11.1198C0.640872 8.24511 0.791039 5.92021 1.63851 4.26513C3.39962 0.825768 8.29658 -0.171037 11.0162 2.62457Z"
+                      fill="#000000" stroke="black" stroke-width="2" />
+                  </svg></a>
+              </sapn>
+            </div>
+            <div class="card-img">
+              <a href="productsviewdetailes.html"><img src="asstes/img/tranding/4.png" alt="" class=""></a>
+            </div>
+
+            <div class="card-body">
+              <div class="card-con">
+                <h1>Health Essential </h1>
+                <h6>The specific products included</h6>
+                <p href="#" class="card-price">
+                  <span class="px-1">&#8377 3389</span>
+                  <span class="px-1">MRP<del>:&#8377 3699</del></span>
+                </p>
+                <a href="product grid page.html" class="">
+                  <p class="shpoing-btn"><i class="bi bi-cart2"></i>Add to Cart</p>
+                </a>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <!-- 4 -->
+          <div class="swiper-slide  box-card ">
+            <!-- <div class="box-card"> -->
+
+            <div class=" head-stars">
+              <sapn class=" reviews"> <i class="fas fa-star  me-1"></i>4.5</sapn>
+              <sapn class="false-seal "><a href="#">
+                  <svg class="heart" width="17" height="20" viewBox="0 0 24 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.0162 2.62457L11.733 3.36138L12.4498 2.62457C15.1694 -0.171114 20.0664 0.825498 21.8274 4.2646C22.6749 5.91956 22.8251 8.24441 21.368 11.1192C19.9471 13.9225 17.0001 17.228 11.7329 20.7968C6.46578 17.2284 3.51885 13.923 2.09797 11.1198C0.640872 8.24511 0.791039 5.92021 1.63851 4.26513C3.39962 0.825768 8.29658 -0.171037 11.0162 2.62457Z"
+                      fill="#000000" stroke="black" stroke-width="2" />
+                  </svg></a>
+              </sapn>
+            </div>
+            <div class="card-img">
+              <a href="productsviewdetailes.html"><img src="asstes/img/tranding/4.png" alt="" class=""></a>
+            </div>
+
+            <div class="card-body">
+              <div class="card-con">
+                <h1>Health Essential </h1>
+                <h6>The specific products included</h6>
+                <p href="#" class="card-price">
+                  <span class="px-1">&#8377 3389</span>
+                  <span class="px-1">MRP<del>:&#8377 3699</del></span>
+                </p>
+                <a href="product grid page.html" class="">
+                  <p class="shpoing-btn"><i class="bi bi-cart2"></i>Add to Cart</p>
+                </a>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <!-- 5 -->
+          <div class="swiper-slide  box-card ">
+            <!-- <div class="box-card"> -->
+
+            <div class=" head-stars">
+              <sapn class=" reviews"> <i class="fas fa-star  me-1"></i>4.5</sapn>
+              <sapn class="false-seal "><a href="#">
+                  <svg class="heart" width="17" height="20" viewBox="0 0 24 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.0162 2.62457L11.733 3.36138L12.4498 2.62457C15.1694 -0.171114 20.0664 0.825498 21.8274 4.2646C22.6749 5.91956 22.8251 8.24441 21.368 11.1192C19.9471 13.9225 17.0001 17.228 11.7329 20.7968C6.46578 17.2284 3.51885 13.923 2.09797 11.1198C0.640872 8.24511 0.791039 5.92021 1.63851 4.26513C3.39962 0.825768 8.29658 -0.171037 11.0162 2.62457Z"
+                      fill="#000000" stroke="black" stroke-width="2" />
+                  </svg></a>
+              </sapn>
+            </div>
+            <div class="card-img">
+              <a href="productsviewdetailes.html"><img src="asstes/img/tranding/4.png" alt="" class=""></a>
+            </div>
+
+            <div class="card-body">
+              <div class="card-con">
+                <h1>Health Essential </h1>
+                <h6>The specific products included</h6>
+                <p href="#" class="card-price">
+                  <span class="px-1">&#8377 3389</span>
+                  <span class="px-1">MRP<del>:&#8377 3699</del></span>
+                </p>
+                <a href="product grid page.html" class="">
+                  <p class="shpoing-btn"><i class="bi bi-cart2"></i>Add to Cart</p>
+                </a>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <!-- 6 -->
+          <div class="swiper-slide  box-card ">
+            <!-- <div class="box-card"> -->
+
+            <div class=" head-stars">
+              <sapn class=" reviews"> <i class="fas fa-star  me-1"></i>4.5</sapn>
+              <sapn class="false-seal "><a href="#">
+                  <svg class="heart" width="17" height="20" viewBox="0 0 24 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.0162 2.62457L11.733 3.36138L12.4498 2.62457C15.1694 -0.171114 20.0664 0.825498 21.8274 4.2646C22.6749 5.91956 22.8251 8.24441 21.368 11.1192C19.9471 13.9225 17.0001 17.228 11.7329 20.7968C6.46578 17.2284 3.51885 13.923 2.09797 11.1198C0.640872 8.24511 0.791039 5.92021 1.63851 4.26513C3.39962 0.825768 8.29658 -0.171037 11.0162 2.62457Z"
+                      fill="#000000" stroke="black" stroke-width="2" />
+                  </svg></a>
+              </sapn>
+            </div>
+            <div class="card-img">
+              <a href="productsviewdetailes.html"><img src="asstes/img/tranding/4.png" alt="" class=""></a>
+            </div>
+
+            <div class="card-body">
+              <div class="card-con">
+                <h1>Health Essential </h1>
+                <h6>The specific products included</h6>
+                <p href="#" class="card-price">
+                  <span class="px-1">&#8377 3389</span>
+                  <span class="px-1">MRP<del>:&#8377 3699</del></span>
+                </p>
+                <a href="product grid page.html" class="">
+                  <p class="shpoing-btn"><i class="bi bi-cart2"></i>Add to Cart</p>
+                </a>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <!-- 7 -->
+          <div class="swiper-slide  box-card ">
+            <!-- <div class="box-card"> -->
+
+            <div class=" head-stars">
+              <sapn class=" reviews"> <i class="fas fa-star  me-1"></i>4.5</sapn>
+              <sapn class="false-seal "><a href="#">
+                  <svg class="heart" width="17" height="20" viewBox="0 0 24 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.0162 2.62457L11.733 3.36138L12.4498 2.62457C15.1694 -0.171114 20.0664 0.825498 21.8274 4.2646C22.6749 5.91956 22.8251 8.24441 21.368 11.1192C19.9471 13.9225 17.0001 17.228 11.7329 20.7968C6.46578 17.2284 3.51885 13.923 2.09797 11.1198C0.640872 8.24511 0.791039 5.92021 1.63851 4.26513C3.39962 0.825768 8.29658 -0.171037 11.0162 2.62457Z"
+                      fill="#000000" stroke="black" stroke-width="2" />
+                  </svg></a>
+              </sapn>
+            </div>
+            <div class="card-img">
+              <a href="productsviewdetailes.html"><img src="asstes/img/tranding/4.png" alt="" class=""></a>
+            </div>
+
+            <div class="card-body">
+              <div class="card-con">
+                <h1>Health Essential </h1>
+                <h6>The specific products included</h6>
+                <p href="#" class="card-price">
+                  <span class="px-1">&#8377 3389</span>
+                  <span class="px-1">MRP<del>:&#8377 3699</del></span>
+                </p>
+                <a href="product grid page.html" class="">
+                  <p class="shpoing-btn"><i class="bi bi-cart2"></i>Add to Cart</p>
+                </a>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <!-- 8 -->
+          <div class="swiper-slide  box-card ">
+            <!-- <div class="box-card"> -->
+
+            <div class=" head-stars">
+              <sapn class=" reviews"> <i class="fas fa-star  me-1"></i>4.5</sapn>
+              <sapn class="false-seal "><a href="#">
+                  <svg class="heart" width="17" height="20" viewBox="0 0 24 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.0162 2.62457L11.733 3.36138L12.4498 2.62457C15.1694 -0.171114 20.0664 0.825498 21.8274 4.2646C22.6749 5.91956 22.8251 8.24441 21.368 11.1192C19.9471 13.9225 17.0001 17.228 11.7329 20.7968C6.46578 17.2284 3.51885 13.923 2.09797 11.1198C0.640872 8.24511 0.791039 5.92021 1.63851 4.26513C3.39962 0.825768 8.29658 -0.171037 11.0162 2.62457Z"
+                      fill="#000000" stroke="black" stroke-width="2" />
+                  </svg></a>
+              </sapn>
+            </div>
+            <div class="card-img">
+              <a href="productsviewdetailes.html"><img src="asstes/img/tranding/4.png" alt="" class=""></a>
+            </div>
+
+            <div class="card-body">
+              <div class="card-con">
+                <h1>Health Essential </h1>
+                <h6>The specific products included</h6>
+                <p href="#" class="card-price">
+                  <span class="px-1">&#8377 3389</span>
+                  <span class="px-1">MRP<del>:&#8377 3699</del></span>
+                </p>
+                <a href="product grid page.html" class="">
+                  <p class="shpoing-btn"><i class="bi bi-cart2"></i>Add to Cart</p>
+                </a>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <!-- 9 -->
+          <div class="swiper-slide  box-card ">
+            <!-- <div class="box-card"> -->
+
+            <div class=" head-stars">
+              <sapn class=" reviews"> <i class="fas fa-star  me-1"></i>4.5</sapn>
+              <sapn class="false-seal "><a href="#">
+                  <svg class="heart" width="17" height="20" viewBox="0 0 24 22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.0162 2.62457L11.733 3.36138L12.4498 2.62457C15.1694 -0.171114 20.0664 0.825498 21.8274 4.2646C22.6749 5.91956 22.8251 8.24441 21.368 11.1192C19.9471 13.9225 17.0001 17.228 11.7329 20.7968C6.46578 17.2284 3.51885 13.923 2.09797 11.1198C0.640872 8.24511 0.791039 5.92021 1.63851 4.26513C3.39962 0.825768 8.29658 -0.171037 11.0162 2.62457Z"
+                      fill="#000000" stroke="black" stroke-width="2" />
+                  </svg></a>
+              </sapn>
+            </div>
+            <div class="card-img">
+              <a href="productsviewdetailes.html"><img src="asstes/img/tranding/4.png" alt="" class=""></a>
+            </div>
+
+            <div class="card-body">
+              <div class="card-con">
+                <h1>Health Essential </h1>
+                <h6>The specific products included</h6>
+                <p href="#" class="card-price">
+                  <span class="px-1">&#8377 3389</span>
+                  <span class="px-1">MRP<del>:&#8377 3699</del></span>
+                </p>
+                <a href="product grid page.html" class="">
+                  <p class="shpoing-btn"><i class="bi bi-cart2"></i>Add to Cart</p>
+                </a>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- footer section start -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 footer-left-body ">
+          <div class="footer-icon-box">
+            <img src="asstes/img/logo/Vector.png" alt=""><span>GymCart</span>
+          </div>
+          <p>2023 GymCart <br>
+            All Right Reserved</p>
+          <div class="icon-footer-box">
+            <div>
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div>
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div>
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 ">
+          <ul class="list-group footer-list">
+            <li class="list-group-item "><a href="#" class="active">Company</a></li>
+            <li class="list-group-item "><a href="#" class="">About</a></li>
+            <li class="list-group-item "><a href="#" class="">Contact us</a></li>
+            <li class="list-group-item "><a href="#" class="">Support</a></li>
+            <li class="list-group-item "><a href="#" class="">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 ">
+          <ul class="list-group footer-list ">
+            <li class="list-group-item"><a href="#" class="active">Qucik Link</a></li>
+            <li class="list-group-item"><a href="#" class="">Share Loction</a></li>
+            <li class="list-group-item"><a href="#" class="">Orders Track</a></li>
+            <li class="list-group-item"><a href="#" class="">Guide</a></li>
+            <li class="list-group-item"><a href="#" class="">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div className="scroll-to-top">
+    <span class="btns-top btn-position btn-style"><i class="fas fa-angle-up"></i></span>
+  </div>
+  <!-- footer section end -->
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+
+  <script>  const accordion = document.querySelectorAll('.accordion-contentBx');
+    accordion.forEach(acc => {
+      acc.addEventListener('click', function () {
+        this.classList.toggle('active');
+      })
+    })
+  </script>
+
+  <script src="asstes/js/scroll top.js"></script>
+  <script src="asstes/js/script.js"></script>
+</body>
+
+</html>

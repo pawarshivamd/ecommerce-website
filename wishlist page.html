@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wishlist page</title>
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- font-awesome icon link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+
+  <!-- font dowlond  link -->
+  <link rel="stylesheet" href="asstes/fonts/transfonter.org-20230210-103519/stylesheet.css">
+
+  <link rel="stylesheet" href="asstes/css/style.css">
+  <link rel="stylesheet" href="asstes/css/responsive.css">
+</head>
+
+<body style="background:white;">
+
+  <!-- ================ header section strat ===================== -->
+  <div class="header">
+    <nav class="navbar navbar-expand-lg nav-section">
+      <div class="container">
+        <a class="navbar-brand img-nav" href="index.html"><img src="asstes/img/logo/vector black.png" alt=""
+            class="pe-3">GymCart
+        </a>
+        <button class="navbar-toggler btn-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_1"
+          aria-controls="navbar_1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbar_1">
+          <ul class="navbar-nav ms-auto  nav-ul">
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-mdb-toggle="dropdown"
+                aria-expanded="false">
+                Category
+              </a>
+              <!-- Dropdown menu -->
+              <div class="dropdown-menu  mt-0  mydropudowan" aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row my-4">
+                    <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                      <div class="list-group ">
+                        <h4 class="mb-0 list-group-item ">
+                          Lorem ipsum
+                        </h4>
+                        <a href="#" class="list-group-item ">Dolor sit</a>
+                        <a href="#" class="list-group-item ">Amet consectetur</a>
+                        <a href="#" class="list-group-item ">Cras justo odio</a>
+                        <a href="#" class="list-group-item ">Adipisicing elit</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                      <div class="list-group ">
+                        <h4 class="mb-0 list-group-item ">
+                          Explicabo voluptas
+                        </h4>
+                        <a href="#" class="list-group-item ">Perspiciatis quo</a>
+                        <a href="#" class="list-group-item ">Cras justo odio</a>
+                        <a href="#" class="list-group-item ">Laudantium maiores</a>
+                        <a href="#" class="list-group-item ">Provident dolor</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3 mb-md-0">
+                      <div class="list-group">
+                        <h4 class="mb-0 list-group-item">
+                          Iste quaerato
+                        </h4>
+                        <a href="#" class="list-group-item ">Cras justo odio</a>
+                        <a href="#" class="list-group-item ">Est iure</a>
+                        <a href="#" class="list-group-item ">Praesentium</a>
+                        <a href="#" class="list-group-item ">Laboriosam</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Left links -->
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#">
+                Brand
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Privacy-Policy</a></li>
+                <li><a class="dropdown-item" href="#">Refund-Policy</a></li>
+                <li><a class="dropdown-item" href="#">shipping-policy</a></li>
+                <li><a class="dropdown-item" href="#">terms-of-use-policy</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- ================ header section End ===================== -->
+  <!-- ================= min-hed section start ===============  -->
+  <div class="min-hed">
+    <div class="container">
+      <div class="head-section">
+        <div class=" col-md-3  col-sm-0 ">
+          <!-- <button class="btn Toggle-section " type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"> <i class="fas fa-bars px-4"></i>All
+            category</button>
+
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                <p class="login-btn-1"><a href="#">Login</a></p>
+              </h5>
+              <a  type="button" class=" btn-close-nav " data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></a>
+              <!-- <button  type="button" class="btn-close btn-close-nav " data-bs-dismiss="offcanvas" aria-label="Close"></button> 
+            </div>
+            <div class="offcanvas-body">
+              <ul >
+                <li><a href="#">sdtdsd</a></li>
+                <li><a href="#">sdtdsd</a></li>
+                <li><a href="#">sdtdsd</a></li>
+              </ul>
+            </div>
+          </div> -->
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <form action="" method="post" class="inputcontainer">
+            <input type="text" placeholder="Search for product">
+            <button type="submit"><!--<i class="fas fa-search"></i> --><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+        <div class="col-md-3 col-sm-3 ">
+          <div class=" login-section">
+            <p class="login-btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a href="#">Login</a></p>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="text-end"> <button type="button" class="btn-close " data-bs-dismiss="modal"
+                      aria-label="Close"></button></div>
+                  <div class="modal-header">
+                    <div>
+                      <h4 class="modal-title  text-center col-md-12" id="staticBackdropLabel">Login</h4>
+                      <p>Please login using account detail bellow.</p>
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                    <form method="post">
+                      <input type="number" placeholder="Contact Number">
+                      <input type="number" placeholder="OTP">
+                      <p class="resend-p ">Didn’t Receive? <span> Resend </span></p>
+                      <button type="submit"> Verify</button>
+
+                    </form>
+                    <p class="text-center">Don’t have an Account? Create account</p>
+                  </div>
+                  <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div> -->
+                </div>
+              </div>
+            </div>
+            <p class="shoping-cart"><i class="bi bi-cart2"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ================= min-hed section End ===============  -->
+
+  <div class="my-whish-section">
+    <div class="container">
+      <div class=" my-whish-head">
+        <h1>My Wishlist <span>(4)</span></h1>
+        <!-- <p ><a href="#"> Continue Shopping</a></p> -->
+      </div>
+      <div class="my-whish-body">
+        <div class="my-whish-contain">
+          <div class="row">
+            <div class="col-lg-2 col-md- col-sm-12 d-flex justify-content-center ">
+              <div class="my-whish-img-box">
+                <img src="asstes/img/Wishlist page img/2.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-9 com-md- col-sm-12">
+              <div class="my-wish-list">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum sed nemo reprehenderit architecto
+                  nulla soluta autem totam quo saepe ratione, mollitia magnam,</p>
+                <h3>₹1289 <span>MRP:<del class="ms-1">1489</del></span> </h3>
+                <p><i class="fas fa-star"></i>4.5</p>
+                <div class="btn-mywish-body">
+                  <p class="bin-body"><a href="#"><i class="far fa-trash-alt"></i></a></p>
+                  <p class="btn-mywhish col-lg-2"> <a href="#" class=" "><i class="bi bi-cart2"></i><span class=""> Add
+                        To Cart </span></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md- col-sm-12 d-flex justify-content-end">
+              <div class="bin-body">
+                <a href="#"><i class="far fa-trash-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="my-whish-contain">
+          <div class="row">
+            <div class="col-lg-2 col-md- col-sm-12 d-flex justify-content-center ">
+              <div class="my-whish-img-box">
+                <img src="asstes/img/Wishlist page img/2.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-9 com-md-9 col-sm-12">
+              <div class="my-wish-list">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum sed nemo reprehenderit architecto
+                  nulla soluta autem totam quo saepe ratione, mollitia magnam,</p>
+                <h3>₹1289 <span>MRP:<del class="ms-1">1489</del></span> </h3>
+                <p><i class="fas fa-star"></i>4.5</p>
+                <div class="btn-mywish-body">
+                  <p class="bin-body"><a href="#"><i class="far fa-trash-alt"></i></a></p>
+                  <p class="btn-mywhish col-lg-2"> <a href="#" class=" "><i class="bi bi-cart2"></i><span class=""> Add
+                        To Cart </span></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md- col-sm-12 d-flex justify-content-end">
+              <div class="bin-body">
+                <a href="#"><i class="far fa-trash-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /2 -->
+        <!-- 3 -->
+        <div class="my-whish-contain">
+          <div class="row">
+            <div class="col-lg-2 col-md- col-sm-12 d-flex justify-content-center ">
+              <div class="my-whish-img-box">
+                <img src="asstes/img/Wishlist page img/2.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-9 com-md- col-sm-12">
+              <div class="my-wish-list">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum sed nemo reprehenderit architecto
+                  nulla soluta autem totam quo saepe ratione, mollitia magnam,</p>
+                <h3>₹1289 <span>MRP:<del class="ms-1">1489</del></span> </h3>
+                <p><i class="fas fa-star"></i>4.5</p>
+                <div class="btn-mywish-body">
+                  <p class="bin-body"><a href="#"><i class="far fa-trash-alt"></i></a></p>
+                  <p class="btn-mywhish col-lg-2"> <a href="#" class=" "><i class="bi bi-cart2"></i><span class=""> Add
+                        To Cart </span></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md- col-sm-12 d-flex justify-content-end">
+              <div class="bin-body">
+                <a href="#"><i class="far fa-trash-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /3 -->
+        <!-- 4 -->
+        <div class="my-whish-contain">
+          <div class="row">
+            <div class="col-lg-2  col-sm-12 d-flex justify-content-center ">
+              <div class="my-whish-img-box">
+                <img src="asstes/img/Wishlist page img/2.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-9 com-md- col-sm-12">
+              <div class="my-wish-list">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum sed nemo reprehenderit architecto
+                  nulla soluta autem totam quo saepe ratione, mollitia magnam,</p>
+                <h3>₹1289 <span>MRP:<del class="ms-1">1489</del></span> </h3>
+                <p><i class="fas fa-star"></i>4.5</p>
+                <div class="btn-mywish-body">
+                  <p class="bin-body"><a href="#"><i class="far fa-trash-alt"></i></a></p>
+                  
+                  <p class="btn-mywhish col-lg-2"> <a href="#" class=" "><i class="bi bi-cart2"></i><span class=""> Add
+                        To Cart </span></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md- col-sm-12 d-flex justify-content-end">
+              <div class="bin-body">
+                <a href="#"><i class="far fa-trash-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /4 -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer section start -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 footer-left-body ">
+          <div class="footer-icon-box">
+            <img src="asstes/img/logo/Vector.png" alt=""><span>GymCart</span>
+          </div>
+          <p>2023 GymCart <br>
+            All Right Reserved</p>
+          <div class="icon-footer-box">
+            <div>
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div>
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div>
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 ">
+          <ul class="list-group footer-list">
+            <li class="list-group-item"><a href="Privacy-Policy.html" class="active">Company</a></li>
+            <li class="list-group-item"><a href="terms-of-use-policy.html" class="">About</a></li>
+            <li class="list-group-item"><a href="Refund-Policy.html" class="">Contact us</a></li>
+            <li class="list-group-item"><a href="shipping-cancellation-return-dispute-resolution-policy.html"
+                class="">Support</a></li>
+            <li class="list-group-item"><a href="product grid page.html" class="">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 ">
+          <ul class="list-group footer-list ">
+            <li class="list-group-item"><a href="productsviewdetailes.html" class="active">Qucik Link</a></li>
+            <li class="list-group-item"><a href="Rating-&-reveiws.html" class="">Share Loction</a></li>
+            <li class="list-group-item"><a href="#" class="">Orders Track</a></li>
+            <li class="list-group-item"><a href="#" class="">Guide</a></li>
+            <li class="list-group-item"><a href="#" class="">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+  <div className="scroll-to-top">
+    <span class="btns-top btn-position btn-style"><i class="fas fa-angle-up"></i></span>
+  </div>
+
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <script src="asstes/js/scroll top.js"></script>
+
+</body>
+
+</html>

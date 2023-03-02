@@ -1,0 +1,61 @@
+/* =========================== policy setion start ======================== */
+.policy-section {
+    min-height: 270px;
+    background-color: var(--them-colour);
+}
+
+.policy-section .policy-hed {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 210px;
+}
+
+.policy-section .policy-hed h1 {
+    font-size: 35px;
+    font-weight: 600;
+
+    text-align: center;
+    color: white;
+}
+
+.policy-body {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: min(100% - 30px, 90%);
+    margin-inline: auto;
+}
+
+.policy-body .policy-box {
+    padding: 30px;
+    // border: 1px solid red;
+    // height: 100vh;
+}
+
+.policy-body .policy-box h1 {
+    color: var(---black);
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 22px;
+    // margin: 12px 0px;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+.policy-body .policy-box p {
+    line-height: 35px;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    margin: 0;
+}
+
+.policy-body .policy-box p a {
+    text-decoration: none;
+}
+
+.policy-body .policy-box .cheak-add span i {
+    color: rgb(210, 211, 212);
+    padding-inline: 5px;
+}
+
+/* =========== policy setion end  =================== */
