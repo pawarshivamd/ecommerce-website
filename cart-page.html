@@ -189,13 +189,14 @@
 
     <div class="cart-section">
         <div class="container">
-            <div class=" my-cart-head">
-                <h1>My Cart<span>(4)</span></h1>
-                <p><a href="#"> My Wishlist</a></p>
-            </div>
+            
             <div class="row">
                 <div class="col-lg-9">
                     <div class="my-cart-body">
+                        <div class=" my-cart-head">
+                            <h1>My Cart<span>(4)</span></h1>
+                            <p><a href="#"> My Wishlist</a></p>
+                        </div>
                         <div class="my-cart-contain">
                             <div class="row">
                                 <div class="col-lg-2 col-md- col-sm-12 d-flex justify-content-center m-0 p-0">
@@ -215,7 +216,7 @@
                                     <div class="my-cart-rs ">
                                         <div class="fw-semibold"> ₹ 8389 </div>
                                         <div class=" form-box ">
-                                            <label for="number"> Qty: </label>
+                                            <label for="number"> Qty</label>
                                             <input type="number" value="1" class="form-control" id="number">
                                         </div>
                                     </div>
@@ -242,7 +243,7 @@
                                     <div class="my-cart-rs ">
                                         <div class="fw-semibold"> ₹ 8389 </div>
                                         <div class=" form-box ">
-                                            <label for="number"> Qty: </label>
+                                            <label for="number"> Qty</label>
                                             <input type="number" value="1" class="form-control" id="number">
                                         </div>
                                     </div>
@@ -270,7 +271,7 @@
                                     <div class="my-cart-rs ">
                                         <div class="fw-semibold"> ₹ 8389 </div>
                                         <div class=" form-box ">
-                                            <label for="number"> Qty: </label>
+                                            <label for="number"> Qty </label>
                                             <input type="number" value="1" class="form-control" id="number">
                                         </div>
                                     </div>
@@ -281,28 +282,43 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md- col-sm-12">
+                    
                     <div class="total-box">
-                        <div>
-                            <p class=" price-details">price Details</p>
-                            <div class="price-border">
-                            <div class="col-  d-flex justify-content-around">
-                                <div class="col-6 text-center">Subtital</div>
-                                <div class="col-6 text-center">₹ 12689</div>
-                            </div>
-                            <div class="col- d-flex justify-content-around">
-                                <div class="col-6 text-center text-success">Discount</div>
-                                <div class="col-6 text-center">-1289</div>
-                            </div>
-                            <div class="col- d-flex justify-content-around">
-                                <div class="col-6 text-center  text-danger">tax</div>
-                                <div class="col-6 text-center">+689</div>
-                            </div>
-                            </div>
-                            <div class="col- d-flex justify-content-around">
-                                <div> Total</div>
-                                <div>₹ 12089</div>
-                            </div>
-                        </div>
+                        <table class="table" >
+                            <thead>
+                              <tr>
+                                <th scope="col" colspan="4" class="Price-detal fw-semibold">Price Details</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row"></th>
+                                <td class="subtotal">Subtotal:</td>
+                                <td></td>
+                                <td class="text-end">₹12689</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"></th>
+                                <td class="discount">Discount :</td>
+                                <td class="text-end"></td>
+                                <td class="text-end"><span class="me-2">-</span> ₹500</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"></th>
+                                <td class="info-btn" >Tax : <i class="bi bi-info-circle"></i></td>
+                                <td class="text-end"></td>
+                                <td class="text-end"><span class="me-2">+</span> ₹689</td>
+                              </tr>
+                              <tr class="total-border">
+                                <th scope="row"></th>
+                                <th class="fw-semibold">Total :</th>
+                                <td class=""></td>
+                                <th class="text-end fw-semibold">₹ 12089</th>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
 
                     </div>
                 </div>
@@ -315,52 +331,50 @@
     <!-- footer section start -->
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-12 footer-left-body ">
-                    <div class="footer-icon-box">
-                        <img src="asstes/img/logo/Vector.png" alt=""><span>GymCart</span>
-                    </div>
-                    <p>2023 GymCart <br>
-                        All Right Reserved</p>
-                    <div class="icon-footer-box">
-                        <div>
-                            <i class="fab fa-facebook-f"></i>
-                        </div>
-                        <div>
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <div>
-                            <i class="fab fa-twitter"></i>
-                        </div>
-                        <div>
-                            <i class="fab fa-linkedin-in"></i>
-                        </div>
-                    </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12 footer-left-body ">
+              <div class="footer-icon-box">
+                <img src="asstes/img/logo/Vector.png" alt=""><span>GymCart</span>
+              </div>
+              <p>2023 GymCart <br>
+                All Right Reserved</p>
+              <div class="icon-footer-box">
+                <div>
+                  <i class="fab fa-facebook-f"></i>
                 </div>
-                <div class="col-md-3 col-sm-6 ">
-                    <ul class="list-group footer-list">
-                        <li class="list-group-item"><a href="Privacy-Policy.html" class="active">Company</a></li>
-                        <li class="list-group-item"><a href="terms-of-use-policy.html" class="">About</a></li>
-                        <li class="list-group-item"><a href="Refund-Policy.html" class="">Contact us</a></li>
-                        <li class="list-group-item"><a
-                                href="shipping-cancellation-return-dispute-resolution-policy.html" class="">Support</a>
-                        </li>
-                        <li class="list-group-item"><a href="#" class="">Careers</a></li>
-                    </ul>
+                <div>
+                  <i class="fab fa-instagram"></i>
                 </div>
-                <div class="col-md-3 col-sm-6 ">
-                    <ul class="list-group footer-list ">
-                        <li class="list-group-item"><a href="productsviewdetailes.html" class="active">Qucik Link</a>
-                        </li>
-                        <li class="list-group-item"><a href="Rating-&-reveiws.html" class="">Share Loction</a></li>
-                        <li class="list-group-item"><a href="wishlist page.html" class="">Orders Track</a></li>
-                        <li class="list-group-item"><a href="#" class="">Guide</a></li>
-                        <li class="list-group-item"><a href="#" class="">FAQs</a></li>
-                    </ul>
+                <div>
+                  <i class="fab fa-twitter"></i>
                 </div>
+                <div>
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+              </div>
             </div>
+            <div class="col-md-3 col-sm-6 ">
+              <ul class="list-group footer-list">
+                <li class="list-group-item"><a href="Privacy-Policy.html" class="active">Company</a></li>
+                <li class="list-group-item"><a href="terms-of-use-policy.html" class="">About</a></li>
+                <li class="list-group-item"><a href="Refund-Policy.html" class="">Contact us</a></li>
+                <li class="list-group-item"><a href="shipping-cancellation-return-dispute-resolution-policy.html"
+                    class="">Support</a></li>
+                <!-- <li class="list-group-item"><a href="#" class="">Careers</a></li> -->
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 ">
+              <ul class="list-group footer-list ">
+                <li class="list-group-item"><a href="productsviewdetailes.html" class="active">Quick Link</a></li>
+                <li class="list-group-item"><a href="terms-of-use-policy.html" class="">Terms of use </a></li>
+                <li class="list-group-item"><a href="Privacy-Policy.html" class="">Privacy Policy</a></li>
+                <li class="list-group-item"><a href="Refund-Policy.html" class="">Refund & Return</a></li>
+                <li class="list-group-item"><a href="wishlist page.html" class="">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </footer>
+      </footer>
     <!-- footer section end -->
 
     <div className="scroll-to-top">

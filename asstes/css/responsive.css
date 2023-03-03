@@ -441,19 +441,25 @@
     top: 10px;
     /* left: 0px; */
   }
+  .cart-section .my-cart-contain .my-cart-list p {
+    line-height: 21px;
+  }
   .cart-section .my-cart-contain .my-cart-rs {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    gap: 10px;
   }
   .cart-section .my-cart-contain .my-cart-rs .form-box {
     margin-top: 0px !important;
-    padding-left: 10px;
     justify-content: flex-start;
     align-items: center;
   }
   .cart-section .my-cart-contain .my-cart-rs .form-control {
     width: 15%;
+  }
+  .cart-section .total-box {
+    padding-top: 20px;
   }
   /* ============== cart page section End ================== */
   /* ===============  delivery-addres page start =============*/
@@ -560,5 +566,8 @@
   }
   footer .footer-left-body .footer-icon-box img {
     width: 10%;
+  }
+  .delivery-section .address-body .delivery-contain .delivery-btn p {
+    padding: 4px 10px;
   }
 }/*# sourceMappingURL=responsive.css.map */
