@@ -318,12 +318,28 @@
 
     /* ==============  Product Grid View page start ========================= */
     .products-grid-body {
-        padding: 50px 0px;
+        padding: 0px 0px;
+        padding-bottom: 20px;
         justify-content: center;
-        gap: 0px;
-
+        gap: 20px;
+         .box-card{
+            // width: 300px;
+        }
     }
+    
+    .product-grid-section-header{
+        h1 {
+            font-size: 24px !important;
 
+            // padding-left: 5px;
+            &::after {
+                top: 18px !important;
+                height: 15px;
+                width: 70px;
+            }
+        }
+       
+    }
     /* ==============  Product Grid View page end ========================= */
     /* =========================== policy setion start ======================== */
     .policy-section {
@@ -635,6 +651,10 @@
 /* ===============  delivery-addres page End =============*/
 /* ================ Blog page start ===================*/
 .blog-section{
+    .blog-body .blog-contain p{
+        line-height: 24px;
+        font-size: 15px;
+    }
     .blog-section-header{
         h1 {
             font-size: 24px !important;
@@ -650,6 +670,17 @@
             font-size: 15px;
         }
     }
+     .blog-right-body .blog-right-head-1 {
+        padding-top: 0px;
+    }
+    .blog-right-body .blog-right-section-2{
+        padding: 0px;
+    }
+     .blog-right-body .blog-right-contain-2 .blog-right-img-box-2{
+        object-fit: cover;
+        padding: 5px;
+        height: auto;
+     } 
 }
 /* ================ Blog page End ===================*/
 
