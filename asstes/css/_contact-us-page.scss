@@ -1,0 +1,41 @@
+.contact-section{
+    .contact-header{
+        margin-inline: auto;
+        h4 {
+            position: relative;
+            font-weight: 600;
+            font-size: 30px;
+            padding-left: 20px;
+            z-index: 0;
+
+            span{
+                background-color: var(--them-colour);
+                opacity: 0.9;
+                height: 25px;
+                width: 121px;
+                border-radius: 128px 0px 144px;
+                position: absolute;
+                // right: 481px;
+                left: 73px;
+                top: 10px;
+                transform: rotate(176deg);
+                z-index: -1;
+            }
+        }
+    }
+    .contact-box{
+        padding: 10px 20px;
+        p{
+            color: #5A5B5A;
+            margin: 0;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        i{
+            color: #5A5B5A;
+        }
+        .contact-detailes{
+            border-bottom: 1px solid gray;
+        }
+    }
+}
