@@ -230,6 +230,9 @@
     width: 30%;
   }
   /* ======================  footer section start ======================== */
+  footer {
+    padding-top: 0px;
+  }
   .footer-icon-box span {
     font-size: 25px !important;
   }
@@ -238,6 +241,9 @@
   }
   footer .footer-list li a {
     font-size: 18px;
+  }
+  footer .footer-left-body {
+    padding-top: 50px;
   }
   footer .footer-left-body .footer-icon-box img {
     width: 8%;

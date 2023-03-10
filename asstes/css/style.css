@@ -142,7 +142,7 @@
 }
 .products-grid-body .box-card .card-body .card-con a .shpoing-btn:hover {
   color: white;
-  box-shadow: inset 400px 0 0 0 #E79835;
+  box-shadow: inset 400px 0 0 0 var(--btn-hover);
 }
 .products-grid-body .box-card .card-body .card-con a .shpoing-btn i {
   margin-right: 10px;
@@ -954,7 +954,7 @@
 }
 .delivery-section .address-body .delivery-contain .delivery-btn p:hover {
   color: white;
-  box-shadow: inset 400px 0 0 0 #E79835;
+  box-shadow: inset 400px 0 0 0 var(--btn-hover);
 }
 .delivery-section .address-body .delivery-contain .delivery-btn p a {
   color: var(--black);
@@ -1252,7 +1252,7 @@
 }
 .contact-section .get-touch-body form .submit-btn input:hover {
   color: white;
-  box-shadow: inset 400px 0 0 0 #E79835;
+  box-shadow: inset 400px 0 0 0 var(--btn-hover);
 }
 .contact-section .get-touch-body form input {
   width: 100%;
@@ -1406,7 +1406,7 @@
 }
 .Checkout-section .shipping-bogy .shipping-btn:hover {
   color: white;
-  box-shadow: inset 400px 0 0 0 #E79835;
+  box-shadow: inset 400px 0 0 0 var(--btn-hover);
 }
 .Checkout-section .oder-sumary-header {
   display: flex;
@@ -1491,7 +1491,7 @@
 }
 .Checkout-section a .place-oder-btn:hover {
   color: white;
-  box-shadow: inset 400px 0 0 0 #E79835;
+  box-shadow: inset 400px 0 0 0 var(--btn-hover);
 }
 
 * {
@@ -1599,6 +1599,11 @@ input:focus {
 }
 
 textarea:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+select:focus {
   box-shadow: none;
   outline: none;
 }
