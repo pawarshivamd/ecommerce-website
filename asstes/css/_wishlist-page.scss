@@ -78,7 +78,7 @@
                 }
             }
 
-            p {
+            .star{
                 i {
                     color: #FF8332;
                 }
@@ -95,37 +95,37 @@
                     }
                 }
 
-                .btn-mywhish {
-                    padding: 5px 11px;
-                    border: 1px solid var(--them-colour);
-                    border-radius: 50px;
-                    background-color: var(--them-colour);
-                    font-size: 15px;
-                    font-weight: 500;
-                    color: black;
-                    text-align: center;
-                    transition: ease-out 0.4s;
-
-                    // &:hover {
-                    //     background-color: var(--them-colour);
-                    //     color: white;
-                    //     // transform: translateX(-100%);
-                    //     box-shadow: inset 400px 0 0 0 #ff910b;
-                    // }
-
-                    a {
+                a{
+                    color: var(--black);
+                    .btn-mywhish  {
+                        padding: 7px 4px;
+                        border: 1px solid var(--them-colour);
+                        border-radius: 5px;
+                        background-color: var(--white);
+                        font-size: 16px;
+                        font-weight: 500;
                         color: black;
-
-                        i {
-                            color: black;
+                        text-align: center;
+                   
+                        -webkit-transition: ease-out 0.4s;
+                        -moz-transition: ease-out 0.4s;
+                        transition: ease-out 0.4s;
+                        margin-bottom: 0px;
+                        &:hover {
+                            background-color: var(--light);
+                            color: white;
+                            // transform: translateX(-100%);
+                            box-shadow: inset 400px 0 0 0 var(--btn-hover);
                         }
+                      
+                        
                     }
                 }
             }
 
 
         }
-
+        
         .bin-body {
             display: flex;
             justify-content: center;

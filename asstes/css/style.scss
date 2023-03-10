@@ -9,6 +9,8 @@
 @import "Blog-page";
 @import "Single-Blog-page";
 @import "contact-us-page";
+@import "profile-page";
+@import "Checkout-page";
 * {
     margin: 0%;
     padding: 0%;
@@ -104,7 +106,17 @@ p {
     --white: #FFFFFF;
     --light: #FDEAD3;
     --primary: #945B13;
+    --btn-hover:#E79835;
 }
+input:focus {
+    box-shadow: none;
+    outline: none;
+}
+textarea:focus{
+    box-shadow: none;
+    outline: none;
+}
+
 
 /* =========  start header section ================ */
 
@@ -214,7 +226,7 @@ p {
     align-items: center;
     position: sticky;
     width: 100%;
-    top: 0;
+    top: -2px;
     border-bottom: 1px solid #E8E8E8;
     z-index: 999999;
 
@@ -306,20 +318,34 @@ p {
         p {
             margin-bottom: 0%;
         }
-
-        .login-btn {
-            background-color: var(--them-colour);
-            border-radius: 41px;
-            padding: 4px 20px;
-            margin-right: 20px;
-
-            a {
-                color: var(--black);
+        a{
+            color: var(--black);
                 font-weight: 500;
                 text-decoration: none;
                 font-size: 15px;
+        
+        .login-btn {
+            // background-color: var(--them-colour);
+            cursor: pointer;
+            border: 1px solid var(--them-colour);
+            border-radius: 5px;
+            padding: 4px 20px;
+            margin-right: 20px;
+            font-weight: 500;
+            -webkit-transition: ease-out 0.4s;
+            -moz-transition: ease-out 0.4s;
+            transition: ease-out 0.4s;
+            color: var(--black);
+            
 
+            &:hover {
+                // background-color: var(--them-colour);
+                color: white;
+                // transform: translateX(-100%);
+                box-shadow: inset 400px 0 0 0 var(--them-colour);
             }
+        }
+            
         }
 
         .modal-dialog {
@@ -395,15 +421,26 @@ p {
                     }
                 }
 
-                button {
-                    width: 100%;
-                    cursor: pointer;
-                    background-color: var(--them-colour);
-                    padding: 7px;
-                    border: none;
-                    border-radius: 50px;
-                    margin: 15px 0px;
+                .submit-profile{
+                    background-color: var(--white);
+                    border:1px solid var(--them-colour);
+                    border-radius: 5px;
+                    color: var(--black);
+                    padding: 8px 20px;
+                    font-size: 16px;
                     font-weight: 600;
+                    width: 60%;
+                    -webkit-transition: ease-out 0.4s;
+                    -moz-transition: ease-out 0.4s;
+                    transition: ease-out 0.4s;
+        
+                    &:hover {
+                        // background-color: var(--them-colour);
+                        color:var(--white);
+                        // transform: translateX(-100%);
+                        box-shadow: inset 400px 0 0 0 var( --btn-hover);
+                    }
+        
                 }
 
                 p {
@@ -428,7 +465,7 @@ p {
         justify-content: center;
         border-radius: 50% 50%;
         margin-right: 20px;
-
+        cursor: pointer;
         i {
             text-align: center;
             /* height: 70px; */
@@ -759,7 +796,7 @@ p {
                         .shpoing-btn {
                             padding: 7px 10px;
                             border: 1px solid var(--them-colour);
-                            border-radius: 50px;
+                            border-radius: 5px;
                             font-size: 16px;
                             font-weight: 600;
                             text-align: center;
@@ -979,7 +1016,7 @@ p {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        gap: 70px;
+        gap: 10px;
 
         .blog-contaion {
             // border: 1px solid red;
@@ -1047,7 +1084,9 @@ footer {
 footer .footer-left-body .footer-icon-box {
     padding: 0px 0px 30px 0px;
 }
-
+footer .gym-icon-size i{
+    font-size: 10px;
+}
 footer .footer-left-body .footer-icon-box {
     display: flex;
     align-items: center;

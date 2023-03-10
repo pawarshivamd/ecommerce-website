@@ -10,8 +10,7 @@
             font-weight: 600;
             font-family: poppins;
             position: relative;
-
-
+            
             &::after {
                 content: "";
                 background-color: var(--them-colour);
@@ -145,7 +144,7 @@
             }
             .Price-detal{
                 padding-left: 10px;
-                
+                font-weight:700 ;
                 
                 color: rgba(0, 0, 0, 0.49);
             }

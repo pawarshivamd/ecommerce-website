@@ -8,17 +8,35 @@
 .product-grid-left-section{
     .product-grid-left-box{
         background: #EFEFEF;
-        padding: 20px;
+        padding: 10px 20px;
+        margin: 10px 0px;
         .left-box-main{
             .main-white{
                 background-color: white;
                 padding: 10px;
+                color: var(--black);
+                font-weight: 500;
             }
             .Left-contain{
-                padding: 0px 50px;
+                padding: 0px 30px;
                  input[type=checkbox] {
                     accent-color: var(--them-colour);
                     margin-right: 10px;
+                }
+                .circle-m{
+                    margin-left: 10px;
+                }
+                .High-light-p{
+                    cursor:  default;
+                    &:hover{
+                        color: var(--them-colour);
+                    }
+                }
+                .star{
+                    color: #FF9017;
+                }
+                .no-colour{
+                    color: #BDC4CD;
                 }
             }
         }
@@ -58,7 +76,7 @@
     /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
     padding: 0px 50px;
     padding-bottom: 20px;
-    justify-content: space-around;
+    justify-content: flex-start;
     .box-card {
         border-radius: 20px;
         // margin: 1rem 0rem;
@@ -68,7 +86,7 @@
         background-color: var(--white);
         // border: 1px solid gray;
         // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        // box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
 
 
@@ -138,7 +156,7 @@
                     .shpoing-btn {
                         padding: 10px 10px;
                         border: 1px solid var(--them-colour);
-                        border-radius: 50px;
+                        border-radius: 5px;
                         font-size: 18px;
                         font-weight: 600;
                         text-align: center;
