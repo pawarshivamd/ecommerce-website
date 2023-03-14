@@ -70,15 +70,15 @@
             .number{
                 padding: 10px 0px;
             }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+            
+            /* Firefox */
             input[type=number] {
-                -webkit-appearance: none;
-                -moz-appearance: textfield;
-                appearance: none !important;
-                &::-webkit-outer-spin-button,
-                &::-webkit-inner-spin-button {
-                    -webkit-appearance: none;
-                    margin: 0;
-                }
+              -moz-appearance: textfield;
             }
             .Subject{
                 padding: 10px 0px;

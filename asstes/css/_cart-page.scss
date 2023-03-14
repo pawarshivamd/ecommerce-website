@@ -45,10 +45,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            // padding: 10px;
+            padding: 16px;
             background-color: var(--white);
-            height: 125px;
-            width: 125px;
+            height: 108px;
+            width: 108px;
 
             // margin: 8px;
             // border: 1px solid red;
@@ -80,9 +80,10 @@
                 display: flex;
                 justify-content: flex-start;
                 margin-top: 20px;
+               
             }
             .form-control {
-                width: 35%;
+                width: 40%;
                 height: 30px;
                 padding: 3px 0px;
                 padding-left: 5px;
@@ -93,7 +94,17 @@
                 cursor: pointer;
                 color: var(--them-colour);
                 margin-left: 5px;
-
+                input[type=number] {
+                    -webkit-appearance: button;
+                    -moz-appearance: button;
+                    appearance: button !important;
+                    -webkit-appearance: button;
+                    // &::-webkit-outer-spin-button,
+                    // &::-webkit-inner-spin-button {
+                    //     -webkit-appearance: none;
+                    //     margin: 0;
+                    // }
+                }
                 &:focus {
                     box-shadow: none;
                 }

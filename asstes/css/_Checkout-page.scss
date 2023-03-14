@@ -35,7 +35,7 @@
         // border: 1px solid red;
         padding: 10px 0px;
         .checkout-p {
-            font-size: 17px;
+            font-size: 19px;
         }
 
         .alredy-p {
@@ -44,15 +44,20 @@
             border-radius: 3px;
             padding: 7px 0px;
             margin-bottom: 1rem;
+            span a{
+                color: #9B5701;
+            }
         }
 
         .edit-p a{
             color: #9B5701;
+            font-weight: 600;
+    font-size: 17px;
         }
 
         .billing-p {
             color: var(--black);
-            font-size: 17px;
+            font-size: 19px;
             font-weight: 500;
         }
 
@@ -69,15 +74,15 @@
            
 
         }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        
+        /* Firefox */
         input[type=number] {
-            -webkit-appearance: none;
-            -moz-appearance: textfield;
-            appearance: none !important;
-            &::-webkit-outer-spin-button,
-            &::-webkit-inner-spin-button {
-                -webkit-appearance: none;
-                margin: 0;
-            }
+          -moz-appearance: textfield;
         }
 
         select {
@@ -86,6 +91,7 @@
             color: #828282;
             border: 1px solid #828282;
             border-radius: 3px;
+            background-color: white;
 
         }
     }
@@ -117,11 +123,13 @@
         justify-content: space-between;
         align-items: center;
         .oder-p{
-            font-size: 16px;
-         
+            font-size: 19px;
+           
         }
         .edit-p a{
             color: #9B5701;
+            font-weight: 600;
+            font-size: 17px;
 
         }
     }
@@ -152,8 +160,21 @@
         .input-num{
             height: 21px;
             color: #8B96A5;
-            border:1px solid #8B96A5;
+            border:0.5px solid #8B96A5;
             border-radius: 5px;
+            width: 19%;
+            height: 25px;
+            padding-left: 2px;
+            appearance: button !important;
+            -webkit-appearance: button !important;
+    -moz-appearance: button !important;
+    &::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button{
+        -webkit-appearance: button !important;
+        appearance: button !important;
+        -moz-appearance: button !important;
+
+    }
         }
       
     }
@@ -174,11 +195,11 @@
             margin-top: 5px;
             background-color: var(--them-colour);
         }
-        span{
+        span a{
             color: #B56807;
         }
     }
-   a{
+    .placce-oder{
     color: var(--black);
     font-weight: 600;
     font-size: 17px;

@@ -3,27 +3,25 @@
     .profile-left-body{
         background-color: white;
         padding-inline: 20px 20px;
-        .profile-ptage{
-            a p{
-                margin: 0;
-                font-size: 16px;
-                line-height: 22px;
-                color:  rgba(0, 0, 0, 0.51);
+        a{
+            color: rgb(147 147 147);
+            font-weight: 500;
+            
+            &:hover{
+                color: var(--them-colour);
+            }
+            p{
+                margin: 0px;
             }
         }
-        .icon-box{
-            a {
-                display: flex;
-                align-items: center;
-                i{
-                    color: rgba(0, 0, 0, 0.51);
-                }
-                iconify-icon{
-                    color: rgba(0, 0, 0, 0.51);
+        .active-a{
+            color: rgb(24, 23, 23);
+            &:hover{
+                color: var(--them-colour);
+                
+            }
+        }
 
-                }
-            }
-        }
     }
     .profile-right-body{
         background-color: white;
@@ -47,6 +45,15 @@
                 // transform: translateX(-100%);
                 box-shadow: inset 400px 0 0 0 var( --btn-hover);
             }
+
+        }
+        input{
+            border: 1px solid #1B1B1B;
+            padding:2px 4px;
+        }
+        textarea{
+            border: 1px solid #1B1B1B;
+            padding:2px 4px;
 
         }
         

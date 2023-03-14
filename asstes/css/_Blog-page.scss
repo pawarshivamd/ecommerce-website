@@ -1,6 +1,6 @@
 .blog-section{
     p{
-        color: #8A8FB9;
+        color: #777777;
     }
     .blog-section-header{
         display: flex;
@@ -30,18 +30,23 @@
 
         }
 
-        p a {
-            text-decoration: underline;
-            color: var(--primary);
-            font-weight: 600;
-            font-size: 17px;
-            cursor: pointer;     
-            &:hover{
-                color: var(--primary);
+        p{
+            margin: 0;
 
+            a {
                 text-decoration: underline;
+                color: var(--primary);
+                font-weight: 600;
+                font-size: 17px;
+                cursor: pointer;     
+                &:hover{
+                    color: var(--primary);
+    
+                    text-decoration: underline;
+                }
             }
-        }
+        } 
+        
     }
 
     .blog-body{
@@ -55,11 +60,11 @@
             }
            h4{
             padding-top: 20px;
-            color: var(--primary);
+            color: var(--black);
            }
             
            a{
-            color:var(--primary);
+            color:#0A2640;
             
            }
 
@@ -71,7 +76,7 @@
             padding-top: 40px;
             p{
                 color: var(--black);
-                font-size: 18px;
+                font-size: 19px;
                 font-weight: 500;
             }
         }
@@ -90,7 +95,7 @@
             }
             h4{
                 font-size: 16px;
-                color: var(--primary);
+                color: var(--black);
                 margin-bottom: 0px;
                 line-height: 17px;
             }
@@ -106,7 +111,7 @@
             padding-top: 40px;
             p{
                 color: var(--black);
-                font-size: 18px;
+                font-size: 19px;
                 font-weight: 500;
             }
         }
@@ -123,7 +128,7 @@
                 padding: 10px;
                 background-color: var(--light);
                 height: 89px;
-                width: auto;
+              
                 // border: 1px solid rosybrown;
                 // margin: 10px;
                 img{
@@ -133,7 +138,7 @@
             }
             h4{
                 font-size: 16px;
-                color: var(--primary);
+                color: var(--black);
                 margin-bottom: 0px;
                 line-height: 17px;
             }

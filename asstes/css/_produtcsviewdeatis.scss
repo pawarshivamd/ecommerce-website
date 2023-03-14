@@ -208,7 +208,14 @@
 
 
 	.xzoom_details  {
-		
+		h4{
+			span{
+				.veg-nonveg-icon{
+					font-size: 28px;
+					color: green;
+				}
+			}
+		}
 		.star{
 			margin: 0;
 

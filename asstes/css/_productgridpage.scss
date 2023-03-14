@@ -7,7 +7,7 @@
 }
 .product-grid-left-section{
     .product-grid-left-box{
-        background: #EFEFEF;
+        background: #f7f4f4;
         padding: 10px 20px;
         margin: 10px 0px;
         .left-box-main{
@@ -46,7 +46,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 45px;
+    padding-left: 66px;
     h1 {
         font-size: 30px;
         font-weight: 600;
@@ -74,7 +74,7 @@
     /* justify-content: center; */
     gap: 40px 40px;
     /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
-    padding: 0px 50px;
+    padding: 0px 73px;
     padding-bottom: 20px;
     justify-content: flex-start;
     .box-card {

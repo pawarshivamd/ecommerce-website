@@ -108,6 +108,7 @@ p {
     --primary: #945B13;
     --btn-hover:#E79835;
 }
+
 input:focus {
     box-shadow: none;
     outline: none;
@@ -412,11 +413,12 @@ select:focus{
 
                 input[type=number] {
                     -webkit-appearance: none;
-                    -moz-appearance: textfield;
-                    appearance: none !important;
+                    appearance: none ;
 
                 }
-
+                input[type=number] {
+                    -moz-appearance: textfield;
+                  }
                 .resend-p {
                     font-size: 15px;
 
@@ -562,22 +564,7 @@ select:focus{
         // padding: 20px 0px;
         align-items: center;
         justify-content: space-between;
-        overflow-x: scroll;
         padding-top: 20px;
-
-        &::-webkit-scrollbar {
-            width: px;
-            background-color: #FDEAD3;
-            cursor: pointer;
-            height: 8px;
-        }
-
-        &::-webkit-scrollbar-thumb {
-            background: #F7A742;
-            border-radius: 4px;
-            width: 5px;
-        }
-
         .carte-contain {
 
             display: flex;

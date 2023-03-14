@@ -98,7 +98,7 @@
                 a{
                     color: var(--black);
                     .btn-mywhish  {
-                        padding: 7px 4px;
+                        padding: 7px 7px;
                         border: 1px solid var(--them-colour);
                         border-radius: 5px;
                         background-color: var(--white);
@@ -106,7 +106,7 @@
                         font-weight: 500;
                         color: black;
                         text-align: center;
-                   
+                        width: 140px;
                         -webkit-transition: ease-out 0.4s;
                         -moz-transition: ease-out 0.4s;
                         transition: ease-out 0.4s;

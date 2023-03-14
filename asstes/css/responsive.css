@@ -15,6 +15,9 @@
   .blog-setion .blog-body .blog-contaion {
     width: 30%;
   }
+  .product-grid-left-section .product-grid-left-box .left-box-main .Left-contain {
+    padding: 0px 9px;
+  }
 }
 @media (max-width: 991px) {
   h1 {
@@ -66,7 +69,7 @@
     min-height: 55px !important;
   }
   .min-hed .head-section {
-    margin-inline: 0px;
+    margin-inline: 30px;
   }
   .min-hed .inputcontainer {
     margin-left: 0px;
@@ -104,6 +107,31 @@
   }
   .min-hed .login-section .modal-content .modal-body .resend-p {
     font-size: 13px;
+  }
+  .min-hed .inputcontainer button {
+    left: 5px !important;
+  }
+  .min-hed .login-section .login-btn {
+    margin-right: 0px !important;
+    padding: 1px 10px !important;
+    margin-inline: 5px !important;
+  }
+  .min-hed .shoping-cart {
+    width: 30px;
+    height: 30px;
+  }
+  .min-hed .shoping-cart {
+    margin-right: 0px;
+  }
+  .min-hed .inputcontainer input {
+    width: 89% !important;
+    padding-left: 13px !important;
+    font-size: 15px;
+  }
+  .min-hed .inputcontainer button i {
+    color: #ABABAB;
+    font-size: 14px;
+    left: 0;
   }
   /*
 
@@ -240,7 +268,7 @@
     padding-top: 50px;
   }
   footer .footer-list li a {
-    font-size: 18px;
+    font-size: 15px;
   }
   footer .footer-left-body {
     padding-top: 50px;
@@ -270,8 +298,12 @@
   /* ==============  Product Grid View page end ========================= */
   /* =========================== policy setion start ======================== */
   .policy-hed h1 {
-    font-size: 19px;
+    font-size: 25px;
     line-height: 25px;
+  }
+  .shipping-hed h1 {
+    line-height: 25px !important;
+    font-size: 19px !important;
   }
   .policy-body .policy-box1 {
     padding: 0px;
@@ -292,6 +324,9 @@
   }
   .Description-contain {
     padding: 20px !important;
+  }
+  .product-grid-section-header {
+    padding-left: 20px;
   }
   /* =================  Product Details page End ================== */
   /* ================ produtcs-view-deatils-page Start ==================== */
@@ -332,14 +367,18 @@
   .xzoom_part .xzoom {
     height: 325px;
     width: 322.625px !important;
+    padding: 40px;
   }
   .xzoom_part .btn-xzone-body .btn-xzone {
     padding: 8px 10px;
     font-size: 15px;
   }
-  .xzoom_part .xzoom_details .btn-body .btn-views a {
-    color: var(--black);
+  .xzoom_part .btn-body .btn-views a {
     font-size: 15px;
+  }
+  .xzoom_part .xzoom_details h4 span .veg-nonveg-icon {
+    font-size: 17px;
+    color: green;
   }
   .xzoom_part .xzoom_container {
     margin: 0px 0px;
@@ -349,7 +388,6 @@
     flex-wrap: wrap;
   }
   .xzoom-thumbs {
-    margin-top: 10px !important;
     display: flex;
     gap: 10px;
     margin-inline: 50px !important;
@@ -379,7 +417,7 @@
     display: none !important;
   }
   .xzoom-body-contain .form-control {
-    width: 10% !important;
+    width: 12% !important;
   }
   /* ================ produtcs-view-deatils-page End ==================== */
   /*  ================  rating and reviews page start =================== */
@@ -436,9 +474,9 @@
     display: block !important;
     display: flex;
     text-align: center;
-    padding: 0px;
-    width: 25px;
-    height: 25px;
+    padding: 4px;
+    width: 30px;
+    height: 30px;
     margin-bottom: 0px !important;
     margin-right: 10px !important;
   }
@@ -460,7 +498,7 @@
   .cart-section .my-cart-contain .my-cart-rs {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 10px;
   }
   .cart-section .my-cart-contain .my-cart-rs .form-box {
@@ -473,6 +511,12 @@
   }
   .cart-section .total-box {
     padding-top: 20px;
+  }
+  .cart-section .my-cart-contain .my-cart-img-box {
+    padding: 10px !important;
+    height: 135px !important;
+    width: 135px !important;
+    margin: 8px !important;
   }
   /* ============== cart page section End ================== */
   /* ===============  delivery-addres page start =============*/
@@ -574,6 +618,9 @@
   .contact-section .contact-body .contact-box {
     padding: 10px 20px;
   }
+  .contact-section .contact-body .contact-box h4 {
+    font-size: 20px;
+  }
   .contact-section .contact-body .contact-box p {
     color: #5A5B5A;
     margin: 0;
@@ -582,6 +629,13 @@
   }
   .contact-section .get-touch-body {
     padding: 10px 0px;
+  }
+  .contact-section .get-touch-body h4 {
+    font-size: 20px;
+  }
+  .contact-section .get-touch-body p {
+    font-size: 15px;
+    margin-bottom: 0%;
   }
   /* =============== Contact-us-page-End =============== */
   /* ================== profile-page Start =============*/
@@ -630,6 +684,9 @@
   .btn-nav {
     margin-right: 0px;
   }
+  .min-hed .head-section {
+    margin-inline: 0px;
+  }
   .min-hed .inputcontainer button {
     left: 5px !important;
   }
@@ -655,6 +712,9 @@
     font-size: 14px;
     left: 0;
   }
+  .slider-card .slider-cat {
+    padding-inline: 10px !important;
+  }
   footer .footer-left-body .footer-icon-box img {
     width: 10%;
   }
@@ -663,5 +723,39 @@
   }
   .contact-section .get-touch-body form .submit-btn {
     width: 32% !important;
+  }
+  .xzoom-body-contain {
+    padding: 20px !important;
+  }
+  .xzoom_part .xzoom_details .btn-body {
+    flex-wrap: nowrap;
+  }
+  .xzoom_part .xzoom_details .btn-body .btn-views {
+    padding: 4px 3px;
+  }
+  .xzoom-body-contain .form-control {
+    width: 13% !important;
+  }
+  .xzoom_part .btn-xzone-body a .btn-xzone {
+    padding: 7px 5px;
+  }
+  .reviews-body nav .nav-tabs .nav-link {
+    padding: 9px 18px;
+  }
+  .reviews-body .reviews-container .progress {
+    width: 153px;
+  }
+  .reviews-body .reviews-container {
+    border-left: none;
+    padding: 10px 0px;
+  }
+  .product-grid-section-header {
+    padding-left: 0px;
+  }
+  .product-grid-left-section .product-grid-left-box .left-box-main .Left-contain {
+    padding: 0px 10px;
+  }
+  .contact-section .contact-body .contact-box {
+    padding: 10px 5px;
   }
 }/*# sourceMappingURL=responsive.css.map */
