@@ -9,12 +9,17 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 10px;
-
-        }
-
-        .Address-head p:nth-child(2) {
+            p{
+                font-size: 17px;
+                a{
             color: #B56807;
+
+                }
+            }
+
         }
+
+     
 
         .delivery-contain {
             background-color: #FEF9F1;

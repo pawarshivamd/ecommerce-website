@@ -364,6 +364,7 @@
         width: 228px;
     }
     .product-grid-section-header{
+        padding-left: 8px;
         h1 {
             font-size: 24px !important;
 
@@ -376,6 +377,7 @@
         }
        
     }
+
     /* ==============  Product Grid View page end ========================= */
     /* =========================== policy setion start ======================== */
 
@@ -414,9 +416,7 @@
     .Description-contain {
         padding: 20px !important;
     }
-    .product-grid-section-header {
-        padding-left: 20px;
-    }
+   
     /* =================  Product Details page End ================== */
     /* ================ produtcs-view-deatils-page Start ==================== */
 
@@ -649,25 +649,21 @@
         .my-cart-contain .my-cart-list p{
             line-height: 21px;
         }
-        .my-cart-contain .my-cart-rs {
-            display: flex;
-            align-items: center;
-            flex-wrap: nowrap;
-            gap: 10px;
-            .form-box{
-                margin-top: 0px !important;
-                // padding-left: 10px;
-                justify-content: flex-start;
-                align-items: center;
-            }
-            .form-control {
-                width: 15%;
-                
-            }
-        }
-         .total-box {
-            padding-top: 20px;
-        }
+    }
+    .cart-section .my-cart-contain .my-cart-list .form-box{
+        margin-top: 0px !important;
+        // padding-left: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cart-section .my-cart-contain .my-cart-list .form-control {
+        width: 16% !important;
+    }
+    .cart-section .my-cart-contain .bin-box .bin-body{
+        display: none;
+    }
+    .cart-section .my-cart-contain .bin-remove-add{
+        display: block;
     }
     .cart-section .my-cart-contain .my-cart-img-box {
         padding: 10px !important;
@@ -818,10 +814,13 @@
 /* =============== Contact-us-page-End =============== */
 /* ================== profile-page Start =============*/
 .profile-section{
-    padding: 0px;
+    padding: 10px;
  .profile-right-body{
-    margin-top: 10px;
+    margin: 5px 0px;
     padding: 10px 10px;
+ }
+ .profile-left-body{
+    margin: 5px 12px;
  }
  .img-icon-box {
     width: 50%;
@@ -840,6 +839,14 @@
 /* ==================== Checkout page start ==================== */
  
 /* ==================== Checkout page End ======================== */
+/* ===================== about us page start ======================*/
+.About-section{
+    .about-body{
+        padding: 0px;
+    }
+}
+/* ===================== about us page End ======================*/
+
 }
 
 @media (min-width: 1280px) {

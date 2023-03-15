@@ -11,6 +11,7 @@
 @import "contact-us-page";
 @import "profile-page";
 @import "Checkout-page";
+@import "about-us";
 * {
     margin: 0%;
     padding: 0%;
@@ -121,7 +122,12 @@ select:focus{
     box-shadow: none;
     outline: none;
 }
-
+.veg-icon{
+    color: green;
+}
+.noveg-icon{
+    color: red;
+}
 
 /* =========  start header section ================ */
 
@@ -758,6 +764,8 @@ select:focus{
                         padding-bottom: 0;
                         line-height: 22px;
                         margin: 0;
+                        display: flex;
+                        justify-content: space-between;
                     }
 
                     h6 {
@@ -779,7 +787,21 @@ select:focus{
                         }
 
                     }
+                    .card-price{
+                        color: var(--black);
+                        margin-bottom: 10px;
+                        span:nth-child(1) {
+                            font-weight: 600;
+                            font-size: 19px;
 
+                        }
+
+                        .mrp {
+                            font-size: 12px;
+                            font-weight: 400;
+
+                        }
+                    }
                     a {
                         color: black;
                         margin-top: 10px;
