@@ -59,6 +59,12 @@
         }
 
         .my-wish-list {
+            a{
+                color: var(--black);
+                h5{
+                    margin: 0;
+                }
+            }
             p {
                 font-size: 15px;
                 line-height: 20px;
@@ -85,7 +91,7 @@
             }
 
             .btn-mywish-body {
-                margin-top: 16px;
+                margin-top: 12px;
 
                 .bin-body {
                     display: none;

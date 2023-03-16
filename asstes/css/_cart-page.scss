@@ -60,10 +60,12 @@
 
         .my-cart-list {
 
+           a{
+            color: var(--black);
             h5 {
                 margin-bottom: 0px !important;
             }
-
+        }
             p {
                 margin-bottom: 0px;
                 color: rgba(0, 0, 0, 0.52);
@@ -179,5 +181,82 @@
                 }
             }
         }
+    }
+    .Delivery-fix-body{
+        // border: 1px solid black;
+        margin-top: 10px;
+        .Delivery-at-contain{
+            display: flex;
+            // flex-wrap: nowrap;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.51);
+            .icon-box{
+                // padding-top: 5px;
+                margin-inline: 10px;
+                iconify-icon{
+                    font-size: 30px;
+                    color: #373737B5;
+                }
+            }
+            .addres{
+                font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+
+color: rgba(0, 0, 0, 0.59);
+            }
+            .Delivery-at{
+                display: flex;
+                justify-content: space-between;
+                font-size: 15px;
+                p{
+                    font-size: 15px;
+                    font-weight: 600;
+                    .tag{
+                        background-color: var(--light);
+                        color: #797676;
+                        font-weight: 500;
+                        padding: 0px 4px;
+                        border-radius: 5px;
+                        margin-left: 5px;
+                        // font-size: 14px !important;
+                    }
+                }
+                .Change{
+                    color: #985500;
+                    font-weight: 600;
+                }
+            }
+           
+        }
+        .place-btn{
+            color: var();
+            p{
+                margin-top: 10px;
+                padding: 7px 10px;
+                border: 1px solid var(--them-colour);
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: 600;
+                width: 50%;
+                margin-inline: auto;
+                text-align: center;
+                color: var(--black);
+                -webkit-transition: ease-out 0.4s;
+                -moz-transition: ease-out 0.4s;
+                transition: ease-out 0.4s;
+                // width: auto;
+                // margin-inline: auto;
+
+                &:hover {
+                    // background-color: var(--them-colour);
+                    color: white;
+                    // transform: translateX(-100%);
+                    box-shadow: inset 400px 0 0 0 #E79835;
+                }
+            }
+     
+
+        }
+        
     }
 }

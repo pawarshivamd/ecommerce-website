@@ -732,6 +732,12 @@
   width: 100%;
   height: 100%;
 }
+.my-whish-section .my-whish-contain .my-wish-list a {
+  color: var(--black);
+}
+.my-whish-section .my-whish-contain .my-wish-list a h5 {
+  margin: 0;
+}
 .my-whish-section .my-whish-contain .my-wish-list p {
   font-size: 15px;
   line-height: 20px;
@@ -751,7 +757,7 @@
   color: #FF8332;
 }
 .my-whish-section .my-whish-contain .my-wish-list .btn-mywish-body {
-  margin-top: 16px;
+  margin-top: 12px;
 }
 .my-whish-section .my-whish-contain .my-wish-list .btn-mywish-body .bin-body {
   display: none;
@@ -850,7 +856,10 @@
   width: 100%;
   height: 100%;
 }
-.cart-section .my-cart-contain .my-cart-list h5 {
+.cart-section .my-cart-contain .my-cart-list a {
+  color: var(--black);
+}
+.cart-section .my-cart-contain .my-cart-list a h5 {
   margin-bottom: 0px !important;
 }
 .cart-section .my-cart-contain .my-cart-list p {
@@ -946,6 +955,67 @@
   font-size: 10px;
   position: absolute;
   color: #868583;
+}
+.cart-section .Delivery-fix-body {
+  margin-top: 10px;
+}
+.cart-section .Delivery-fix-body .Delivery-at-contain {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.51);
+}
+.cart-section .Delivery-fix-body .Delivery-at-contain .icon-box {
+  margin-inline: 10px;
+}
+.cart-section .Delivery-fix-body .Delivery-at-contain .icon-box iconify-icon {
+  font-size: 30px;
+  color: rgba(55, 55, 55, 0.7098039216);
+}
+.cart-section .Delivery-fix-body .Delivery-at-contain .addres {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.59);
+}
+.cart-section .Delivery-fix-body .Delivery-at-contain .Delivery-at {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.cart-section .Delivery-fix-body .Delivery-at-contain .Delivery-at p {
+  font-size: 15px;
+  font-weight: 600;
+}
+.cart-section .Delivery-fix-body .Delivery-at-contain .Delivery-at p .tag {
+  background-color: var(--light);
+  color: #797676;
+  font-weight: 500;
+  padding: 0px 4px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.cart-section .Delivery-fix-body .Delivery-at-contain .Delivery-at .Change {
+  color: #985500;
+  font-weight: 600;
+}
+.cart-section .Delivery-fix-body .place-btn {
+  color: var();
+}
+.cart-section .Delivery-fix-body .place-btn p {
+  margin-top: 10px;
+  padding: 7px 10px;
+  border: 1px solid var(--them-colour);
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 50%;
+  margin-inline: auto;
+  text-align: center;
+  color: var(--black);
+  transition: ease-out 0.4s;
+}
+.cart-section .Delivery-fix-body .place-btn p:hover {
+  color: white;
+  box-shadow: inset 400px 0 0 0 #E79835;
 }
 
 .delivery-section {
@@ -1133,11 +1203,16 @@
   padding: 10px 0px;
 }
 .blog-section .blog-right-body .blog-right-contain-2 .blog-right-img-box-2 {
-  padding: 10px;
   background-color: var(--light);
   height: 89px;
 }
-.blog-section .blog-right-body .blog-right-contain-2 .blog-right-img-box-2 img {
+.blog-section .blog-right-body .blog-right-contain-2 .blog-right-img-box-2 .img-contain {
+  padding: 5px;
+  height: 100%;
+  width: 85px;
+  margin-inline: auto;
+}
+.blog-section .blog-right-body .blog-right-contain-2 .blog-right-img-box-2 .img-contain img {
   width: 100%;
   height: 100%;
 }
@@ -1360,7 +1435,7 @@
 }
 .profile-section .profile-right-body .submit-profile:hover {
   color: white;
-  box-shadow: inset 400px 0 0 0 var(--btn-hover);
+  box-shadow: inset 400px 0 0 0 var(--them-colour);
 }
 .profile-section .profile-right-body input {
   border: 1px solid #1B1B1B;
@@ -1757,7 +1832,6 @@ select:focus {
 .nav-section {
   background-color: var(--them-colour);
   min-height: 63px;
-  z-index: 99999999;
 }
 .nav-section .img-nav {
   font-size: 25px;
@@ -1933,7 +2007,7 @@ select:focus {
 }
 .min-hed .login-section .modal-dialog {
   top: 90px;
-  z-index: 100000000000000000000;
+  z-index: 9999999;
 }
 .min-hed .login-section .modal-content {
   padding: 15px 30px;
@@ -2002,7 +2076,7 @@ select:focus {
 }
 .min-hed .login-section .modal-content .modal-body .submit-profile:hover {
   color: var(--white);
-  box-shadow: inset 400px 0 0 0 var(--btn-hover);
+  box-shadow: inset 400px 0 0 0 var(--them-colour);
 }
 .min-hed .login-section .modal-content .modal-body p {
   font-size: 15px;
@@ -2339,8 +2413,6 @@ select:focus {
 /* ==================  Tranding section End ==============  */
 /* ==============  brand boy svae to 40% section Start =================== */
 .img-bg-box img {
-  -o-object-fit: cover;
-     object-fit: cover;
   width: 100%;
   height: 100%;
 }
