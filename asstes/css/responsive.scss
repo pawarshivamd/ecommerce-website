@@ -163,55 +163,7 @@
         left: 0;
     }
 
-    /*
-        
-           =================== offcanvase css ==================
 
-
-        .min-hed .login-section p{
-            margin-bottom: 0% !important;
-        }
-        .Toggle-section{
-            padding: 0% !important;
-            margin: 0% !important;
-            font-size: 10px !important;
-        }
-        .Toggle-section i{
-            font-size: 10px !important;
-            padding-right: 5px !important;
-            padding-left: 0px !important;
-        }
-        .Toggle-section span{
-            font-size: 10px !important;
-        }
-        
-        .login-section .login-btn {
-            padding: 3px 10px !important;
-            display: none !important;
-            a{
-
-                font-size: 13px !important;
-            }
-        }
-        .login-section .shoping-cart {
-            width: 30px !important;
-            height: 30px !important;
-            i{
-
-                font-size: 15px !important;
-            }
-        }
-        .login-btn-1{
-            background-color: #068381;
-            border-radius: 41px;
-            padding: 5px 40px;
-            margin-bottom: 0;
-            a{
-                color: white;
-            }
-        }
-
-            */
     .nav-section .nav-ul .menu-wrapper {
         width: 300px;
         margin-left: 0px;
@@ -239,12 +191,35 @@
    
     /* =================== /banner end ==================  */
     .cat-round {
-        .carte-body .carte-contain P a{
-            font-size: 15px;
-            line-height: 20px;
-        }
+        .carte-body{
+            padding: 0px !important;
+            .carte-contain {
+                padding: 10px 0px !important;
+                P{
+                    margin: 0;
+                    a{
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+                } 
+             
+            }
+        } 
+     
+       
     }
-
+    .cat-round .carte-body .carte-contain .carte-img-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        gap: 10px;
+        width: 100px;
+        height: 100px;
+        background: #FFFFFF;
+        border-radius: 50%;
+    }
     /* ==================  Tranding section Start ==============  */
 
     .trending-head {
@@ -287,7 +262,6 @@
                 width: 87px !important;
             }
         }
-
     }
 
     .blog-setion .trending-head h1 {
@@ -337,9 +311,6 @@
         padding-bottom: 20px;
         justify-content: center;
         gap: 30px;
-         .box-card{
-            // width: 300px;
-        }
     }
     .products-grid-body .box-card{
         width: 228px;
