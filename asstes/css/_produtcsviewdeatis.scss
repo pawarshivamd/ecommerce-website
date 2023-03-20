@@ -1,5 +1,11 @@
 /* ================ produtcs-view-deatils-page start ==================== */
 /* ========= Xzoom = (Start) ========================= */
+.x-zoom-body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .xzoom_part {
 	padding: 30px 0px;
 
@@ -25,7 +31,7 @@
 		margin-top: 20;
 		display: flex;
 		// overflow-x: scroll;
-		margin-inline: 20px;
+		// margin-inline: 20px;
 		gap: 10px;
 
 		.swiper-slide {
@@ -85,7 +91,7 @@
 	}
 
 	.xzoom {
-		height: 360px;
+		// height: 360px;
 		width: 100%;
 		// box-shadow: 1px 4px 8px #aaa;
 		// border: 1px solid #ce8c8c;
@@ -256,11 +262,6 @@
 		}
 	}
 
-	.shi {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
 
 	.btn-xzone-body {
 

@@ -236,30 +236,11 @@
         padding: 0.5rem 0rem;
     }
 
-    .banner-wrapper .mySwiper-1 {
-        padding: 10px 5px;
-    }
-
-    .banner-wrapper .swiper-slide {
-        height: auto;
-    }
-
-    .banner-txt {
-        padding: 2rem;
-
-    }
-
-    .banner-wrapper .swiper-slide {
-        margin: 0;
-        padding: 0 0.1rem;
-
-
-    }
-
+   
     /* =================== /banner end ==================  */
     .cat-round {
-        .carte-body .carte-contain P {
-            font-size: 14px;
+        .carte-body .carte-contain P a{
+            font-size: 15px;
             line-height: 20px;
         }
     }
@@ -435,12 +416,12 @@
         }
     }
 
-    .shi {
+    .x-zoom-body{
         display: block !important;
         padding-right: 0;
         position: relative !important;
 
-        .hii {
+        .x-zoomin-responsive {
             display: flex;
             justify-content: flex-end;
             // padding-top: 30px;
@@ -467,13 +448,6 @@
             padding: 0px !important;
         }
 
-        .xzoom {
-            height: 325px;
-            width: 322.625px !important;
-            // border: 1px solid blue;
-            padding: 40px;
-        }
-
         .btn-xzone-body .btn-xzone {
             padding: 8px 10px;
             font-size: 15px;
@@ -490,6 +464,9 @@
         color: green;
     }
     .xzoom_part .xzoom_container {
+        .xzoom-body-responsive{
+            padding: 40px;
+        }
         margin: 0px 0px;
         padding: 0px;
         display: flex;
@@ -671,6 +648,9 @@
         width: 135px !important;
         margin: 8px !important;
     }
+    .cart-section .Delivery-fix-body .Delivery-at-contain .Delivery-at p{
+        margin-bottom: 5px;
+    }
 /* ============== cart page section End ================== */
 /* ===============  delivery-addres page start =============*/
 .delivery-section {
@@ -833,7 +813,9 @@
 }
 /* =================== profile-page End ==============*/
 /* ==================== Checkout page start ==================== */
- 
+.Checkout-section .billing-body {
+    padding-top: 30px;
+}
 /* ==================== Checkout page End ======================== */
 /* ===================== about us page start ======================*/
 .About-section{

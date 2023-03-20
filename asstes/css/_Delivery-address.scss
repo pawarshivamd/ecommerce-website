@@ -24,7 +24,7 @@
         .delivery-contain {
             background-color: #FEF9F1;
             padding: 10px 20px;
-
+            margin-bottom: 20px;
             .delivery-name {
                 display: flex;
                 justify-content: space-between;
@@ -35,7 +35,17 @@
                    width: 15px;
                    height: 15px;
                 }
+                .home-tag{
+                    // background-color: var(--light);
+                    color: #797676;
+                    font-weight: 400;
+                    padding: 2px 8px;
+                    border-radius: 5px;
+                    margin-left: 10px;
+                    font-size: 12px;
+                    background: #E0DCDC;
 
+                }
             }
             .edit a{
                 color: #B56807;

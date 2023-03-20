@@ -1,18 +1,14 @@
 .Checkout-section {
     padding: 10px 0px;
-
     .Checkout-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         h4 {
             font-size: 30px;
             font-weight: 600;
-            font-family: poppins;   
+            font-family: poppins;
             position: relative;
-
-
             &::after {
                 content: "";
                 background-color: var(--them-colour);
@@ -31,9 +27,9 @@
     }
 
     .Checkout-left-body {
-
         // border: 1px solid red;
         padding: 10px 0px;
+
         .checkout-p {
             font-size: 19px;
         }
@@ -44,15 +40,16 @@
             border-radius: 3px;
             padding: 7px 0px;
             margin-bottom: 1rem;
-            span a{
+
+            span a {
                 color: #9B5701;
             }
         }
 
-        .edit-p a{
+        .edit-p a {
             color: #9B5701;
             font-weight: 600;
-    font-size: 17px;
+            font-size: 17px;
         }
 
         .billing-p {
@@ -71,18 +68,19 @@
             color: #828282;
             border: 1px solid #828282;
             border-radius: 3px;
-           
+
 
         }
+
         input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
-          -webkit-appearance: none;
-          margin: 0;
+            -webkit-appearance: none;
+            margin: 0;
         }
-        
+
         /* Firefox */
         input[type=number] {
-          -moz-appearance: textfield;
+            -moz-appearance: textfield;
         }
 
         select {
@@ -95,14 +93,82 @@
 
         }
     }
-    .shipping-bogy{
-        padding: 50px 0px 0px 0px;
-        .shipping-btn{
+    .billing-body{
+        padding-top: 108px;
+        .edit-p a {
+            color: #9B5701;
+            font-weight: 600;
+            font-size: 17px;
+        }
+
+        .billing-p {
+            color: var(--black);
+            font-size: 19px;
+            font-weight: 500;
+        }
+        form {
+            
+        .checkout-input-wid {
+            width: 47%;
+        }
+
+            .address-types-body {
+                padding-top: 10px;
+                padding-left: 10px;
+
+                p {
+                    color: #827E7E;
+                    margin: 0;
+                }
+
+                input,
+                label {
+                    color: #827E7E;
+                }
+
+                input[type=radio] {
+                    accent-color: #B56807;
+                }
+            }
+            
+        input {
+            padding: 5px 5px;
+            margin: 5px 0px;
+            color: #828282;
+            border: 1px solid #828282;
+            border-radius: 3px;
+
+
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        select {
+            padding: 5px 5px;
+            margin: 5px 0px;
+            color: #828282;
+            border: 1px solid #828282;
+            border-radius: 3px;
+            background-color: white;
+
+        }
+        }
+
+        .shipping-btn {
             background-color: var(--white);
 
             border: 1px solid var(--them-colour);
             border-radius: 5px;
-            color:var(--black);
+            color: var(--black);
             font-size: 17px;
             font-weight: 600;
             padding: 7px 30px;
@@ -117,113 +183,5 @@
                 box-shadow: inset 400px 0 0 0 var(--btn-hover);
             }
         }
-    }
-    .oder-sumary-header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .oder-p{
-            font-size: 19px;
-           
-        }
-        .edit-p a{
-            color: #9B5701;
-            font-weight: 600;
-            font-size: 17px;
-
-        }
-    }
-    .oder-detail{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        border-bottom: 1px solid #E0E0E0;
-        padding-bottom: 10px;
-        .oder-img-box{
-            padding: 5px;
-            img{
-                object-fit: contain;
-                width: 100%;
-                height: 100%;
-            }
-        }
-        .odre-head-text{
-            font-size: 15px;
-            line-height: 20px;
-            font-weight: 500;
-        }
-        .oder-des{
-            font-size: 13px;
-            font-weight: 400;
-            line-height: 20px;
-        }
-        .input-num{
-            height: 21px;
-            color: #8B96A5;
-            border:0.5px solid #8B96A5;
-            border-radius: 5px;
-            width: 19%;
-            height: 25px;
-            padding-left: 2px;
-            appearance: button !important;
-            -webkit-appearance: button !important;
-    -moz-appearance: button !important;
-    &::-webkit-inner-spin-button,
-        ::-webkit-outer-spin-button{
-        -webkit-appearance: button !important;
-        appearance: button !important;
-        -moz-appearance: button !important;
-
-    }
-        }
-      
-    }
-    .review-des{
-        color: #645A5C;
-        line-height: 20px;
-        font-size: 14px;
-    }
-    .policy-input{
-        display: flex;
-        p{
-            line-height: 20px;
-            font-size: 12px;
-        }
-        input{
-            height: 13px;
-            width: 13px;
-            margin-top: 5px;
-            background-color: var(--them-colour);
-        }
-        span a{
-            color: #B56807;
-        }
-    }
-    .placce-oder{
-    color: var(--black);
-    font-weight: 600;
-    font-size: 17px;
-    display: flex;
-    justify-content: center;
-    .place-oder-btn{
-        background-color: var(--white);
-        border: 1px solid var(--them-colour);
-        text-align: center;
-        border-radius:5px ;
-        padding: 7px 10px;
-        font-weight: 600;
-        cursor: pointer;
-        -webkit-transition: ease-out 0.4s;
-        -moz-transition: ease-out 0.4s;
-        transition: ease-out 0.4s;
-        
-        &:hover {
-            // background-color: var(--them-colour);
-            color: white;
-            // transform: translateX(-100%);
-            box-shadow: inset 400px 0 0 0 var(--btn-hover);
-        }
-     
-   }    
     }
 }
