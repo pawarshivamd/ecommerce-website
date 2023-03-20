@@ -1,24 +1,4 @@
-@media (max-width: 1024px) {
-  .banner-wrapper .banner .mySwiper-1 .banner-txt h1 {
-    font-size: 24px;
-    line-height: 30px;
-  }
-  .slider-card {
-    padding-inline: 0px;
-  }
-  .slider-cat {
-    padding-inline: 0px;
-  }
-  .blog-setion .blog-body {
-    gap: 30px;
-  }
-  .blog-setion .blog-body .blog-contaion {
-    width: 30%;
-  }
-  .product-grid-left-section .product-grid-left-box .left-box-main .Left-contain {
-    padding: 0px 9px;
-  }
-}
+/* =========== Phone and Tablets css ===========*/
 @media (max-width: 991px) {
   h1 {
     font-weight: 600;
@@ -623,6 +603,28 @@
   }
   /* ===================== about us page End ======================*/
 }
+/* ======== custom css ======= */
+@media (max-width: 1024px) {
+  .banner-wrapper .banner .mySwiper-1 .banner-txt h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .slider-card {
+    padding-inline: 0px;
+  }
+  .slider-cat {
+    padding-inline: 0px;
+  }
+  .blog-setion .blog-body {
+    gap: 30px;
+  }
+  .blog-setion .blog-body .blog-contaion {
+    width: 30%;
+  }
+  .product-grid-left-section .product-grid-left-box .left-box-main .Left-contain {
+    padding: 0px 9px;
+  }
+}
 @media (min-width: 1280px) {
   .products-grid-body .box-card {
     width: 252px;
@@ -638,6 +640,7 @@
     width: 100%;
   }
 }
+/* ========= Samsung flod phone for ========== */
 @media (max-width: 280px) {
   .img-nav {
     padding-left: 10px !important;

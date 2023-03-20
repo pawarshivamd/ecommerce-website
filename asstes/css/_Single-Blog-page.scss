@@ -1,11 +1,13 @@
-.single-blog-section{
+/* =============  Singal-blog setion Start ============= */
+.single-blog-section {
     padding: 10px 0px;
-    .singal-blog-head{
+
+    .singal-blog-head {
         display: flex;
         justify-content: space-between;
         align-items: center;
         // padding-inline:30px ;
- 
+
 
         h1 {
             font-size: 30px;
@@ -33,34 +35,42 @@
 
         a {
             text-decoration: underline;
-            color:var(--primary);
+            color: var(--primary);
             font-weight: 600;
             font-size: 17px;
-            cursor: pointer;     
-            &:hover{
-            color:var(--primary);
-               
+            cursor: pointer;
+
+            &:hover {
+                color: var(--primary);
+
                 text-decoration: underline;
             }
         }
     }
-    .blog-body{
+
+    .blog-body {
         padding-bottom: 20px;
-        .blog-contain{
+
+        .blog-contain {
             padding: 10px 0px;
-            .blog-img-box{
-                img{
+
+            .blog-img-box {
+                img {
                     width: 100%;
                     height: 100%;
                 }
             }
-            h4{
+
+            h4 {
                 color: var(--black);
                 padding-top: 20px;
             }
-            p{
+
+            p {
                 color: #777777;
             }
         }
     }
 }
+
+/* =============  Singal-blog setion End ============= */

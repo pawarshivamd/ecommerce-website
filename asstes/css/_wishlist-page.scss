@@ -1,3 +1,4 @@
+/* =================  Wish-list Setion Start ============ */
 .my-whish-section {
     padding: 5px 0px;
 
@@ -52,6 +53,7 @@
             width: 135px;
             margin: 8px;
             border-radius: 5px;
+
             img {
                 width: 100%;
                 height: 100%;
@@ -59,12 +61,14 @@
         }
 
         .my-wish-list {
-            a{
+            a {
                 color: var(--black);
-                h5{
+
+                h5 {
                     margin: 0;
                 }
             }
+
             p {
                 font-size: 15px;
                 line-height: 20px;
@@ -84,7 +88,7 @@
                 }
             }
 
-            .star{
+            .star {
                 i {
                     color: #FF8332;
                 }
@@ -101,9 +105,10 @@
                     }
                 }
 
-                a{
+                a {
                     color: var(--black);
-                    .btn-mywhish  {
+
+                    .btn-mywhish {
                         padding: 7px 7px;
                         border: 1px solid var(--them-colour);
                         border-radius: 5px;
@@ -117,21 +122,22 @@
                         -moz-transition: ease-out 0.4s;
                         transition: ease-out 0.4s;
                         margin-bottom: 0px;
+
                         &:hover {
                             background-color: var(--light);
                             color: white;
                             // transform: translateX(-100%);
                             box-shadow: inset 400px 0 0 0 var(--btn-hover);
                         }
-                      
-                        
+
+
                     }
                 }
             }
 
 
         }
-        
+
         .bin-body {
             display: flex;
             justify-content: center;
@@ -154,3 +160,5 @@
         }
     }
 }
+
+/* =================  Wish-list Setion End ============ */

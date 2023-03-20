@@ -1,14 +1,18 @@
+/* =================== Checkout section Start =============== */
 .Checkout-section {
     padding: 10px 0px;
+
     .Checkout-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         h4 {
             font-size: 30px;
             font-weight: 600;
             font-family: poppins;
             position: relative;
+
             &::after {
                 content: "";
                 background-color: var(--them-colour);
@@ -93,8 +97,10 @@
 
         }
     }
-    .billing-body{
+
+    .billing-body {
         padding-top: 108px;
+
         .edit-p a {
             color: #9B5701;
             font-weight: 600;
@@ -106,11 +112,12 @@
             font-size: 19px;
             font-weight: 500;
         }
+
         form {
-            
-        .checkout-input-wid {
-            width: 47%;
-        }
+
+            .checkout-input-wid {
+                width: 47%;
+            }
 
             .address-types-body {
                 padding-top: 10px;
@@ -130,37 +137,37 @@
                     accent-color: #B56807;
                 }
             }
-            
-        input {
-            padding: 5px 5px;
-            margin: 5px 0px;
-            color: #828282;
-            border: 1px solid #828282;
-            border-radius: 3px;
+
+            input {
+                padding: 5px 5px;
+                margin: 5px 0px;
+                color: #828282;
+                border: 1px solid #828282;
+                border-radius: 3px;
 
 
-        }
+            }
 
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
 
-        /* Firefox */
-        input[type=number] {
-            -moz-appearance: textfield;
-        }
+            /* Firefox */
+            input[type=number] {
+                -moz-appearance: textfield;
+            }
 
-        select {
-            padding: 5px 5px;
-            margin: 5px 0px;
-            color: #828282;
-            border: 1px solid #828282;
-            border-radius: 3px;
-            background-color: white;
+            select {
+                padding: 5px 5px;
+                margin: 5px 0px;
+                color: #828282;
+                border: 1px solid #828282;
+                border-radius: 3px;
+                background-color: white;
 
-        }
+            }
         }
 
         .shipping-btn {
@@ -185,3 +192,5 @@
         }
     }
 }
+
+/* =================== Checkout section End =============== */

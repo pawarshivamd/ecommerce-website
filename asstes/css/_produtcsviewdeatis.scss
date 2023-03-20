@@ -213,16 +213,17 @@
 	}
 
 
-	.xzoom_details  {
-		h4{
-			span{
-				.veg-nonveg-icon{
+	.xzoom_details {
+		h4 {
+			span {
+				.veg-nonveg-icon {
 					font-size: 28px;
 					color: green;
 				}
 			}
 		}
-		.star{
+
+		.star {
 			margin: 0;
 
 			i {
@@ -265,8 +266,9 @@
 
 	.btn-xzone-body {
 
-		a{
+		a {
 			color: var(--black);
+
 			.btn-xzone {
 				padding: 7px 10px;
 				border: 1px solid var(--them-colour);
@@ -281,16 +283,16 @@
 				-moz-transition: ease-out 0.4s;
 				transition: ease-out 0.4s;
 				margin-bottom: 0px;
+
 				&:hover {
 					background-color: var(--light);
 					color: white;
 					// transform: translateX(-100%);
 					box-shadow: inset 400px 0 0 0 var(--btn-hover);
 				}
-				i{
 
-				}
-				
+				i {}
+
 			}
 		}
 
@@ -348,7 +350,8 @@
 		b {
 			color: #000;
 		}
-		.higlight-colur{
+
+		.higlight-colur {
 			color: #B56807;
 		}
 	}

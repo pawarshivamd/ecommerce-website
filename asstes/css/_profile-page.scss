@@ -1,35 +1,43 @@
-.profile-section{
+/* =============== Profile Setion Start ================ */
+.profile-section {
     padding: 20px 0px;
-    .profile-left-body{
+
+    .profile-left-body {
         background-color: white;
         padding-inline: 20px 20px;
-        a{
+
+        a {
             color: rgb(147 147 147);
             font-weight: 500;
-            
-            &:hover{
+
+            &:hover {
                 color: var(--them-colour);
             }
-            p{
+
+            p {
                 margin: 0px;
             }
         }
-        .active-a{
+
+        .active-a {
             color: rgb(24, 23, 23);
-            &:hover{
+
+            &:hover {
                 color: var(--them-colour);
-                
+
             }
         }
 
     }
-    .profile-right-body{
+
+    .profile-right-body {
         background-color: white;
         padding: 20px 30px;
         color: var(--black);
-        .submit-profile{
+
+        .submit-profile {
             background-color: var(--white);
-            border:1px solid var(--them-colour);
+            border: 1px solid var(--them-colour);
             border-radius: 5px;
             color: var(--black);
             padding: 10px 50px;
@@ -47,24 +55,30 @@
             }
 
         }
-        input{
+
+        input {
             border: 1px solid #1B1B1B;
-            padding:2px 4px;
+            padding: 2px 4px;
         }
-        textarea{
+
+        textarea {
             border: 1px solid #1B1B1B;
-            padding:2px 4px;
+            padding: 2px 4px;
 
         }
-        
+
     }
+
     .img-icon-box {
         display: contents;
         width: 100%;
         height: 100%;
-        img{
+
+        img {
             width: 100%;
             height: 100%;
         }
     }
 }
+
+/* =============== Profile Setion End ================ */

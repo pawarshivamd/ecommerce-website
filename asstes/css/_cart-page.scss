@@ -1,5 +1,7 @@
+/* =========== Cart section Start =============== */
 .cart-section {
     padding: 20px 0px;
+
     .my-cart-head {
         display: flex;
         justify-content: space-between;
@@ -10,7 +12,7 @@
             font-weight: 600;
             font-family: poppins;
             position: relative;
-            
+
             &::after {
                 content: "";
                 background-color: var(--them-colour);
@@ -50,6 +52,7 @@
             height: 108px;
             width: 108px;
             border-radius: 5px;
+
             // margin: 8px;
             // border: 1px solid red;
             img {
@@ -60,22 +63,26 @@
 
         .my-cart-list {
 
-           a{
-            color: var(--black);
-            h5 {
-                margin-bottom: 0px !important;
+            a {
+                color: var(--black);
+
+                h5 {
+                    margin-bottom: 0px !important;
+                }
             }
-        }
+
             p {
                 margin-bottom: 0px;
                 color: rgba(0, 0, 0, 0.52);
                 line-height: 21px;
             }
-            .form-box{
+
+            .form-box {
                 display: flex;
                 justify-content: flex-start;
-               
+
             }
+
             .form-control {
                 width: 18%;
                 height: 25px;
@@ -88,17 +95,20 @@
                 cursor: pointer;
                 color: var(--them-colour);
                 margin-left: 5px;
+
                 input[type=number] {
                     -webkit-appearance: button;
                     -moz-appearance: button;
                     appearance: button !important;
                     -webkit-appearance: button;
+
                     &::-webkit-outer-spin-button,
                     &::-webkit-inner-spin-button {
                         -webkit-appearance: button;
                         margin: 0;
                     }
                 }
+
                 &:focus {
                     box-shadow: none;
                 }
@@ -124,57 +134,71 @@
             }
 
         }
-        .bin-remove-add{
+
+        .bin-remove-add {
             display: none;
         }
     }
-    
+
     .total-box {
         // border: 1px solid red;
         // background: #8B8282;
         padding-top: 70px;
-        .table{
-            thead{
-                
+
+        .table {
+            thead {
+
                 border-bottom: 1px solid gray;
-                tr{
-    
+
+                tr {
+
                     background-color: #FFF6EA !important;
                 }
             }
         }
-        thead{
-            
+
+        thead {
+
             border-bottom: 1px solid gray;
-            tr{
+
+            tr {
 
                 background-color: #FFF6EA !important;
             }
-            .Price-detal{
+
+            .Price-detal {
                 padding-left: 10px;
-                font-weight:700 ;
-                
+                font-weight: 700;
+
                 color: rgba(0, 0, 0, 0.49);
             }
         }
-        tbody{
-            tr{
-                td,th{
+
+        tbody {
+            tr {
+
+                td,
+                th {
                     border: none !important;
                 }
             }
-            .total-border{
+
+            .total-border {
                 border-top: 1px solid gray;
             }
-            .subtotal{
+
+            .subtotal {
                 color: rgba(81, 80, 79, 0.81);
             }
-            .discount{
+
+            .discount {
                 color: #079504;
             }
-            .info-btn{
-                color:#FF2C2C;
-                i{
+
+            .info-btn {
+                color: #FF2C2C;
+
+                i {
                     font-size: 10px;
                     position: absolute;
                     color: #868583;
@@ -182,39 +206,47 @@
             }
         }
     }
-    .Delivery-fix-body{
+
+    .Delivery-fix-body {
         // border: 1px solid black;
         margin-top: 35px;
-        .Delivery-at-contain{
+
+        .Delivery-at-contain {
             display: flex;
             // flex-wrap: nowrap;
             border-bottom: 1px solid rgba(0, 0, 0, 0.51);
-            .icon-box{
+
+            .icon-box {
                 // padding-top: 5px;
                 margin-inline: 10px;
-                iconify-icon{
+
+                iconify-icon {
                     font-size: 30px;
                     color: #373737B5;
                 }
             }
-            .addres{
-                font-weight: 600;
-font-size: 14px;
-line-height: 21px;
 
-color: rgba(0, 0, 0, 0.59);
+            .addres {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 21px;
+
+                color: rgba(0, 0, 0, 0.59);
             }
-            .Delivery-at{
+
+            .Delivery-at {
                 display: flex;
                 justify-content: space-between;
                 font-size: 15px;
-                p{
+
+                p {
                     font-size: 15px;
                     font-weight: 600;
+
                     // margin-bottom: 5px;
-                    .tag{
+                    .tag {
                         // background-color: var(--light);
-                        background-color:#E0DCDC ;
+                        background-color: #E0DCDC;
                         color: #797676;
                         font-weight: 400;
                         padding: 2px 9px;
@@ -223,16 +255,19 @@ color: rgba(0, 0, 0, 0.59);
                         font-size: 12px !important;
                     }
                 }
-                .Change{
+
+                .Change {
                     color: #985500;
                     font-weight: 600;
                 }
             }
-           
+
         }
-        .place-btn{
+
+        .place-btn {
             color: var(--black);
-            p{
+
+            p {
                 margin-top: 20px;
                 padding: 7px 10px;
                 border: 1px solid var(--them-colour);
@@ -256,9 +291,11 @@ color: rgba(0, 0, 0, 0.59);
                     box-shadow: inset 400px 0 0 0 var(--them-colour);
                 }
             }
-     
+
 
         }
-        
+
     }
 }
+
+/* =========== Cart section End =============== */

@@ -1,27 +1,4 @@
-@media (max-width:1024px) {
-    .banner-wrapper .banner .mySwiper-1 .banner-txt h1 {
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    .slider-card {
-        padding-inline: 0px;
-    }
-
-    .slider-cat {
-        padding-inline: 0px;
-    }
-    .blog-setion .blog-body{
-        gap: 30px;
-    }
-    .blog-setion .blog-body .blog-contaion {
-        width: 30%;
-    }
-    .product-grid-left-section .product-grid-left-box .left-box-main .Left-contain {
-        padding: 0px 9px;
-    }
-}
-
+/* =========== Phone and Tablets css ===========*/
 @media (max-width:991px) {
 
     h1 {
@@ -137,26 +114,32 @@
             font-size: 13px;
         }
     }
-    .min-hed .inputcontainer button{
+
+    .min-hed .inputcontainer button {
         left: 5px !important;
     }
+
     .min-hed .login-section .login-btn {
         margin-right: 0px !important;
         padding: 1px 10px !important;
         margin-inline: 5px !important;
     }
+
     .min-hed .shoping-cart {
         width: 30px;
         height: 30px;
     }
-    .min-hed .shoping-cart{
+
+    .min-hed .shoping-cart {
         margin-right: 0px;
     }
+
     .min-hed .inputcontainer input {
         width: 89% !important;
-         padding-left: 13px !important; 
+        padding-left: 13px !important;
         font-size: 15px;
     }
+
     .min-hed .inputcontainer button i {
         color: #ABABAB;
         font-size: 14px;
@@ -188,26 +171,30 @@
         padding: 0.5rem 0rem;
     }
 
-   
+
     /* =================== /banner end ==================  */
     .cat-round {
-        .carte-body{
+        .carte-body {
             padding: 0px !important;
+
             .carte-contain {
                 padding: 10px 0px !important;
-                P{
+
+                P {
                     margin: 0;
-                    a{
+
+                    a {
                         font-size: 15px;
                         line-height: 20px;
                     }
-                } 
-             
+                }
+
             }
-        }  
-     
-       
+        }
+
+
     }
+
     .cat-round .carte-body .carte-contain .carte-img-box {
         display: flex;
         flex-direction: row;
@@ -220,6 +207,7 @@
         background: #FFFFFF;
         border-radius: 50%;
     }
+
     /* ==================  Tranding section Start ==============  */
 
     .trending-head {
@@ -270,7 +258,8 @@
 
     .blog-setion {
         padding: 95px 20px;
-        .blog-body{
+
+        .blog-body {
             gap: 30px;
         }
     }
@@ -280,9 +269,10 @@
     }
 
     /* ======================  footer section start ======================== */
-    footer{
+    footer {
         padding-top: 0px;
     }
+
     .footer-icon-box {
         span {
             font-size: 25px !important;
@@ -296,12 +286,15 @@
     footer .footer-list li a {
         font-size: 15px;
     }
-    footer .footer-left-body{
+
+    footer .footer-left-body {
         padding-top: 50px;
     }
+
     footer .footer-left-body .footer-icon-box img {
         width: 8%;
     }
+
     /* ======================  footer section End ======================== */
 
 
@@ -312,11 +305,14 @@
         justify-content: center;
         gap: 30px;
     }
-    .products-grid-body .box-card{
+
+    .products-grid-body .box-card {
         width: 228px;
     }
-    .product-grid-section-header{
+
+    .product-grid-section-header {
         padding-left: 8px;
+
         h1 {
             font-size: 24px !important;
 
@@ -327,23 +323,25 @@
                 width: 70px;
             }
         }
-       
+
     }
 
     /* ==============  Product Grid View page end ========================= */
     /* =========================== policy setion start ======================== */
 
 
- 
 
- .policy-hed h1 {
+
+    .policy-hed h1 {
         font-size: 25px;
         line-height: 25px;
     }
-    .shipping-hed h1{
+
+    .shipping-hed h1 {
         line-height: 25px !important;
-    font-size: 19px !important;  
-  }
+        font-size: 19px !important;
+    }
+
     .policy-body .policy-box1 {
         padding: 0px;
     }
@@ -368,7 +366,7 @@
     .Description-contain {
         padding: 20px !important;
     }
-   
+
     /* =================  Product Details page End ================== */
     /* ================ produtcs-view-deatils-page Start ==================== */
 
@@ -387,7 +385,7 @@
         }
     }
 
-    .x-zoom-body{
+    .x-zoom-body {
         display: block !important;
         padding-right: 0;
         position: relative !important;
@@ -425,19 +423,22 @@
         }
 
         .btn-body .btn-views a {
-        
+
             font-size: 15px;
         }
 
     }
+
     .xzoom_part .xzoom_details h4 span .veg-nonveg-icon {
         font-size: 17px;
         color: green;
     }
+
     .xzoom_part .xzoom_container {
-        .xzoom-body-responsive{
+        .xzoom-body-responsive {
             padding: 40px;
         }
+
         margin: 0px 0px;
         padding: 0px;
         display: flex;
@@ -446,7 +447,7 @@
     }
 
     .xzoom-thumbs {
-        
+
         display: flex;
         // overflow-x: scroll;
         gap: 10px;
@@ -580,328 +581,426 @@
             color: black;
         }
     }
+
     /* ================= whish list page section start ===================== */
 
-/* ============== cart page section start ================== */
-    .cart-section{
-        .my-cart-head{
+    /* ============== cart page section start ================== */
+    .cart-section {
+        .my-cart-head {
             h1 {
                 font-size: 22px;
+
                 &::after {
                     top: 10px;
                     /* left: 0px; */
                 }
-    
+
             }
         }
-        .my-cart-contain .my-cart-list p{
+
+        .my-cart-contain .my-cart-list p {
             line-height: 21px;
         }
     }
-    .cart-section .my-cart-contain .my-cart-list .form-box{
+
+    .cart-section .my-cart-contain .my-cart-list .form-box {
         margin-top: 0px !important;
         // padding-left: 10px;
         justify-content: space-between;
         align-items: center;
     }
+
     .cart-section .my-cart-contain .my-cart-list .form-control {
         width: 16% !important;
     }
-    .cart-section .my-cart-contain .bin-box .bin-body{
+
+    .cart-section .my-cart-contain .bin-box .bin-body {
         display: none;
     }
-    .cart-section .my-cart-contain .bin-remove-add{
+
+    .cart-section .my-cart-contain .bin-remove-add {
         display: block;
     }
+
     .cart-section .my-cart-contain .my-cart-img-box {
         padding: 10px !important;
         height: 135px !important;
         width: 135px !important;
         margin: 8px !important;
     }
-    .cart-section .Delivery-fix-body .Delivery-at-contain .Delivery-at p{
+
+    .cart-section .Delivery-fix-body .Delivery-at-contain .Delivery-at p {
         margin-bottom: 5px;
     }
-/* ============== cart page section End ================== */
-/* ===============  delivery-addres page start =============*/
-.delivery-section {
-    padding: 10px 0px;
-    .address-body {
-        .Address-head p{
-            font-size: 15px;
-        }
-        .address-write{
-            font-size: 15px ;
-            line-height: 22px;
-        }
-    }
-    .total-body {
-        margin-top: 30px;
-        .total-body-head {
-            font-size: 16px;
-        }
-    }
-}
-/* ===============  delivery-addres page End =============*/
-/* ================ Blog page start ===================*/
-.blog-section{
-    .blog-body .blog-contain p{
-        line-height: 24px;
-        font-size: 15px;
-    }
-    .blog-section-header{
-        h1 {
-            font-size: 24px !important;
 
-            // padding-left: 5px;
-            &::after {
-                top: 18px !important;
-                height: 15px;
-                width: 70px;
-            }
-        }
-        a{
-            font-size: 15px;
-        }
-    }
-     .blog-right-body .blog-right-head-1 {
-        padding-top: 0px;
-    }
-    .blog-right-body .blog-right-section-2{
-        padding: 0px;
-    }
-   
-}
-/* ================ Blog page End ===================*/
+    /* ============== cart page section End ================== */
+    /* ===============  delivery-addres page start =============*/
+    .delivery-section {
+        padding: 10px 0px;
 
-/* =============== single-blog-page- start =============== */
-.single-blog-section{
-    padding: 5px 0px;
-    padding-bottom: 10px;
-    .singal-blog-head{
-        h1 {
-            font-size: 24px !important;
+        .address-body {
+            .Address-head p {
+                font-size: 15px;
+            }
 
-            // padding-left: 5px;
-            &::after {
-                top: 18px !important;
-                height: 15px;
-                width: 70px;
-            }
-        }
-        a{
-            font-size: 15px;
-        }
-    }
-    .blog-body{
-        padding-bottom: 20px;
-        .blog-contain{
-            padding: 10px 0px;
-            h4{
-                font-size: 17px;
-            }
-            p{
+            .address-write {
                 font-size: 15px;
                 line-height: 22px;
             }
         }
-    }
-}
-/* =============== single-blog-page- End =============== */
-/* =============== Contact-us-page-Start =============== */
 
+        .total-body {
+            margin-top: 30px;
 
-.contact-section{
-    padding: 0px 0px;
-    .contact-header{
-        // margin-inline: auto;
-        .contact{
-
-            font-size: 22px;
-            span{
-                height: 20px;
-                width: 100px;
-                // right: 105px;
-                    left: 93px;
-                top: 20px;
+            .total-body-head {
+                font-size: 16px;
             }
         }
     }
-    
-    .from-contact-body{
-        padding: 0px 0px;
+
+    /* ===============  delivery-addres page End =============*/
+    /* ================ Blog page start ===================*/
+    .blog-section {
+        .blog-body .blog-contain p {
+            line-height: 24px;
+            font-size: 15px;
+        }
+
+        .blog-section-header {
+            h1 {
+                font-size: 24px !important;
+
+                // padding-left: 5px;
+                &::after {
+                    top: 18px !important;
+                    height: 15px;
+                    width: 70px;
+                }
+            }
+
+            a {
+                font-size: 15px;
+            }
+        }
+
+        .blog-right-body .blog-right-head-1 {
+            padding-top: 0px;
+        }
+
+        .blog-right-body .blog-right-section-2 {
+            padding: 0px;
+        }
+
     }
-    .contact-body{
-        margin: 10px 0px;
-        .contact-box{
-            padding: 10px 20px;
-            h4{
+
+    /* ================ Blog page End ===================*/
+
+    /* =============== single-blog-page- start =============== */
+    .single-blog-section {
+        padding: 5px 0px;
+        padding-bottom: 10px;
+
+        .singal-blog-head {
+            h1 {
+                font-size: 24px !important;
+
+                // padding-left: 5px;
+                &::after {
+                    top: 18px !important;
+                    height: 15px;
+                    width: 70px;
+                }
+            }
+
+            a {
+                font-size: 15px;
+            }
+        }
+
+        .blog-body {
+            padding-bottom: 20px;
+
+            .blog-contain {
+                padding: 10px 0px;
+
+                h4 {
+                    font-size: 17px;
+                }
+
+                p {
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+
+    /* =============== single-blog-page- End =============== */
+    /* =============== Contact-us-page-Start =============== */
+
+
+    .contact-section {
+        padding: 0px 0px;
+
+        .contact-header {
+
+            // margin-inline: auto;
+            .contact {
+
+                font-size: 22px;
+
+                span {
+                    height: 20px;
+                    width: 100px;
+                    // right: 105px;
+                    left: 93px;
+                    top: 20px;
+                }
+            }
+        }
+
+        .from-contact-body {
+            padding: 0px 0px;
+        }
+
+        .contact-body {
+            margin: 10px 0px;
+
+            .contact-box {
+                padding: 10px 20px;
+
+                h4 {
+                    font-size: 20px;
+                }
+
+                p {
+                    color: #5A5B5A;
+                    margin: 0;
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        .get-touch-body {
+            padding: 10px 0px;
+
+            h4 {
                 font-size: 20px;
             }
-            p{
-                color: #5A5B5A;
-                margin: 0;
+
+            p {
                 font-size: 15px;
-                line-height: 22px;
+                margin-bottom: 0%;
             }
         }
     }
-    .get-touch-body{
-        padding: 10px 0px;
-        h4{
-            font-size: 20px;
+
+    /* =============== Contact-us-page-End =============== */
+    /* ================== profile-page Start =============*/
+    .profile-section {
+        padding: 10px;
+
+        .profile-right-body {
+            margin: 5px 0px;
+            padding: 10px 10px;
         }
-         p {
-            font-size: 15px;
-            margin-bottom: 0%;
+
+        .profile-left-body {
+            margin: 5px 12px;
+        }
+
+        .img-icon-box {
+            width: 50%;
+
+            a {
+
+                width: 50%;
+                height: auto;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
         }
     }
+
+    /* =================== profile-page End ==============*/
+    /* ==================== Checkout page start ==================== */
+    .Checkout-section .billing-body {
+        padding-top: 30px;
+    }
+
+    /* ==================== Checkout page End ======================== */
+    /* ===================== about us page start ======================*/
+    .About-section {
+        .about-body {
+            padding: 0px;
+        }
+    }
+
+    /* ===================== about us page End ======================*/
+
 }
 
-/* =============== Contact-us-page-End =============== */
-/* ================== profile-page Start =============*/
-.profile-section{
-    padding: 10px;
- .profile-right-body{
-    margin: 5px 0px;
-    padding: 10px 10px;
- }
- .profile-left-body{
-    margin: 5px 12px;
- }
- .img-icon-box {
-    width: 50%;
-    a{
-     
-        width: 50%;
-        height: auto;
-        img{
-            width: 100%;
-            height: 100%;
-        }
-    }
-}
-}
-/* =================== profile-page End ==============*/
-/* ==================== Checkout page start ==================== */
-.Checkout-section .billing-body {
-    padding-top: 30px;
-}
-/* ==================== Checkout page End ======================== */
-/* ===================== about us page start ======================*/
-.About-section{
-    .about-body{
-        padding: 0px;
-    }
-}
-/* ===================== about us page End ======================*/
 
+/* ======== custom css ======= */
+@media (max-width:1024px) {
+    .banner-wrapper .banner .mySwiper-1 .banner-txt h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .slider-card {
+        padding-inline: 0px;
+    }
+
+    .slider-cat {
+        padding-inline: 0px;
+    }
+
+    .blog-setion .blog-body {
+        gap: 30px;
+    }
+
+    .blog-setion .blog-body .blog-contaion {
+        width: 30%;
+    }
+
+    .product-grid-left-section .product-grid-left-box .left-box-main .Left-contain {
+        padding: 0px 9px;
+    }
 }
 
 @media (min-width: 1280px) {
-    
 
-.products-grid-body .box-card{
-    width: 252px;
-} 
+
+    .products-grid-body .box-card {
+        width: 252px;
+    }
 
 }
-@media (max-width: 414px) {
-    
 
-    .products-grid-body .box-card{
+@media (max-width: 414px) {
+
+
+    .products-grid-body .box-card {
         width: 300px;
-    } 
     }
-    
+}
+
 @media(max-width:625px) {
     .blog-setion .blog-body .blog-contaion {
         width: 100%;
     }
 }
 
+/* ========= Samsung flod phone for ========== */
 @media (max-width:280px) {
     .img-nav {
         padding-left: 10px !important;
         font-size: 18px !important;
     }
+
     .btn-nav {
-         margin-right: 0px; 
+        margin-right: 0px;
     }
+
     .min-hed .head-section {
         margin-inline: 0px;
     }
-    .min-hed .inputcontainer button{
+
+    .min-hed .inputcontainer button {
         left: 5px !important;
     }
+
     .min-hed .login-section .login-btn {
         margin-right: 0px !important;
         padding: 0px 3px !important;
         margin-inline: 5px !important;
     }
+
     .min-hed .shoping-cart {
         width: 30px;
         height: 30px;
     }
-    .min-hed .shoping-cart{
+
+    .min-hed .shoping-cart {
         margin-right: 0px;
     }
+
     .min-hed .inputcontainer input {
         width: 89% !important;
-         padding-left: 13px !important; 
+        padding-left: 13px !important;
         font-size: 13px;
     }
+
     .min-hed .inputcontainer button i {
         color: #ABABAB;
         font-size: 14px;
         left: 0;
     }
-     .slider-card .slider-cat {
+
+    .slider-card .slider-cat {
         padding-inline: 10px !important;
     }
+
     footer .footer-left-body .footer-icon-box img {
         width: 10%;
     }
 
 
-    .delivery-section .address-body .delivery-contain .delivery-btn p{
+    .delivery-section .address-body .delivery-contain .delivery-btn p {
         padding: 4px 10px;
     }
+
     .contact-section .get-touch-body form .submit-btn {
         width: 32% !important;
     }
+
     .xzoom-body-contain {
         padding: 20px !important;
     }
+
     .xzoom_part .xzoom_details .btn-body {
         flex-wrap: nowrap;
     }
+
     .xzoom_part .xzoom_details .btn-body .btn-views {
         padding: 4px 3px;
     }
+
     .xzoom-body-contain .form-control {
         width: 13% !important;
     }
+
     .xzoom_part .btn-xzone-body a .btn-xzone {
         padding: 7px 5px;
     }
+
     .reviews-body nav .nav-tabs .nav-link {
         padding: 9px 18px;
     }
+
     .reviews-body .reviews-container .progress {
         width: 153px;
     }
+
     .reviews-body .reviews-container {
         border-left: none;
         padding: 10px 0px;
     }
+
     .product-grid-section-header {
-    
+
         padding-left: 0px;
     }
+
     .product-grid-left-section .product-grid-left-box .left-box-main .Left-contain {
         padding: 0px 10px;
     }
+
     .contact-section .contact-body .contact-box {
         padding: 10px 5px;
     }
