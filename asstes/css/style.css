@@ -1069,6 +1069,11 @@
 .delivery-section .address-body .delivery-contain .edit a {
   color: #B56807;
 }
+.delivery-section .address-body .delivery-contain .edit .Delete-colour {
+  color: red;
+  margin-left: 20px;
+  cursor: pointer;
+}
 .delivery-section .address-body .delivery-contain .delivery-btn {
   display: flex;
   justify-content: center;

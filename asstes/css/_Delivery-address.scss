@@ -53,9 +53,18 @@
                 }
             }
 
-            .edit a {
-                color: #B56807;
-            }
+            .edit{
+                a {
+                    color: #B56807;
+                  
+                }
+                .Delete-colour{
+                    color: red;
+                    margin-left: 20px;
+                    cursor: pointer;
+                }
+            } 
+           
 
             .delivery-btn {
                 display: flex;
