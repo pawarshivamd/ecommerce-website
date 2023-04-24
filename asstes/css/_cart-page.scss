@@ -10,12 +10,12 @@
         h1 {
             font-size: 25px;
             font-weight: 600;
-            font-family: poppins;
+            font-family: Montserrat;
             position: relative;
 
             &::after {
                 content: "";
-                background-color: var(--them-colour);
+                background-color: var(--theam-colour);
                 height: 19px;
                 width: 107px;
                 border-radius: 128px 0px 144px 0px;
@@ -30,9 +30,10 @@
         }
 
         p a {
-            color: var(--them-colour);
+            color: var(--theam-colour);
             font-size: 17px;
             text-decoration: underline;
+            font-weight: 600;
         }
     }
 
@@ -73,7 +74,8 @@
 
             p {
                 margin-bottom: 0px;
-                color: rgba(0, 0, 0, 0.52);
+                color: var(--black);
+                font-weight: 500;
                 line-height: 21px;
             }
 
@@ -93,7 +95,7 @@
                 font-weight: 500;
                 // text-align: center;
                 cursor: pointer;
-                color: var(--them-colour);
+                color: var(--theam-colour);
                 margin-left: 5px;
 
                 input[type=number] {
@@ -156,20 +158,19 @@
                 }
             }
         }
-
+        
         thead {
 
             border-bottom: 1px solid gray;
-
             tr {
-
+                
                 background-color: #FFF6EA !important;
             }
 
             .Price-detal {
                 padding-left: 10px;
                 font-weight: 700;
-
+                
                 color: rgba(0, 0, 0, 0.49);
             }
         }
@@ -180,6 +181,7 @@
                 td,
                 th {
                     border: none !important;
+                    font-weight: 600;
                 }
             }
 
@@ -270,7 +272,7 @@
             p {
                 margin-top: 20px;
                 padding: 7px 10px;
-                border: 1px solid var(--them-colour);
+                border: 1px solid var(--theam-colour);
                 border-radius: 5px;
                 font-size: 16px;
                 font-weight: 600;
@@ -285,10 +287,10 @@
                 // margin-inline: auto;
 
                 &:hover {
-                    // background-color: var(--them-colour);
+                    // background-color: var(--theam-colour);
                     color: white;
                     // transform: translateX(-100%);
-                    box-shadow: inset 400px 0 0 0 var(--them-colour);
+                    box-shadow: inset 400px 0 0 0 var(--theam-colour);
                 }
             }
 

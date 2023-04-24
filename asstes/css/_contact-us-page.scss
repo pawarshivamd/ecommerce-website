@@ -15,7 +15,7 @@
             z-index: 0;
 
             span {
-                background-color: var(--them-colour);
+                background-color: var(--theam-colour);
                 opacity: 0.9;
                 height: 25px;
                 width: 100px;
@@ -109,7 +109,7 @@
 
                 input {
                     background-color: var(--white);
-                    border: 1px solid var(--them-colour);
+                    border: 1px solid var(--theam-colour);
                     color: var(--black);
                     border-radius: 5px;
                     padding: 7px 9px;
@@ -119,7 +119,7 @@
                     transition: ease-out 0.4s;
 
                     &:hover {
-                        // background-color: var(--them-colour);
+                        // background-color: var(--theam-colour);
                         color: white;
                         // transform: translateX(-100%);
                         box-shadow: inset 400px 0 0 0 var(--btn-hover);

@@ -48,22 +48,7 @@
   .min-hed {
     min-height: 55px !important;
   }
-  .min-hed .head-section {
-    margin-inline: 30px;
-  }
-  .min-hed .inputcontainer {
-    margin-left: 0px;
-    min-height: 37px !important;
-  }
-  .min-hed .inputcontainer input {
-    width: 80% !important;
-    padding-left: 13px !important;
-  }
-  .min-hed .inputcontainer input:focus {
-    border: none;
-    outline: none;
-  }
-  .min-hed .inputcontainer button {
+  .min-hed .head-section .img-nav {
     padding: 0px !important;
   }
   .min-hed .shoping-cart {
@@ -87,6 +72,9 @@
   }
   .min-hed .login-section .modal-content .modal-body .resend-p {
     font-size: 13px;
+  }
+  .min-hed .login-section .search-icon-hide-show-box {
+    display: block;
   }
   .min-hed .inputcontainer button {
     left: 5px !important;
@@ -127,6 +115,37 @@
     left: 0;
     top: 30px;
   }
+  .min-hed .login-section .login-btn-hide-show {
+    display: none;
+  }
+  .header .nav-section .img-nav {
+    display: none;
+  }
+  .header .nav-section .hide-show-login-btn {
+    display: block !important;
+    margin-inline: 10px;
+    margin-top: 4px;
+  }
+  .header .nav-section .login-btn-box {
+    color: var(--black);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .header .nav-section .login-btn-box .login-btn {
+    cursor: pointer;
+    border: 1px solid var(--theam-colour);
+    border-radius: 5px;
+    padding: 0px 10px;
+    font-weight: 600;
+    transition: ease-out 0.4s;
+    color: var(--black);
+    margin: 0;
+  }
+  .header .nav-section .login-btn-box .login-btn:hover {
+    color: white;
+    box-shadow: inset 400px 0 0 0 var(--theam-colour);
+  }
   /* ================= banner ============== */
   .banner-wrapper {
     padding: 0.5rem 0rem;
@@ -146,16 +165,10 @@
     line-height: 20px;
   }
   .cat-round .carte-body .carte-contain .carte-img-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 15px;
     gap: 10px;
     width: 100px;
     height: 100px;
-    background: #FFFFFF;
-    border-radius: 50%;
   }
   /* ==================  Tranding section Start ==============  */
   .trending-head h1 {
@@ -188,7 +201,7 @@
     padding-left: 5px;
   }
   .blog-setion {
-    padding: 95px 20px;
+    padding: 20px 20px 95px 20px;
   }
   .blog-setion .blog-body {
     gap: 30px;
@@ -722,5 +735,50 @@
   }
   .contact-section .contact-body .contact-box {
     padding: 10px 5px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* ========== min-head section start =======*/
+  /* ========== min-head section End =======*/
+  .min-hed .login-section .search-icon-hide-show-box {
+    display: none;
+  }
+  .min-hed .inputcontainer {
+    margin-left: 0px;
+    min-height: 37px !important;
+  }
+  .min-hed .inputcontainer input {
+    width: 80% !important;
+    padding-left: 13px !important;
+  }
+  .min-hed .inputcontainer input:focus {
+    border: none;
+    outline: none;
+  }
+}
+@media (max-width: 767px) {
+  .min-hed .head-section {
+    justify-content: space-between;
+  }
+  .min-hed .head-section .login-section p {
+    margin-inline: 10px;
+  }
+  .min-hed .head-section .inputcontainer {
+    display: none !important;
+  }
+  .min-hed .head-section .login-section .search-icon-hide-show-box .offcanvas {
+    height: 70vh;
+    overflow-y: scroll;
+  }
+  .min-hed .head-section .login-section .search-icon-hide-show-box .offcanvas .offcanvas-header {
+    padding: 10px 10px;
+    background-color: rgba(241, 241, 241, 0.59);
+  }
+  .min-hed .head-section .login-section .search-icon-hide-show-box .offcanvas .offcanvas-header form input {
+    border: none;
+    background: transparent;
+  }
+  .nav-section .btn-nav {
+    padding: 0px;
   }
 }/*# sourceMappingURL=responsive.css.map */

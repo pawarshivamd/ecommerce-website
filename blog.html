@@ -24,24 +24,113 @@
 </head>
 
 <body style="background: #F4F6F5;">
+  <!-- ================= min-hed section start ===============  -->
+  <div class="min-hed ">
+    <div class="container">
+      <div class="head-section">
+
+        <div class=" col-md-3   col-lg-3">
+          <a class="navbar-brand img-nav" href="index.html">
+            <span > <img src="asstes/img/logo/vector black.png" alt="" class="pe-2"></span> GymCart
+          </a>
+        </div>
+        
+        <div class="col-md-7  col-lg-6">
+          <form action="" method="post" class="inputcontainer">
+            <input type="text" placeholder="Search for product">
+            <p><!--<i class="fas fa-search"></i> --><i class="bi bi-search"></i></p>
+          </form>
+        </div>
+
+        <div class="col-md-1  col-lg-3">
+          <div class=" login-section">
+            <div class="search-icon-hide-show-box">
+            <p data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="bi bi-search"></i></p>
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTopLabel">  <form action="" method="post">
+                  <input type="text" placeholder="Search for product">
+                </form> </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="my-2">
+                  <p><i class="bi bi-search"></i> <span class="ps-2"><a href="#">Whey Protein</a></span></p>
+                </div>
+                <div class="my-2">
+                  <p><i class="bi bi-search"></i> <span class="ps-2"><a href="#">Whey Protein</a></span></p>
+                </div>
+                <div class="my-2">
+                  <p><i class="bi bi-search"></i> <span class="ps-2"><a href="#">Whey Protein</a></span></p>
+                </div>
+                <div class="my-2">
+                  <p><i class="bi bi-search"></i> <span class="ps-2"><a href="#">Whey Protein</a></span></p>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="login-btn-hide-show">
+              <a href="#">
+                <p class="login-btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</p>
+              </a>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade " id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdrop"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="text-end"> <button type="button" class="btn-close " data-bs-dismiss="modal"
+                      aria-label="Close"></button></div>
+                  <div class="modal-header">
+                    <div>
+                      <h4 class="modal-title  text-center col-md-12" id="staticBackdropLabel">Login</h4>
+                      <p>Please login using account details below.</p>
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                    <form method="post">
+                      <input type="number" placeholder="Contact Number">
+                      <input type="number" placeholder="OTP">
+                      <p class="resend-p ">Didn’t Receive? <span> Resend </span></p>
+                      <div class="col-12 d-flex justify-content-center">
+                        <input type="submit" class=" submit-profile" value="Verify">
+                      </div>
+                    </form>
+                    <p class="text-center">Don’t have an account? Create account</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="shoping-cart"><a href="cart-page.html"><i class="bi bi-cart2"></i></a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ================= min-hed section End ===============  -->
   <!-- ================ header section strat ===================== -->
-  <div class="header">
+  <div class="header w-100 ">
     <nav class="navbar navbar-expand-lg nav-section">
       <div class="container">
-        <a class="navbar-brand img-nav" href="index.html"><img src="asstes/img/logo/vector black.png" alt=""
-            class="pe-3">GymCart
-        </a>
+
         <button class="navbar-toggler btn-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_1"
           aria-controls="navbar_1" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbar_1">
-          <ul class="navbar-nav ms-auto  nav-ul">
+        <div class="hide-show-login-btn">
+          <a href="#" class="login-btn-box">
+            <p class="login-btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</p>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse  justify-content-center" id="navbar_1" tabindex="-1">
+          <ul class="navbar-nav   nav-ul">
             <!-- Navbar dropdown -->
             <li class="nav-item dropdown position-static">
               <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-mdb-toggle="dropdown"
                 aria-expanded="false">
-                Category
+                <i class="bi bi-tags"></i>  Category
               </a>
               <!-- Dropdown menu -->
               <div class="dropdown-menu  mt-0  mydropudowan" aria-labelledby="navbarDropdown">
@@ -87,7 +176,7 @@
             <!-- Left links -->
             <li class="nav-item dropdown">
               <a class="nav-link " href="#">
-                Brand
+                <iconify-icon icon="ph:bookmark"></iconify-icon> Brand
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="Privacy-Policy.html">Privacy Policy</a></li>
@@ -98,67 +187,18 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
+              <a class="nav-link" href="blog.html"><iconify-icon icon="carbon:blog"></iconify-icon> Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="Contact-us-page.html">Contact</a>
+              <a class="nav-link " href="Contact-us-page.html"><iconify-icon icon="ic:baseline-local-phone"></iconify-icon> Contact</a>
             </li>
           </ul>
         </div>
+
       </div>
     </nav>
   </div>
   <!-- ================ header section End ===================== -->
-  <!-- ================= min-hed section start ===============  -->
-  <div class="min-hed">
-    <div class="container">
-      <div class="head-section">
-        <div class=" col-md-3  col-sm-0 "></div>
-        <div class="col-md-6 col-sm-6">
-          <form action="" method="post" class="inputcontainer">
-            <input type="text" placeholder="Search for product">
-            <button type="submit"><!--<i class="fas fa-search"></i> --><i class="bi bi-search"></i></button>
-          </form>
-        </div>
-        <div class="col-md-3 col-sm-6 ">
-          <div class=" login-section">
-            <a href="#">
-              <p class="login-btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</p>
-            </a>
-            <!-- Modal -->
-            <div class="modal fade " id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdrop"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="text-end"> <button type="button" class="btn-close " data-bs-dismiss="modal"
-                      aria-label="Close"></button></div>
-                  <div class="modal-header">
-                    <div>
-                      <h4 class="modal-title  text-center col-md-12" id="staticBackdropLabel">Login</h4>
-                      <p>Please login using account details below.</p>
-                    </div>
-                  </div>
-                  <div class="modal-body">
-                    <form method="post">
-                      <input type="number" placeholder="Contact Number">
-                      <input type="number" placeholder="OTP">
-                      <p class="resend-p ">Didn’t Receive? <span> Resend </span></p>
-                      <div class="col-12 d-flex justify-content-center">
-                        <input type="submit" class=" submit-profile" value="Verify">
-                      </div>
-                    </form>
-                    <p class="text-center">Don’t have an account? Create account</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <p class="shoping-cart"><a href="cart-page.html"><i class="bi bi-cart2"></i></a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ================= min-hed section End ===============  -->
 
   <div class="blog-section">
     <div class="container">
@@ -415,6 +455,8 @@
   <div className="scroll-to-top">
     <span class="btns-top btn-position btn-style"><i class="fas fa-angle-up"></i></span>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
   <!-- bootstrap script -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

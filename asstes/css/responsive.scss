@@ -64,27 +64,13 @@
         min-height: 55px !important;
 
         .head-section {
-            margin-inline: 30px;
-        }
-
-        .inputcontainer {
-            margin-left: 0px;
-            min-height: 37px !important;
-
-            input {
-                width: 80% !important;
-                padding-left: 13px !important;
-
-                &:focus {
-                    border: none;
-                    outline: none;
-                }
-            }
-
-            button {
+            // margin-inline: 30px;
+            .img-nav{
                 padding: 0px !important;
             }
         }
+
+  
 
         .shoping-cart {
             width: 40px;
@@ -112,6 +98,11 @@
 
         .login-section .modal-content .modal-body .resend-p {
             font-size: 13px;
+        }
+        .login-section{
+            .search-icon-hide-show-box{
+                display: block;
+            } 
         }
     }
 
@@ -164,6 +155,46 @@
         left: 0;
         top: 30px;
     }
+    .min-hed .login-section .login-btn-hide-show{
+        display: none;
+    }
+
+    .header .nav-section .img-nav{
+        display: none;
+    }
+    .header .nav-section  .hide-show-login-btn{
+        display: block !important;
+        margin-inline: 10px;
+        margin-top: 4px;
+    }
+    .header .nav-section .login-btn-box{
+        color: var(--black);
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 15px;
+    
+    .login-btn {
+        // background-color: var(--theam-colour);
+        cursor: pointer;
+        border: 1px solid var(--theam-colour);
+        border-radius: 5px;
+        padding: 0px 10px;
+        font-weight: 600;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+        color: var(--black);
+        margin: 0;
+
+        &:hover {
+            // background-color: var(--theam-colour);
+            color: white;
+            // transform: translateX(-100%);
+            box-shadow: inset 400px 0 0 0 var(--theam-colour);
+        }
+    }
+        
+    }
 
     /* ================= banner ============== */
     .banner-wrapper {
@@ -196,16 +227,11 @@
     }
 
     .cat-round .carte-body .carte-contain .carte-img-box {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
         padding: 15px;
         gap: 10px;
         width: 100px;
         height: 100px;
-        background: #FFFFFF;
-        border-radius: 50%;
+
     }
 
     /* ==================  Tranding section Start ==============  */
@@ -257,7 +283,7 @@
     }
 
     .blog-setion {
-        padding: 95px 20px;
+        padding: 20px 20px 95px 20px;
 
         .blog-body {
             gap: 30px;
@@ -1003,5 +1029,63 @@
 
     .contact-section .contact-body .contact-box {
         padding: 10px 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px){
+/* ========== min-head section start =======*/
+
+
+/* ========== min-head section End =======*/
+.min-hed {
+    .login-section .search-icon-hide-show-box{
+        display: none;
+    }
+    .inputcontainer {
+        margin-left: 0px;
+        min-height: 37px !important;
+        input {
+            width: 80% !important;
+            padding-left: 13px !important;
+            // display: none;
+            &:focus {
+                border: none;
+                outline: none;
+            }
+    
+        }
+    
+    }
+}
+
+}
+
+@media (max-width:767px) {
+    .min-hed .head-section {
+        justify-content: space-between;
+        .login-section p{
+            margin-inline: 10px;
+        }
+        .inputcontainer {
+            display: none !important;
+
+        }
+       .login-section .search-icon-hide-show-box .offcanvas {
+        height: 70vh;
+        overflow-y: scroll;
+        .offcanvas-header{
+            padding: 10px 10px;
+            background-color:rgba(241, 241, 241, 0.59) ;
+            form{
+                input{
+                    border: none;
+                    background: transparent;
+                }
+            }
+        }
+       }
+    }
+    .nav-section .btn-nav {
+        padding: 0px;
     }
 }

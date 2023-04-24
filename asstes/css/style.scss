@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,800;1,900&display=swap');
 @import "productgridpage.scss";
 @import "policys";
 @import "produtcsviewdeatis";
@@ -22,7 +23,7 @@ html{
 }
 body {
     overflow-x: hidden;
-    font-family: 'Poppins';
+    font-family: 'Montserrat', sans-serif;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -41,9 +42,9 @@ section {
 }
 
 p {
-    font-family: 'Poppins';
+    font-family: 'Montserrat';
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h1,
@@ -54,7 +55,7 @@ h5,
 h6,
 a,
 p {
-    font-family: 'Poppins';
+    font-family: 'Montserrat';
 }
 
 h1 {
@@ -102,7 +103,7 @@ p {
 }
 
 :root {
-    --them-colour: #F7A742;
+    --theam-colour: #F7A742;
     --black: #000000;
     --white: #FFFFFF;
     --light: #FDEAD3;
@@ -132,8 +133,9 @@ select:focus{
 /* =========  start header section ================ */
 
 .nav-section {
-    background-color: var(--them-colour);
-    min-height: 63px;
+    background-color: rgba(241, 241, 241, 0.59);
+    min-height: 40px;
+    padding: 0px;
     // z-index: 99999999;
 
     .img-nav {
@@ -166,6 +168,12 @@ select:focus{
                 color: var(--black);
                 font-weight: 600;
                 font-size: 15px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                &:hover{
+                    color: var(--theam-colour);
+                }
             }
         }
 
@@ -191,7 +199,7 @@ select:focus{
 
             // padding: 20px;
             &:hover {
-                color: var(--them-colour);
+                color: var(--theam-colour);
                 background-color: white;
 
             }
@@ -210,7 +218,7 @@ select:focus{
                     font-size: 17px;
                     font-weight: 600;
                     border: none;
-                    border-bottom: 1px solid var(--them-colour);
+                    border-bottom: 1px solid var(--theam-colour);
                 }
 
                 a {
@@ -219,12 +227,15 @@ select:focus{
                     font-weight: 500;
 
                     &:hover {
-                        color: var(--them-colour);
+                        color: var(--theam-colour);
                     }
                 }
             }
 
         }
+    }
+     .hide-show-login-btn{
+        display: none;
     }
 }
 
@@ -246,6 +257,20 @@ select:focus{
         align-items: center;
         justify-content: space-evenly;
         // margin-inline: 50px;
+        .img-nav {
+            // padding-left: 130px;
+            font-size: 25px;
+            font-weight: 700;
+            span{
+               width: 30px;
+                display: inline-block;
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+           
+        }
     }
 
     .login-btn-1 {
@@ -261,8 +286,9 @@ select:focus{
         justify-content: center;
         // border: 1px solid #EFF0F7;
         // box-shadow: 0px 8px 25px rgba(13, 10, 44, 0.06);
-        border-radius: 60px;
-        background: #F9EEE0;
+        border-radius: 5px;
+        // background: rgb(241 241 241 / 59%);
+        border:1px solid rgb(231 231 231);
         position: relative;
 
         input {
@@ -277,16 +303,15 @@ select:focus{
             }
         }
 
-        button {
-            border-radius: 100%;
-            padding: 10px;
+        p {
+            // border-radius: 100%;
+            // padding: 10px;
             position: absolute;
             left: 10px;
             background-color: transparent;
             border: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            
+            margin: 0px;
 
             i {
                 color: #ABABAB;
@@ -312,13 +337,13 @@ select:focus{
                 font-size: 15px;
         
         .login-btn {
-            // background-color: var(--them-colour);
+            // background-color: var(--theam-colour);
             cursor: pointer;
-            border: 1px solid var(--them-colour);
+            border: 1px solid var(--theam-colour);
             border-radius: 5px;
             padding: 4px 20px;
             margin-right: 20px;
-            font-weight: 500;
+            font-weight: 600;
             -webkit-transition: ease-out 0.4s;
             -moz-transition: ease-out 0.4s;
             transition: ease-out 0.4s;
@@ -326,10 +351,10 @@ select:focus{
             
 
             &:hover {
-                // background-color: var(--them-colour);
+                // background-color: var(--theam-colour);
                 color: white;
                 // transform: translateX(-100%);
-                box-shadow: inset 400px 0 0 0 var(--them-colour);
+                box-shadow: inset 400px 0 0 0 var(--theam-colour);
             }
         }
             
@@ -405,13 +430,13 @@ select:focus{
                     font-size: 15px;
 
                     span {
-                        color: var(--them-colour);
+                        color: var(--theam-colour);
                     }
                 }
 
                 .submit-profile{
                     background-color: var(--white);
-                    border:1px solid var(--them-colour);
+                    border:1px solid var(--theam-colour);
                     border-radius: 5px;
                     color: var(--black);
                     padding: 8px 20px;
@@ -423,10 +448,10 @@ select:focus{
                     transition: ease-out 0.4s;
         
                     &:hover {
-                        // background-color: var(--them-colour);
+                        // background-color: var(--theam-colour);
                         color:var(--white);
                         // transform: translateX(-100%);
-                        box-shadow: inset 400px 0 0 0 var( --them-colour);
+                        box-shadow: inset 400px 0 0 0 var( --theam-colour);
                     }
         
                 }
@@ -440,20 +465,35 @@ select:focus{
                 border: none;
             }
         }
-
+        .search-icon-hide-show-box{
+            display: none;
+        } 
     }
 
     .shoping-cart {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         display: flex;
         align-items: center;
-        background-color: var(--them-colour);
+        // background-color: var(--theam-colour);
+        border: 1px solid var(--theam-colour);
         // padding: 20px;
         justify-content: center;
-        border-radius: 50% 50%;
+        border-radius: 5px;
         margin-right: 20px;
         cursor: pointer;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+        &:hover{
+             // background-color: var(--theam-colour);
+             color:var(--white);
+             // transform: translateX(-100%);
+             box-shadow: inset 400px 0 0 0 var( --theam-colour);
+             i{
+                color: var(--white);
+             }
+        }
         i {
             text-align: center;
             /* height: 70px; */
@@ -481,12 +521,14 @@ select:focus{
 .banner-wrapper .swiper-slide {
     margin: 0;
     width: 100%;
+
 }
 
 .banner-wrapper .banner-img {
     width: 100%;
     object-fit: contain;
     padding: 0;
+    border-radius: 5px;
 }
 
 
@@ -494,7 +536,7 @@ select:focus{
 /* ====================== banner end ============= */
 /* ================  Categories round shape section start =========== */
 .cat-round {
-    background-color: var(--light);
+    background-color:#FEF9F1;
     margin: 0.5rem 0rem;
     .carte-body {
         display: flex;
@@ -521,7 +563,7 @@ select:focus{
                 width: 130px;
                 height: 130px;
                 background: #FFFFFF;
-                border-radius: 50%;
+                border-radius: 10px;
 
                a img {
                     width: 100%;
@@ -530,7 +572,7 @@ select:focus{
             }
 
             p a {
-                font-family: 'Poppins';
+                font-family: 'Montserrat';
                 font-weight: 400;
                 font-size: 15px;
                 // line-height: 28px;
@@ -549,7 +591,7 @@ select:focus{
         }
 
         .aero {
-            color: var(--them-colour);
+            color: var(--theam-colour);
             top: 40%;
 
             &::after {
@@ -576,13 +618,13 @@ select:focus{
         h1 {
             font-size: 30px;
             font-weight: 600;
-            font-family: poppins;
+            font-family: Montserrat;
             position: relative;
 
 
             &::after {
                 content: "";
-                background-color: var(--them-colour);
+                background-color: var(--theam-colour);
                 height: 19px;
                 width: 107px;
                 border-radius: 128px 0px 144px 0px;
@@ -598,7 +640,7 @@ select:focus{
 
         a {
             text-decoration: underline;
-            color: var(--them-colour);
+            color: var(--theam-colour);
             font-weight: 700;
             font-size: 17px;
         }
@@ -610,7 +652,7 @@ select:focus{
         // border: 1px dotted rgb(240, 239, 234);
         // background-color: #fffffa;
         .swiper-button-next {
-            color: var(--them-colour);
+            color: var(--theam-colour);
             background-color: var(--light);
             border-radius: 50%;
             width: 35px;
@@ -626,7 +668,7 @@ select:focus{
         }
 
         .swiper-button-prev {
-            color: var(--them-colour);
+            color: var(--theam-colour);
             background-color: var(--light);
             border-radius: 50%;
             width: 35px;
@@ -740,7 +782,7 @@ select:focus{
 
                         .shpoing-btn {
                             padding: 7px 10px;
-                            border: 1px solid var(--them-colour);
+                            border: 1px solid var(--theam-colour);
                             border-radius: 5px;
                             font-size: 16px;
                             font-weight: 600;
@@ -752,10 +794,10 @@ select:focus{
                             // margin-inline: auto;
 
                             &:hover {
-                                // background-color: var(--them-colour);
+                                // background-color: var(--theam-colour);
                                 color: white;
                                 // transform: translateX(-100%);
-                                box-shadow: inset 400px 0 0 0 #E79835;
+                                box-shadow: inset 400px 0 0 0 var(--theam-colour);
                             }
 
                             i {
@@ -815,8 +857,8 @@ select:focus{
                     }
 
                     .heart:hover path {
-                        fill: var(--them-colour);
-                        stroke: var(--them-colour);
+                        fill: var(--theam-colour);
+                        stroke: var(--theam-colour);
                     }
 
                 }
@@ -852,7 +894,7 @@ select:focus{
             z-index: 0;
 
             span{
-                background-color: var(--them-colour);
+                background-color: var(--theam-colour);
                 opacity: 0.9;
                 height: 25px;
                 width: 121px;
@@ -910,7 +952,7 @@ select:focus{
 /* ============= Blog section start ================= */
 
 .blog-setion {
-    padding: 95px 50px;
+    padding: 50px 50px 95px 50px;
     // padding-bottom: 95px;
     background-color: white;
 
@@ -924,14 +966,14 @@ select:focus{
         h1 {
             font-size: 30px;
             font-weight: 600;
-            font-family: poppins;
+            font-family: Montserrat;
             position: relative;
             padding-left: 20px;
             z-index: 0;
 
             &::after {
                 content: "";
-                background-color: var(--them-colour);
+                background-color: var(--theam-colour);
                 height: 19px;
                 width: 81px;
                 border-radius: 128px 0px 144px 0px;
@@ -947,7 +989,7 @@ select:focus{
 
         a {
             text-decoration: underline;
-            color: var(--them-colour);
+            color: var(--theam-colour);
             font-weight: 700;
             font-size: 17px;
         }
@@ -980,7 +1022,7 @@ select:focus{
 
             .blog-footer {
                 h1 {
-                    font-weight: 400;
+                    font-weight: 600;
                     font-size: 19px;
                     padding-top: 20px;
                     line-height: 20px;
@@ -1000,7 +1042,7 @@ select:focus{
                     font-size: 17px;
                     border-bottom: 3px solid #0A2640;
                     line-height: 10px;
-
+                    font-weight: 500;
                     i {
                         padding-left: 20px;
 
@@ -1030,13 +1072,22 @@ footer .footer-left-body .footer-icon-box {
 footer .gym-icon-size i{
     font-size: 10px;
 }
-footer .footer-left-body .footer-icon-box {
+footer .footer-left-body .footer-icon-box a{
     display: flex;
     align-items: center;
-
-    img {
-        width: 10%;
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 700;
+    span{
+        display: inline-block;
+        width: 30px;
+        padding: 0;
+        margin-right: 5px;
+        img {
+            width: 100%;
+        }
     }
+   
 }
 
 footer .footer-left-body .footer-icon-box span {
@@ -1076,7 +1127,7 @@ footer .icon-footer-box div {
         transform: translateY(-10px);
 
         i {
-            color: var(--them-colour);
+            color: var(--theam-colour);
         }
     }
 }

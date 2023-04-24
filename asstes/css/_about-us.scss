@@ -48,7 +48,7 @@
             text-align: center;
 
             a input {
-                border: 1px solid var(--them-colour);
+                border: 1px solid var(--theam-colour);
                 background-color: var(--white);
                 color: var(--black);
                 padding: 10px 20px;
@@ -62,10 +62,10 @@
                 transition: ease-out 0.4s;
 
                 &:hover {
-                    // background-color: var(--them-colour);
+                    // background-color: var(--theam-colour);
                     color: white;
                     // transform: translateX(-100%);
-                    box-shadow: inset 400px 0 0 0 var(--them-colour);
+                    box-shadow: inset 400px 0 0 0 var(--theam-colour);
                 }
             }
         }

@@ -18,14 +18,14 @@
                 background-color: white;
                 padding: 10px;
                 color: var(--black);
-                font-weight: 500;
+                font-weight: 600;
             }
 
             .Left-contain {
                 padding: 0px 30px;
 
                 input[type=checkbox] {
-                    accent-color: var(--them-colour);
+                    accent-color: var(--theam-colour);
                     margin-right: 10px;
                 }
 
@@ -37,7 +37,7 @@
                     cursor: default;
 
                     &:hover {
-                        color: var(--them-colour);
+                        color: var(--theam-colour);
                     }
                 }
 
@@ -62,12 +62,12 @@
     h1 {
         font-size: 30px;
         font-weight: 600;
-        font-family: poppins;
+        font-family: Montserrat;
         position: relative;
 
         &::after {
             content: "";
-            background-color: var(--them-colour);
+            background-color: var(--theam-colour);
             height: 19px;
             width: 81px;
             border-radius: 128px 0px 144px 0px;
@@ -190,7 +190,7 @@
 
                     .shpoing-btn {
                         padding: 7px 10px;
-                        border: 1px solid var(--them-colour);
+                        border: 1px solid var(--theam-colour);
                         border-radius: 5px;
                         font-size: 16px;
                         font-weight: 600;
@@ -202,7 +202,7 @@
                         // margin-inline: auto;
 
                         &:hover {
-                            // background-color: var(--them-colour);
+                            // background-color: var(--theam-colour);
                             color: white;
                             // transform: translateX(-100%);
                             box-shadow: inset 400px 0 0 0 var(--btn-hover);
@@ -265,8 +265,8 @@
                 }
 
                 .heart:hover path {
-                    fill: var(--them-colour);
-                    stroke: var(--them-colour);
+                    fill: var(--theam-colour);
+                    stroke: var(--theam-colour);
                 }
 
             }

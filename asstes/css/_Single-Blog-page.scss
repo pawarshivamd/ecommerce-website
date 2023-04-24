@@ -12,14 +12,14 @@
         h1 {
             font-size: 30px;
             font-weight: 600;
-            font-family: poppins;
+            font-family: Montserrat;
             position: relative;
             padding-left: 20px;
             z-index: 0;
 
             &::after {
                 content: "";
-                background-color: var(--them-colour);
+                background-color: var(--theam-colour);
                 height: 19px;
                 width: 81px;
                 border-radius: 128px 0px 144px 0px;
