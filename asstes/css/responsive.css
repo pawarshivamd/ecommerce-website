@@ -29,6 +29,9 @@
     font-size: 16px;
     line-height: 28px;
   }
+  section {
+    padding: 1.5rem 0rem;
+  }
   .img-nav {
     padding-left: 25px !important;
     font-size: 25px !important;
@@ -50,10 +53,6 @@
   }
   .min-hed .head-section .img-nav {
     padding: 0px !important;
-  }
-  .min-hed .shoping-cart {
-    width: 40px;
-    height: 40px;
   }
   .min-hed .login-section .login-btn {
     margin-right: 0px;
@@ -84,12 +83,9 @@
     padding: 1px 10px !important;
     margin-inline: 5px !important;
   }
-  .min-hed .shoping-cart {
-    width: 30px;
-    height: 30px;
-  }
-  .min-hed .shoping-cart {
-    margin-right: 0px;
+  .min-hed .login-section .cart-box a .shoping-cart {
+    padding: 2px 5px !important;
+    text-align: center;
   }
   .min-hed .inputcontainer input {
     width: 89% !important;
@@ -108,7 +104,7 @@
   }
   .mydropudowan {
     left: 0;
-    width: 100% !important;
+    width: 90% !important;
   }
   .min-hed .login-section .modal-content {
     width: 100%;
@@ -123,7 +119,7 @@
   }
   .header .nav-section .hide-show-login-btn {
     display: block !important;
-    margin-inline: 10px;
+    margin-inline: 14px;
     margin-top: 4px;
   }
   .header .nav-section .login-btn-box {
@@ -131,13 +127,15 @@
     font-weight: 500;
     text-decoration: none;
     font-size: 15px;
+    display: inline-grid;
   }
   .header .nav-section .login-btn-box .login-btn {
     cursor: pointer;
     border: 1px solid var(--theam-colour);
     border-radius: 5px;
-    padding: 0px 10px;
+    padding: 0px 0px;
     font-weight: 600;
+    text-align: center;
     transition: ease-out 0.4s;
     color: var(--black);
     margin: 0;
@@ -145,6 +143,13 @@
   .header .nav-section .login-btn-box .login-btn:hover {
     color: white;
     box-shadow: inset 400px 0 0 0 var(--theam-colour);
+  }
+  .header .nav-section .login-btn-box span {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .dropdown:hover .dropdown-menu {
+    left: 10px !important;
   }
   /* ================= banner ============== */
   .banner-wrapper {
@@ -673,13 +678,6 @@
     padding: 0px 3px !important;
     margin-inline: 5px !important;
   }
-  .min-hed .shoping-cart {
-    width: 30px;
-    height: 30px;
-  }
-  .min-hed .shoping-cart {
-    margin-right: 0px;
-  }
   .min-hed .inputcontainer input {
     width: 89% !important;
     padding-left: 13px !important;
@@ -780,5 +778,8 @@
   }
   .nav-section .btn-nav {
     padding: 0px;
+  }
+  .header .nav-section .hide-show-login-btn {
+    margin-inline: 1px;
   }
 }/*# sourceMappingURL=responsive.css.map */

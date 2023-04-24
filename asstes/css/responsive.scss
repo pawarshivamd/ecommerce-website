@@ -35,7 +35,9 @@
         font-size: 16px;
         line-height: 28px;
     }
-
+    section{
+        padding: 1.5rem 0rem;
+    }
     .img-nav {
         padding-left: 25px !important;
         font-size: 25px !important;
@@ -72,10 +74,7 @@
 
   
 
-        .shoping-cart {
-            width: 40px;
-            height: 40px;
-        }
+   
 
         .login-section .login-btn {
             margin-right: 0px;
@@ -116,14 +115,13 @@
         margin-inline: 5px !important;
     }
 
-    .min-hed .shoping-cart {
-        width: 30px;
-        height: 30px;
-    }
+    .min-hed .login-section .cart-box a .shoping-cart {
+        padding: 2px 5px !important;
+        text-align: center;
+         }
+     
 
-    .min-hed .shoping-cart {
-        margin-right: 0px;
-    }
+ 
 
     .min-hed .inputcontainer input {
         width: 89% !important;
@@ -146,7 +144,7 @@
 
     .mydropudowan {
         left: 0;
-        width: 100% !important;
+        width: 90% !important;
     }
 
     .min-hed .login-section .modal-content {
@@ -164,22 +162,25 @@
     }
     .header .nav-section  .hide-show-login-btn{
         display: block !important;
-        margin-inline: 10px;
+        margin-inline: 14px;
         margin-top: 4px;
+
     }
     .header .nav-section .login-btn-box{
         color: var(--black);
             font-weight: 500;
             text-decoration: none;
             font-size: 15px;
+            display: inline-grid;
     
     .login-btn {
         // background-color: var(--theam-colour);
         cursor: pointer;
         border: 1px solid var(--theam-colour);
         border-radius: 5px;
-        padding: 0px 10px;
+        padding: 0px 0px;
         font-weight: 600;
+        text-align: center;
         -webkit-transition: ease-out 0.4s;
         -moz-transition: ease-out 0.4s;
         transition: ease-out 0.4s;
@@ -193,8 +194,18 @@
             box-shadow: inset 400px 0 0 0 var(--theam-colour);
         }
     }
-        
+        span{
+            font-size: 12px;
+            font-weight: 500;
+        }
     }
+    .dropdown:hover .dropdown-menu {
+
+        left: 10px !important;
+    
+    }
+    
+
 
     /* ================= banner ============== */
     .banner-wrapper {
@@ -947,14 +958,8 @@
         margin-inline: 5px !important;
     }
 
-    .min-hed .shoping-cart {
-        width: 30px;
-        height: 30px;
-    }
-
-    .min-hed .shoping-cart {
-        margin-right: 0px;
-    }
+ 
+   
 
     .min-hed .inputcontainer input {
         width: 89% !important;
@@ -1087,5 +1092,8 @@
     }
     .nav-section .btn-nav {
         padding: 0px;
+    }
+    .header .nav-section .hide-show-login-btn {
+        margin-inline: 1px;
     }
 }

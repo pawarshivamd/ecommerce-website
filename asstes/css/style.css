@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,800;1,900&display=swap"); /* ============== Product grid detils Start ============= */
+/* ============== Product grid detils Start ============= */
 .sidebar-produtespage {
   padding: 30px 20px;
 }
@@ -1723,7 +1723,7 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -1742,7 +1742,7 @@ section {
 }
 
 p {
-  font-family: "Montserrat";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 17px;
   font-weight: 500;
 }
@@ -1755,7 +1755,7 @@ h5,
 h6,
 a,
 p {
-  font-family: "Montserrat";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 h1 {
@@ -1873,7 +1873,8 @@ select:focus {
 .nav-section .nav-ul .dropdown:hover .dropdown-menu {
   display: block;
   position: absolute;
-  top: 10;
+  right: 0px;
+  left: 50px;
   z-index: 9999999;
 }
 .nav-section .nav-ul .dropdown-toggle::after {
@@ -1890,19 +1891,21 @@ select:focus {
 .nav-section .nav-ul .mydropudowan {
   position: absolute;
   right: 0;
-  width: 70%;
+  width: 90%;
   border-radius: 5px;
 }
 .nav-section .nav-ul .mydropudowan .list-group h4 {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 600;
   border: none;
-  border-bottom: 1px solid var(--theam-colour);
+  color: var(--theam-colour);
+  padding: 2px 0px;
 }
 .nav-section .nav-ul .mydropudowan .list-group a {
   border: none;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
+  padding: 3px 0px;
 }
 .nav-section .nav-ul .mydropudowan .list-group a:hover {
   color: var(--theam-colour);
@@ -1914,7 +1917,7 @@ select:focus {
 /* =========   header End ================ */
 /*  ========== min-hed section start ============ */
 .min-hed {
-  min-height: 50px;
+  min-height: 65px;
   background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
@@ -1981,6 +1984,7 @@ select:focus {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 10px;
 }
 .min-hed .login-section p {
   margin-bottom: 0%;
@@ -1990,13 +1994,18 @@ select:focus {
   font-weight: 500;
   text-decoration: none;
   font-size: 15px;
+  display: inline-grid;
+  float: left;
+}
+.min-hed .login-section a span {
+  font-size: 12px;
+  text-align: center;
 }
 .min-hed .login-section a .login-btn {
   cursor: pointer;
   border: 1px solid var(--theam-colour);
   border-radius: 5px;
-  padding: 4px 20px;
-  margin-right: 20px;
+  padding: 2px 7px;
   font-weight: 600;
   transition: ease-out 0.4s;
   color: var(--black);
@@ -2087,26 +2096,38 @@ select:focus {
 .min-hed .login-section .search-icon-hide-show-box {
   display: none;
 }
-.min-hed .shoping-cart {
-  width: 35px;
-  height: 35px;
-  display: flex;
-  align-items: center;
+.min-hed .login-section .cart-box {
+  display: inline-grid;
+}
+.min-hed .login-section .cart-box span {
+  font-size: 12px;
+  color: var(--black);
+  font-weight: 500;
+  text-align: center;
+}
+.min-hed .login-section .cart-box a {
+  color: var(--black);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 15px;
+  display: inline-grid;
+  float: left;
+}
+.min-hed .login-section .cart-box a .shoping-cart {
+  padding: 2px 7px;
   border: 1px solid var(--theam-colour);
-  justify-content: center;
   border-radius: 5px;
-  margin-right: 20px;
   cursor: pointer;
   transition: ease-out 0.4s;
 }
-.min-hed .shoping-cart:hover {
+.min-hed .login-section .cart-box a .shoping-cart:hover {
   color: var(--white);
   box-shadow: inset 400px 0 0 0 var(--theam-colour);
 }
-.min-hed .shoping-cart:hover i {
+.min-hed .login-section .cart-box a .shoping-cart:hover i {
   color: var(--white);
 }
-.min-hed .shoping-cart i {
+.min-hed .login-section .cart-box a .shoping-cart i {
   text-align: center;
   /* height: 70px; */
   color: var(--black);
@@ -2173,7 +2194,7 @@ select:focus {
   height: 100%;
 }
 .cat-round .carte-body .carte-contain p a {
-  font-family: "Montserrat";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 400;
   font-size: 15px;
   text-align: center;
@@ -2208,7 +2229,7 @@ select:focus {
 .slider-card .trending-head h1 {
   font-size: 30px;
   font-weight: 600;
-  font-family: Montserrat;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   position: relative;
 }
 .slider-card .trending-head h1::after {
@@ -2293,6 +2314,7 @@ select:focus {
 }
 .slider-card .slider-cat .box-card .card-body .card-con {
   padding: 1rem 1rem;
+  border-top: 1px solid #f1f1f1;
 }
 .slider-card .slider-cat .box-card .card-body .card-con h1 {
   font-weight: 600;
@@ -2354,10 +2376,9 @@ select:focus {
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
-  padding-inline: 25px;
+  padding-inline: 8px;
 }
 .slider-card .slider-cat .box-card .head-stars .reviews {
-  background-color: #FFDAAD;
   padding: 2px 5px;
   border-radius: 20px;
   display: flex;
@@ -2369,7 +2390,6 @@ select:focus {
   font-size: 11px;
 }
 .slider-card .slider-cat .box-card .head-stars .false-seal {
-  background-color: #FFDAAD;
   border-radius: 50%;
   height: 25px;
   width: 25px;
@@ -2449,7 +2469,7 @@ select:focus {
 .blog-setion .trending-head h1 {
   font-size: 30px;
   font-weight: 600;
-  font-family: Montserrat;
+  font-family: Poppins;
   position: relative;
   padding-left: 20px;
   z-index: 0;

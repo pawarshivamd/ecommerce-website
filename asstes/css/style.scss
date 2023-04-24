@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,800;1,900&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,800;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,800;1,900&display=swap');
 @import "productgridpage.scss";
 @import "policys";
 @import "produtcsviewdeatis";
@@ -23,7 +25,15 @@ html{
 }
 body {
     overflow-x: hidden;
-    font-family: 'Montserrat', sans-serif;
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    "Helvetica Neue",
+    sans-serif;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -42,7 +52,15 @@ section {
 }
 
 p {
-    font-family: 'Montserrat';
+       font-family: -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen-Sans,
+                Ubuntu,
+                Cantarell,
+                "Helvetica Neue",
+                sans-serif;
     font-size: 17px;
     font-weight: 500;
 }
@@ -55,7 +73,15 @@ h5,
 h6,
 a,
 p {
-    font-family: 'Montserrat';
+       font-family: -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen-Sans,
+                Ubuntu,
+                Cantarell,
+                "Helvetica Neue",
+                sans-serif;
 }
 
 h1 {
@@ -185,8 +211,11 @@ select:focus{
         .dropdown:hover .dropdown-menu {
             display: block;
             position: absolute;
-            top: 10;
+            // top:10;
+            right: 0px;
+            left: 50px;
             z-index: 9999999;
+            // border: 1px solid red;
         }
 
         .dropdown-toggle::after {
@@ -210,24 +239,29 @@ select:focus{
             position: absolute;
             // left: 100px;
             right: 0;
-            width: 70%;
+            width: 90%;
             border-radius: 5px;
 
             .list-group {
+                // border: 1px solid rebeccapurple;
+                
                 h4 {
-                    font-size: 17px;
+                    font-size: 14px;
                     font-weight: 600;
                     border: none;
-                    border-bottom: 1px solid var(--theam-colour);
+                    // border-bottom: 1px solid var(--theam-colour);
+                    color: var(--theam-colour);
+                    padding: 2px 0px;
                 }
 
                 a {
                     border: none;
-                    font-size: 15px;
+                    font-size: 12px;
                     font-weight: 500;
-
+                    padding: 3px 0px;
                     &:hover {
                         color: var(--theam-colour);
+
                     }
                 }
             }
@@ -242,7 +276,7 @@ select:focus{
 /* =========   header End ================ */
 /*  ========== min-hed section start ============ */
 .min-hed {
-    min-height: 50px;
+    min-height: 65px;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -325,7 +359,7 @@ select:focus{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-
+        gap: 10px;
 
         p {
             margin-bottom: 0%;
@@ -335,14 +369,21 @@ select:focus{
                 font-weight: 500;
                 text-decoration: none;
                 font-size: 15px;
-        
+                display: inline-grid;
+                float: left;
+                      
+        span{
+            font-size: 12px;
+            text-align: center;
+        }
         .login-btn {
             // background-color: var(--theam-colour);
             cursor: pointer;
             border: 1px solid var(--theam-colour);
             border-radius: 5px;
-            padding: 4px 20px;
-            margin-right: 20px;
+            padding: 2px 7px;
+            
+            // margin-right: 10px;
             font-weight: 600;
             -webkit-transition: ease-out 0.4s;
             -moz-transition: ease-out 0.4s;
@@ -431,6 +472,7 @@ select:focus{
 
                     span {
                         color: var(--theam-colour);
+                        
                     }
                 }
 
@@ -467,42 +509,57 @@ select:focus{
         }
         .search-icon-hide-show-box{
             display: none;
+        }
+        .cart-box{
+            display: inline-grid;
+            span{
+                font-size: 12px;
+                color: var(--black);
+                font-weight: 500;
+                text-align: center;
+            }
+            a{
+              
+                color: var(--black);
+                font-weight: 500;
+                text-decoration: none;
+                font-size: 15px;
+                display: inline-grid;
+                float: left;
+               
+
+                .shoping-cart {
+                    padding: 2px 7px;
+                    border: 1px solid var(--theam-colour);
+                    border-radius: 5px;
+                    cursor: pointer;
+                    -webkit-transition: ease-out 0.4s;
+                    -moz-transition: ease-out 0.4s;
+                    transition: ease-out 0.4s;
+                    &:hover{
+                         // background-color: var(--theam-colour);
+                         color:var(--white);
+                         // transform: translateX(-100%);
+                         box-shadow: inset 400px 0 0 0 var( --theam-colour);
+                         i{
+                            color: var(--white);
+                         }
+                    }
+                    i {
+                        text-align: center;
+                        /* height: 70px; */
+                        color: var(--black);
+                        font-size: 17px;
+            
+            
+                    }
+                }
+            } 
         } 
+      
     }
 
-    .shoping-cart {
-        width: 35px;
-        height: 35px;
-        display: flex;
-        align-items: center;
-        // background-color: var(--theam-colour);
-        border: 1px solid var(--theam-colour);
-        // padding: 20px;
-        justify-content: center;
-        border-radius: 5px;
-        margin-right: 20px;
-        cursor: pointer;
-        -webkit-transition: ease-out 0.4s;
-        -moz-transition: ease-out 0.4s;
-        transition: ease-out 0.4s;
-        &:hover{
-             // background-color: var(--theam-colour);
-             color:var(--white);
-             // transform: translateX(-100%);
-             box-shadow: inset 400px 0 0 0 var( --theam-colour);
-             i{
-                color: var(--white);
-             }
-        }
-        i {
-            text-align: center;
-            /* height: 70px; */
-            color: var(--black);
-            font-size: 17px;
-
-
-        }
-    }
+  
 }
 
 
@@ -572,7 +629,15 @@ select:focus{
             }
 
             p a {
-                font-family: 'Montserrat';
+                   font-family: -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen-Sans,
+                Ubuntu,
+                Cantarell,
+                "Helvetica Neue",
+                sans-serif;
                 font-weight: 400;
                 font-size: 15px;
                 // line-height: 28px;
@@ -618,7 +683,15 @@ select:focus{
         h1 {
             font-size: 30px;
             font-weight: 600;
-            font-family: Montserrat;
+            font-family: -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Oxygen-Sans,
+            Ubuntu,
+            Cantarell,
+            "Helvetica Neue",
+            sans-serif;
             position: relative;
 
 
@@ -731,6 +804,7 @@ select:focus{
 
                 .card-con {
                     padding: 1rem 1rem;
+                    border-top: 1px solid #f1f1f1;
 
                     h1 {
                         font-weight: 600;
@@ -815,10 +889,10 @@ select:focus{
                 justify-content: space-between;
                 align-items: center;
                 padding-top: 10px;
-                padding-inline: 25px;
+                padding-inline: 8px;
 
                 .reviews {
-                    background-color: #FFDAAD;
+                    // background-color: #FFDAAD;
                     padding: 2px 5px;
                     border-radius: 20px;
                     display: flex;
@@ -833,7 +907,7 @@ select:focus{
                 }
 
                 .false-seal {
-                    background-color: #FFDAAD;
+                    // background-color: #FFDAAD;
                     border-radius: 50%;
                     height: 25px;
                     width: 25px;
@@ -966,7 +1040,7 @@ select:focus{
         h1 {
             font-size: 30px;
             font-weight: 600;
-            font-family: Montserrat;
+            font-family: Poppins;
             position: relative;
             padding-left: 20px;
             z-index: 0;
