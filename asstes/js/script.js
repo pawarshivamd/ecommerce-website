@@ -1,4 +1,9 @@
-
+const accordion = document.querySelectorAll('.accordion-contentBx');
+accordion.forEach(acc => {
+    acc.addEventListener('click', function () {
+        this.classList.toggle('active');
+    })
+})
 var swiper = new Swiper(".mySwiper-1", {
   slidesPerView: 1.1,
   spaceBetween: 30,

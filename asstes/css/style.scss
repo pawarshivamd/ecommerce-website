@@ -213,7 +213,7 @@ select:focus{
             position: absolute;
             // top:10;
             right: 0px;
-            left: 50px;
+            left: 20px;
             z-index: 9999999;
             // border: 1px solid red;
         }
@@ -223,7 +223,7 @@ select:focus{
         }
 
         .dropdown-menu .dropdown-item {
-            font-size: 15px;
+            font-size: 12px;
             font-weight: 500;
 
             // padding: 20px;
@@ -238,7 +238,7 @@ select:focus{
             // border:5px solid red ;
             position: absolute;
             // left: 100px;
-            right: 0;
+            // right: 100px;
             width: 90%;
             border-radius: 5px;
 
@@ -250,7 +250,7 @@ select:focus{
                     font-weight: 600;
                     border: none;
                     // border-bottom: 1px solid var(--theam-colour);
-                    color: var(--theam-colour);
+                    // color: var(--theam-colour);
                     padding: 2px 0px;
                 }
 
@@ -275,6 +275,112 @@ select:focus{
 
 /* =========   header End ================ */
 /*  ========== min-hed section start ============ */
+.modal-dialog {
+    top: 90px;
+    z-index: 9999999;
+}
+
+.modal-content {
+    padding: 15px 30px;
+    width: 88%;
+    left: 36px;
+
+    p {
+        color: rgba(91, 53, 3, 0.87);
+        font-size: 17px;
+    }
+
+    .btn-close {
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .modal-header {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        /*space-between */
+        border: none;
+        padding: 0;
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .modal-body {
+
+        input {
+            width: 100%;
+            margin: 10px 0px;
+            padding: 8px 10px;
+            border: 1px solid rgba(91, 53, 3, 0.87);
+
+            &:focus {
+                outline: none;
+            }
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+
+        }
+
+        input[type=number] {
+            -webkit-appearance: none;
+            appearance: none ;
+
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+          }
+        .resend-p {
+            font-size: 15px;
+
+            span {
+                color: var(--theam-colour);
+                
+            }
+        }
+
+        .submit-profile{
+            background-color: var(--white);
+            border:1px solid var(--theam-colour);
+            border-radius: 5px;
+            color: var(--black);
+            padding: 8px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            width: 60%;
+            -webkit-transition: ease-out 0.4s;
+            -moz-transition: ease-out 0.4s;
+            transition: ease-out 0.4s;
+
+            &:hover {
+                // background-color: var(--theam-colour);
+                color:var(--white);
+                // transform: translateX(-100%);
+                box-shadow: inset 400px 0 0 0 var( --theam-colour);
+            }
+
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .modal-footer {
+        border: none;
+    }
+}
 .min-hed {
     min-height: 65px;
     background-color: rgb(255, 255, 255);
@@ -401,112 +507,7 @@ select:focus{
             
         }
 
-        .modal-dialog {
-            top: 90px;
-            z-index: 9999999;
-        }
-
-        .modal-content {
-            padding: 15px 30px;
-            width: 88%;
-            left: 36px;
-
-            p {
-                color: rgba(91, 53, 3, 0.87);
-                font-size: 17px;
-            }
-
-            .btn-close {
-                border: none;
-
-                &:focus {
-                    box-shadow: none;
-                }
-            }
-
-            .modal-header {
-                display: flex;
-                flex-shrink: 0;
-                align-items: center;
-                justify-content: center;
-                /*space-between */
-                border: none;
-                padding: 0;
-
-                p {
-                    font-size: 15px;
-                }
-            }
-
-            .modal-body {
-
-                input {
-                    width: 100%;
-                    margin: 10px 0px;
-                    padding: 8px 10px;
-                    border: 1px solid rgba(91, 53, 3, 0.87);
-
-                    &:focus {
-                        outline: none;
-                    }
-
-                    &::-webkit-outer-spin-button,
-                    &::-webkit-inner-spin-button {
-                        -webkit-appearance: none;
-                        margin: 0;
-                    }
-
-
-                }
-
-                input[type=number] {
-                    -webkit-appearance: none;
-                    appearance: none ;
-
-                }
-                input[type=number] {
-                    -moz-appearance: textfield;
-                  }
-                .resend-p {
-                    font-size: 15px;
-
-                    span {
-                        color: var(--theam-colour);
-                        
-                    }
-                }
-
-                .submit-profile{
-                    background-color: var(--white);
-                    border:1px solid var(--theam-colour);
-                    border-radius: 5px;
-                    color: var(--black);
-                    padding: 8px 20px;
-                    font-size: 16px;
-                    font-weight: 600;
-                    width: 60%;
-                    -webkit-transition: ease-out 0.4s;
-                    -moz-transition: ease-out 0.4s;
-                    transition: ease-out 0.4s;
         
-                    &:hover {
-                        // background-color: var(--theam-colour);
-                        color:var(--white);
-                        // transform: translateX(-100%);
-                        box-shadow: inset 400px 0 0 0 var( --theam-colour);
-                    }
-        
-                }
-
-                p {
-                    font-size: 15px;
-                }
-            }
-
-            .modal-footer {
-                border: none;
-            }
-        }
         .search-icon-hide-show-box{
             display: none;
         }
@@ -558,7 +559,14 @@ select:focus{
         } 
       
     }
-
+    .unique-Category{
+        color: black;
+        font-weight: 600;
+        font-size: 15px;
+        &:hover{
+            color: var(--theam-colour);
+        }
+    }
   
 }
 

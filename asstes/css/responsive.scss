@@ -1,6 +1,11 @@
 /* =========== Phone and Tablets css ===========*/
-@media (max-width:991px) {
-
+@media (max-width:992px) {
+    .header{
+        display: none;
+    }
+    .min-hed{
+        display: none;
+    }
     h1 {
         font-weight: 600;
         font-size: 28px;
@@ -82,22 +87,7 @@
             margin-inline: 5px;
         }
 
-        .modal-body {
-            padding: 0px;
-        }
 
-        .login-section .modal-content {
-            padding: 15px 15px;
-            width: 100%;
-        }
-
-        .login-section .modal-content p {
-            font-size: 13px;
-        }
-
-        .login-section .modal-content .modal-body .resend-p {
-            font-size: 13px;
-        }
         .login-section{
             .search-icon-hide-show-box{
                 display: block;
@@ -204,8 +194,101 @@
         left: 10px !important;
     
     }
+    /* =========== mobile-tables-section section =========== */
+    .mobile-tables-section{
+        background-color: #ebebeb;
+        height: 3rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .menu-bars-section{
+            .menu-bar-box{
+                iconify-icon{
+                    color: var(--black);
+                    font-size: 30px;
+                }
+            }
+        }
+        .logo-section{
+            text-align: center;
+            .navbar-brand{
+                    font-weight: 700;
+                    font-size: 22px;   
+                span{
+                    width: 25px;
+                    height: 25px;
+                    display: inline-block;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                } 
+            }
+            
+        }
+        .cart-icon-box{
+            a i{
+                color: var(--black);
+            }
+        }
+       
+        .accordion .accordion-contentBx {
+            position: relative;
+            margin: 10px 20px;
+        }
+        .accordion-contentBx {
+            overflow-y: auto;
+        }
+        
+        .accordion .accordion-contentBx .accordion-label{
+            position:relative;
+            padding: 10px;
+            // background-color: rebeccapurple;
+            // color: #fff;
+            cursor: pointer;
+        }
+        .accordion .accordion-contentBx .accordion-label::before {
+            content: '∨';
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 12px;
+        } 
+        .accordion .accordion-contentBx.active .accordion-label::before {
+            content: '^';
+        } 
+        
+        .accordion .accordion-contentBx .accordion-content {
+            position: relative;
+            padding: 0px;
+            background: #fff;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            overflow-y: auto;
+           
+        }
+        .accordion .accordion-contentBx .accordion-content p a
+        {
+            text-decoration:none;
+            color: blue;
+        }
+        .accordion .accordion-contentBx .accordion-content p a i .fa .fa-arrow-circle-right
+        {
+            color: black;
+            padding-left:0.5rem;
+            border: 2px solid red;
+        }
+        .accordion .accordion-contentBx.active .accordion-content {
+            padding:10px;
+            height: 150px;
+        }
+    }
     
+    /* =========== mobile-tables-section End =========== */
 
+    
 
     /* ================= banner ============== */
     .banner-wrapper {
@@ -1064,8 +1147,30 @@
 }
 
 }
-
+@media (min-width:991px){
+    .mobile-tables-section {
+        display: none;
+    }
+}
 @media (max-width:767px) {
+    .modal-body {
+        padding: 0px;
+    }
+
+     .modal-content {
+        padding: 15px 15px;
+        width: 88%;
+        left: 25px;
+    }
+
+     .modal-content p {
+        font-size: 13px;
+    }
+
+     .modal-content .modal-body .resend-p {
+        font-size: 13px;
+    }
+    
     .min-hed .head-section {
         justify-content: space-between;
         .login-section p{
@@ -1096,4 +1201,8 @@
     .header .nav-section .hide-show-login-btn {
         margin-inline: 1px;
     }
+
+    /* mobile view nvabar */
+
+
 }

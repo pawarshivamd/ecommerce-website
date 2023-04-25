@@ -1874,14 +1874,14 @@ select:focus {
   display: block;
   position: absolute;
   right: 0px;
-  left: 50px;
+  left: 20px;
   z-index: 9999999;
 }
 .nav-section .nav-ul .dropdown-toggle::after {
   display: none;
 }
 .nav-section .nav-ul .dropdown-menu .dropdown-item {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
 }
 .nav-section .nav-ul .dropdown-menu .dropdown-item:hover {
@@ -1890,7 +1890,6 @@ select:focus {
 }
 .nav-section .nav-ul .mydropudowan {
   position: absolute;
-  right: 0;
   width: 90%;
   border-radius: 5px;
 }
@@ -1898,7 +1897,6 @@ select:focus {
   font-size: 14px;
   font-weight: 600;
   border: none;
-  color: var(--theam-colour);
   padding: 2px 0px;
 }
 .nav-section .nav-ul .mydropudowan .list-group a {
@@ -1916,6 +1914,87 @@ select:focus {
 
 /* =========   header End ================ */
 /*  ========== min-hed section start ============ */
+.modal-dialog {
+  top: 90px;
+  z-index: 9999999;
+}
+
+.modal-content {
+  padding: 15px 30px;
+  width: 88%;
+  left: 36px;
+}
+.modal-content p {
+  color: rgba(91, 53, 3, 0.87);
+  font-size: 17px;
+}
+.modal-content .btn-close {
+  border: none;
+}
+.modal-content .btn-close:focus {
+  box-shadow: none;
+}
+.modal-content .modal-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  /*space-between */
+  border: none;
+  padding: 0;
+}
+.modal-content .modal-header p {
+  font-size: 15px;
+}
+.modal-content .modal-body input {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 8px 10px;
+  border: 1px solid rgba(91, 53, 3, 0.87);
+}
+.modal-content .modal-body input:focus {
+  outline: none;
+}
+.modal-content .modal-body input::-webkit-outer-spin-button, .modal-content .modal-body input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.modal-content .modal-body input[type=number] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+.modal-content .modal-body input[type=number] {
+  -moz-appearance: textfield;
+}
+.modal-content .modal-body .resend-p {
+  font-size: 15px;
+}
+.modal-content .modal-body .resend-p span {
+  color: var(--theam-colour);
+}
+.modal-content .modal-body .submit-profile {
+  background-color: var(--white);
+  border: 1px solid var(--theam-colour);
+  border-radius: 5px;
+  color: var(--black);
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 60%;
+  transition: ease-out 0.4s;
+}
+.modal-content .modal-body .submit-profile:hover {
+  color: var(--white);
+  box-shadow: inset 400px 0 0 0 var(--theam-colour);
+}
+.modal-content .modal-body p {
+  font-size: 15px;
+}
+.modal-content .modal-footer {
+  border: none;
+}
+
 .min-hed {
   min-height: 65px;
   background-color: rgb(255, 255, 255);
@@ -2013,85 +2092,6 @@ select:focus {
   color: white;
   box-shadow: inset 400px 0 0 0 var(--theam-colour);
 }
-.min-hed .login-section .modal-dialog {
-  top: 90px;
-  z-index: 9999999;
-}
-.min-hed .login-section .modal-content {
-  padding: 15px 30px;
-  width: 88%;
-  left: 36px;
-}
-.min-hed .login-section .modal-content p {
-  color: rgba(91, 53, 3, 0.87);
-  font-size: 17px;
-}
-.min-hed .login-section .modal-content .btn-close {
-  border: none;
-}
-.min-hed .login-section .modal-content .btn-close:focus {
-  box-shadow: none;
-}
-.min-hed .login-section .modal-content .modal-header {
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: center;
-  /*space-between */
-  border: none;
-  padding: 0;
-}
-.min-hed .login-section .modal-content .modal-header p {
-  font-size: 15px;
-}
-.min-hed .login-section .modal-content .modal-body input {
-  width: 100%;
-  margin: 10px 0px;
-  padding: 8px 10px;
-  border: 1px solid rgba(91, 53, 3, 0.87);
-}
-.min-hed .login-section .modal-content .modal-body input:focus {
-  outline: none;
-}
-.min-hed .login-section .modal-content .modal-body input::-webkit-outer-spin-button, .min-hed .login-section .modal-content .modal-body input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-.min-hed .login-section .modal-content .modal-body input[type=number] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
-}
-.min-hed .login-section .modal-content .modal-body input[type=number] {
-  -moz-appearance: textfield;
-}
-.min-hed .login-section .modal-content .modal-body .resend-p {
-  font-size: 15px;
-}
-.min-hed .login-section .modal-content .modal-body .resend-p span {
-  color: var(--theam-colour);
-}
-.min-hed .login-section .modal-content .modal-body .submit-profile {
-  background-color: var(--white);
-  border: 1px solid var(--theam-colour);
-  border-radius: 5px;
-  color: var(--black);
-  padding: 8px 20px;
-  font-size: 16px;
-  font-weight: 600;
-  width: 60%;
-  transition: ease-out 0.4s;
-}
-.min-hed .login-section .modal-content .modal-body .submit-profile:hover {
-  color: var(--white);
-  box-shadow: inset 400px 0 0 0 var(--theam-colour);
-}
-.min-hed .login-section .modal-content .modal-body p {
-  font-size: 15px;
-}
-.min-hed .login-section .modal-content .modal-footer {
-  border: none;
-}
 .min-hed .login-section .search-icon-hide-show-box {
   display: none;
 }
@@ -2131,6 +2131,14 @@ select:focus {
   /* height: 70px; */
   color: var(--black);
   font-size: 17px;
+}
+.min-hed .unique-Category {
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+.min-hed .unique-Category:hover {
+  color: var(--theam-colour);
 }
 
 /*  ========== min-hed section End ============ */
