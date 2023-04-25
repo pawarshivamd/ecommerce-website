@@ -1995,7 +1995,6 @@ select:focus {
   text-decoration: none;
   font-size: 15px;
   display: inline-grid;
-  float: left;
 }
 .min-hed .login-section a span {
   font-size: 12px;
