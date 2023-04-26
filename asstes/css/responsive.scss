@@ -236,10 +236,20 @@
                 color: var(--black);
             }
         }
-       
+        .btn-close{
+            --bs-btn-close-focus-shadow: none;
+        }
+        .nav-tabs .nav-link{
+            transition: color .15s ease-in-out,background-color .15s ease-in-out;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .nav-tabs .nav-link.active{
+            border: none;
+        }
         .accordion .accordion-contentBx {
             position: relative;
-            margin: 10px 20px;
+            // margin: 10px 20px;
         }
         .accordion-contentBx {
             overflow-y: auto;
@@ -264,21 +274,46 @@
             content: '^';
         } 
         
-        .accordion .accordion-contentBx .accordion-content {
-            position: relative;
-            padding: 0px;
-            background: #fff;
-            height: 0;
-            overflow: hidden;
-            transition: 0.5s;
-            overflow-y: auto;
-           
+        .accordion .accordion-contentBx {
+            .accordion-label-disative{
+                &::before{
+                    display: none;
+                }
+                &::after{
+                    display: none;
+                }
+            }
+            
+            .accordion-label:hover{
+                color: var(--theam-colour);
+            }
+            .accordion-content {
+                position: relative;
+                padding: 0px;
+                background: #fff;
+                height: 0;
+                overflow: hidden;
+                transition: 0.5s;
+                overflow-y: auto;
+                ul{
+                    .mobile-menu-head{
+                        // color: var(--theam-colour);
+                        font-weight: 600;
+                    }
+                    li{
+                        padding: 10px;
+                        a:hover{
+                            color: var(--theam-colour);
+                        }
+                    }
+    
+                }
+               
+            }
         }
-        .accordion .accordion-contentBx .accordion-content p a
-        {
-            text-decoration:none;
-            color: blue;
-        }
+
+
+       
         .accordion .accordion-contentBx .accordion-content p a i .fa .fa-arrow-circle-right
         {
             color: black;
@@ -289,6 +324,18 @@
             padding:10px;
             height: 150px;
         }
+
+        .brand-mobile-tab-section{
+            ul{
+                padding: 0;
+                li{
+                    padding: 10px;
+                    a:hover{
+                        color: var(--theam-colour);
+                    }
+                }
+            }
+        }
     }
     
     /* =========== mobile-tables-section End =========== */
@@ -297,12 +344,33 @@
 
     /* ================= banner ============== */
     .banner-wrapper {
-        // height: 100vh;
-        padding: 0.5rem 0rem;
+        display: none;
     }
-
-
     /* =================== /banner end ==================  */
+    /* ========== mobile-slider-section Start ============*/
+    .banner-wrappper-mobile-section {
+        padding: 0.5rem 0rem;
+        .mymobile-swiper {
+            padding: 0px 0px;
+        }
+         .swiper-slide {
+            margin: 0;
+            width: 100%;
+        
+        }
+        .banner-img {
+            width: 100%;
+            object-fit: contain;
+            padding: 0;
+            border-radius: 5px;
+        }
+    }
+    
+
+    
+ 
+    /* ========== mobile-slider-section End ============*/
+
     .cat-round {
         .carte-body {
             padding: 0px !important;
@@ -1154,6 +1222,9 @@
 }
 @media (min-width:991px){
     .mobile-tables-section {
+        display: none;
+    }
+    .banner-wrappper-mobile-section{
         display: none;
     }
 }

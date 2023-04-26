@@ -180,9 +180,19 @@
   .mobile-tables-section .cart-icon-box a i {
     color: var(--black);
   }
+  .mobile-tables-section .btn-close {
+    --bs-btn-close-focus-shadow: none;
+  }
+  .mobile-tables-section .nav-tabs .nav-link {
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .mobile-tables-section .nav-tabs .nav-link.active {
+    border: none;
+  }
   .mobile-tables-section .accordion .accordion-contentBx {
     position: relative;
-    margin: 10px 20px;
   }
   .mobile-tables-section .accordion-contentBx {
     overflow-y: auto;
@@ -203,6 +213,15 @@
   .mobile-tables-section .accordion .accordion-contentBx.active .accordion-label::before {
     content: "^";
   }
+  .mobile-tables-section .accordion .accordion-contentBx .accordion-label-disative::before {
+    display: none;
+  }
+  .mobile-tables-section .accordion .accordion-contentBx .accordion-label-disative::after {
+    display: none;
+  }
+  .mobile-tables-section .accordion .accordion-contentBx .accordion-label:hover {
+    color: var(--theam-colour);
+  }
   .mobile-tables-section .accordion .accordion-contentBx .accordion-content {
     position: relative;
     padding: 0px;
@@ -212,9 +231,14 @@
     transition: 0.5s;
     overflow-y: auto;
   }
-  .mobile-tables-section .accordion .accordion-contentBx .accordion-content p a {
-    text-decoration: none;
-    color: blue;
+  .mobile-tables-section .accordion .accordion-contentBx .accordion-content ul .mobile-menu-head {
+    font-weight: 600;
+  }
+  .mobile-tables-section .accordion .accordion-contentBx .accordion-content ul li {
+    padding: 10px;
+  }
+  .mobile-tables-section .accordion .accordion-contentBx .accordion-content ul li a:hover {
+    color: var(--theam-colour);
   }
   .mobile-tables-section .accordion .accordion-contentBx .accordion-content p a i .fa .fa-arrow-circle-right {
     color: black;
@@ -225,12 +249,40 @@
     padding: 10px;
     height: 150px;
   }
+  .mobile-tables-section .brand-mobile-tab-section ul {
+    padding: 0;
+  }
+  .mobile-tables-section .brand-mobile-tab-section ul li {
+    padding: 10px;
+  }
+  .mobile-tables-section .brand-mobile-tab-section ul li a:hover {
+    color: var(--theam-colour);
+  }
   /* =========== mobile-tables-section End =========== */
   /* ================= banner ============== */
   .banner-wrapper {
-    padding: 0.5rem 0rem;
+    display: none;
   }
   /* =================== /banner end ==================  */
+  /* ========== mobile-slider-section Start ============*/
+  .banner-wrappper-mobile-section {
+    padding: 0.5rem 0rem;
+  }
+  .banner-wrappper-mobile-section .mymobile-swiper {
+    padding: 0px 0px;
+  }
+  .banner-wrappper-mobile-section .swiper-slide {
+    margin: 0;
+    width: 100%;
+  }
+  .banner-wrappper-mobile-section .banner-img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding: 0;
+    border-radius: 5px;
+  }
+  /* ========== mobile-slider-section End ============*/
   .cat-round .carte-body {
     padding: 0px !important;
   }
@@ -831,6 +883,9 @@
 }
 @media (min-width: 991px) {
   .mobile-tables-section {
+    display: none;
+  }
+  .banner-wrappper-mobile-section {
     display: none;
   }
 }

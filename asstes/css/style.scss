@@ -702,7 +702,8 @@ select:focus{
             sans-serif;
             position: relative;
 
-
+            /*
+            
             &::after {
                 content: "";
                 background-color: var(--theam-colour);
@@ -712,11 +713,12 @@ select:focus{
                 position: absolute;
                 right: -15px;
                 top: 26px;
-                /* left: 0px; */
+                 left: 0px; 
                 transform: rotate(173deg);
                 z-index: -999;
-            }
+             }
 
+                */
         }
 
         a {
@@ -974,7 +976,7 @@ select:focus{
             font-size: 30px;
             padding-left: 20px;
             z-index: 0;
-
+            /*
             span{
                 background-color: var(--theam-colour);
                 opacity: 0.9;
@@ -988,6 +990,7 @@ select:focus{
                 transform: rotate(176deg);
                 z-index: -1;
             }
+            */
         }
 
     }
@@ -1048,11 +1051,11 @@ select:focus{
         h1 {
             font-size: 30px;
             font-weight: 600;
-            font-family: Poppins;
             position: relative;
             padding-left: 20px;
             z-index: 0;
 
+            /*
             &::after {
                 content: "";
                 background-color: var(--theam-colour);
@@ -1062,10 +1065,11 @@ select:focus{
                 position: absolute;
                 right: -15px;
                 top: 24px;
-                /* left: 0px; */
+                 left: 0px; 
                 transform: rotate(173deg);
                 z-index: -999;
             }
+            */
 
         }
 

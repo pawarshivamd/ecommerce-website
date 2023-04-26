@@ -2238,19 +2238,23 @@ select:focus {
   font-weight: 600;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   position: relative;
-}
-.slider-card .trending-head h1::after {
-  content: "";
-  background-color: var(--theam-colour);
-  height: 19px;
-  width: 107px;
-  border-radius: 128px 0px 144px 0px;
-  position: absolute;
-  right: -15px;
-  top: 26px;
-  /* left: 0px; */
-  transform: rotate(173deg);
-  z-index: -999;
+  /*
+
+  &::after {
+      content: "";
+      background-color: var(--theam-colour);
+      height: 19px;
+      width: 107px;
+      border-radius: 128px 0px 144px 0px;
+      position: absolute;
+      right: -15px;
+      top: 26px;
+       left: 0px; 
+      transform: rotate(173deg);
+      z-index: -999;
+   }
+
+      */
 }
 .slider-card .trending-head a {
   text-decoration: underline;
@@ -2439,18 +2443,21 @@ select:focus {
   font-size: 30px;
   padding-left: 20px;
   z-index: 0;
-}
-.brnad-home-section .brand-section h1 span {
-  background-color: var(--theam-colour);
-  opacity: 0.9;
-  height: 25px;
-  width: 121px;
-  border-radius: 128px 0px 144px;
-  position: absolute;
-  left: 120px;
-  top: 19px;
-  transform: rotate(176deg);
-  z-index: -1;
+  /*
+  span{
+      background-color: var(--theam-colour);
+      opacity: 0.9;
+      height: 25px;
+      width: 121px;
+      border-radius: 128px 0px 144px;
+      position: absolute;
+      // right: 481px;
+      left: 120px;
+      top: 19px;
+      transform: rotate(176deg);
+      z-index: -1;
+  }
+  */
 }
 .brnad-home-section .swiper-wrapper .brand-img-box {
   width: 50%;
@@ -2476,23 +2483,24 @@ select:focus {
 .blog-setion .trending-head h1 {
   font-size: 30px;
   font-weight: 600;
-  font-family: Poppins;
   position: relative;
   padding-left: 20px;
   z-index: 0;
-}
-.blog-setion .trending-head h1::after {
-  content: "";
-  background-color: var(--theam-colour);
-  height: 19px;
-  width: 81px;
-  border-radius: 128px 0px 144px 0px;
-  position: absolute;
-  right: -15px;
-  top: 24px;
-  /* left: 0px; */
-  transform: rotate(173deg);
-  z-index: -999;
+  /*
+  &::after {
+      content: "";
+      background-color: var(--theam-colour);
+      height: 19px;
+      width: 81px;
+      border-radius: 128px 0px 144px 0px;
+      position: absolute;
+      right: -15px;
+      top: 24px;
+       left: 0px; 
+      transform: rotate(173deg);
+      z-index: -999;
+  }
+  */
 }
 .blog-setion .trending-head a {
   text-decoration: underline;
