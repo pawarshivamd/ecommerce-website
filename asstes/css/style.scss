@@ -603,77 +603,9 @@ select:focus{
 .cat-round {
     background-color:#FEF9F1;
     margin: 0.5rem 0rem;
-    .carte-body {
-        display: flex;
-        gap: 60px;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 20px;
-        .carte-contain {
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 5px;
-            gap: 5px;
-
-            .carte-img-box {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                padding: 30px;
-                gap: 10px;
-                width: 130px;
-                height: 130px;
-                background: #FFFFFF;
-                border-radius: 10px;
-
-               a img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-
-            p a {
-                   font-family: -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                Oxygen-Sans,
-                Ubuntu,
-                Cantarell,
-                "Helvetica Neue",
-                sans-serif;
-                font-weight: 400;
-                font-size: 15px;
-                // line-height: 28px;
-                text-align: center;
-                text-transform: capitalize;
-                color: var(--black);
-            }
-        }
-
-        .swiper-button-next {
-            right: 0;
-        }
-
-        .swiper-button-prev {
-            left: 0;
-        }
-
-        .aero {
-            color: var(--theam-colour);
-            top: 40%;
-
-            &::after {
-
-                font-size: 30px;
-            }
-        }
+            
     }
-}
+
 
 /* ==================  Categories round shape section End ==============  */
 /* ==================  Tranding section Start ==============  */

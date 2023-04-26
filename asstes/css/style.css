@@ -2169,58 +2169,6 @@ select:focus {
   background-color: #FEF9F1;
   margin: 0.5rem 0rem;
 }
-.cat-round .carte-body {
-  display: flex;
-  gap: 60px;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 20px;
-}
-.cat-round .carte-body .carte-contain {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  gap: 5px;
-}
-.cat-round .carte-body .carte-contain .carte-img-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  gap: 10px;
-  width: 130px;
-  height: 130px;
-  background: #FFFFFF;
-  border-radius: 10px;
-}
-.cat-round .carte-body .carte-contain .carte-img-box a img {
-  width: 100%;
-  height: 100%;
-}
-.cat-round .carte-body .carte-contain p a {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--black);
-}
-.cat-round .carte-body .swiper-button-next {
-  right: 0;
-}
-.cat-round .carte-body .swiper-button-prev {
-  left: 0;
-}
-.cat-round .carte-body .aero {
-  color: var(--theam-colour);
-  top: 40%;
-}
-.cat-round .carte-body .aero::after {
-  font-size: 30px;
-}
 
 /* ==================  Categories round shape section End ==============  */
 /* ==================  Tranding section Start ==============  */
