@@ -580,6 +580,18 @@ select:focus{
     padding: 1rem 0rem;
     .mySwiper-1 {
         padding: 0px 0px;
+        .btn-destop-slider{
+            color: var(--theam-colour);
+            background-color: rgba(240, 240, 240, 0.5);
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            // left: 0;
+            &::after{
+                font-size: 15px;
+                font-weight: 900;
+            }
+        }
     }
 }
 
@@ -601,9 +613,33 @@ select:focus{
 /* ====================== banner end ============= */
 /* ================  Categories round shape section start =========== */
 .cat-round {
-    background-color:#FEF9F1;
+    // background-color:#FEF9F1;
     margin: 0.5rem 0rem;
-            
+    .Category-head{
+        h1{
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .Category-stn{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px 50px;
+        flex-wrap: wrap;
+        .cart-box{
+            width: 120px;
+            a{
+
+                p{
+                    color: var(--black);
+                    font-weight: 500;
+                    &:hover{
+                        color: var(--theam-colour);
+                    }
+                }
+            }
+        }
+    }
     }
 
 

@@ -2149,6 +2149,17 @@ select:focus {
 .banner-wrapper .mySwiper-1 {
   padding: 0px 0px;
 }
+.banner-wrapper .mySwiper-1 .btn-destop-slider {
+  color: var(--theam-colour);
+  background-color: rgba(240, 240, 240, 0.5);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+.banner-wrapper .mySwiper-1 .btn-destop-slider::after {
+  font-size: 15px;
+  font-weight: 900;
+}
 
 .banner-wrapper .swiper-slide {
   margin: 0;
@@ -2166,8 +2177,27 @@ select:focus {
 /* ====================== banner end ============= */
 /* ================  Categories round shape section start =========== */
 .cat-round {
-  background-color: #FEF9F1;
   margin: 0.5rem 0rem;
+}
+.cat-round .Category-head h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.cat-round .Category-stn {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px 50px;
+  flex-wrap: wrap;
+}
+.cat-round .Category-stn .cart-box {
+  width: 120px;
+}
+.cat-round .Category-stn .cart-box a p {
+  color: var(--black);
+  font-weight: 500;
+}
+.cat-round .Category-stn .cart-box a p:hover {
+  color: var(--theam-colour);
 }
 
 /* ==================  Categories round shape section End ==============  */

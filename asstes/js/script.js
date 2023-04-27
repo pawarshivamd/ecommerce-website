@@ -7,7 +7,7 @@ accordion.forEach(acc => {
 var swiper = new Swiper(".mySwiper-1", {
   // slidesPerView: 1.1,
   spaceBetween: 30,
-  centeredSlides: true,
+  // centeredSlides: true,
   loop: true,
   autoplay: {
     delay: 3500,
@@ -16,6 +16,10 @@ var swiper = new Swiper(".mySwiper-1", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 // mobile-swiper
@@ -30,6 +34,10 @@ var swiper = new Swiper(".mymobile-swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 var swiper = new Swiper(".hero-slider-js", {
