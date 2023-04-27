@@ -152,7 +152,6 @@
     position: sticky;
     top: -1px;
     z-index: 9999999999999;
-    height: 3rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -160,6 +159,12 @@
   .mobile-tables-section .menu-bars-section .menu-bar-box iconify-icon {
     color: var(--black);
     font-size: 30px;
+  }
+  .mobile-tables-section .menu-bars-section .menu-bar-box i {
+    color: var(--black);
+  }
+  .mobile-tables-section .menu-bars-section .menu-bar-box i:hover {
+    color: var(--theam-colour);
   }
   .mobile-tables-section .logo-section {
     text-align: center;
@@ -258,6 +263,76 @@
   .mobile-tables-section .brand-mobile-tab-section ul li a:hover {
     color: var(--theam-colour);
   }
+  .mobile-tables-section .search-section {
+    /* From uiverse.io by @satyamchaudharydev */
+    /* removing default style of button */
+    /* styling of whole input container */
+    /* styling of Input */
+    /* styling of animated border */
+    /* Hover on Input */
+    /* here is code of animated border */
+    /* styling of close button */
+    /* == you can click the close button to remove text == */
+    /* close button shown when typing */
+    /* sizing svg icons */
+  }
+  .mobile-tables-section .search-section .form button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+  }
+  .mobile-tables-section .search-section .form {
+    --timing: 0.3s;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #2f2ee9;
+    --border-radius: 5px;
+    --after-border-radius: 1px;
+    position: relative;
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg, #fff);
+    margin-inline: auto;
+    border: 1px solid #ebebeb;
+    margin: 10px 0px;
+  }
+  .mobile-tables-section .search-section .input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+  }
+  .mobile-tables-section .search-section input:focus {
+    outline: none;
+  }
+  .mobile-tables-section .search-section .form:focus-within:before {
+    transform: scale(1);
+  }
+  .mobile-tables-section .search-section .reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .mobile-tables-section .search-section input:not(:-moz-placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+  }
+  .mobile-tables-section .search-section input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+  }
+  .mobile-tables-section .search-section .form svg {
+    width: 17px;
+  }
   /* =========== mobile-tables-section End =========== */
   /* ================= banner ============== */
   .banner-wrapper {
@@ -266,7 +341,7 @@
   /* =================== /banner end ==================  */
   /* ========== mobile-slider-section Start ============*/
   .banner-wrappper-mobile-section {
-    padding: 0.5rem 0rem;
+    padding: 0px !important;
   }
   .banner-wrappper-mobile-section .mymobile-swiper {
     padding: 0px 0px;
@@ -307,6 +382,10 @@
   }
   .cat-round .Category-stn .cart-box {
     width: 100px;
+  }
+  .cat-round .Category-stn .cart-box a p {
+    font-size: 12px;
+    line-height: 17px;
   }
   /* ==================  Tranding section Start ==============  */
   .trending-head h1 {

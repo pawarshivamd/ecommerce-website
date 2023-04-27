@@ -1807,7 +1807,7 @@ p {
   --white: #FFFFFF;
   --light: #FDEAD3;
   --primary: #945B13;
-  --btn-hover:#E79835;
+  --btn-hover: #E79835;
 }
 
 input:focus {
@@ -1845,6 +1845,25 @@ select:focus {
 }
 .nav-section .img-nav img {
   width: 25%;
+}
+.nav-section .img-nav .under-line {
+  position: relative;
+}
+.nav-section .img-nav .under-line::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  /* adjust the distance of the underline from the text */
+  left: 0;
+  width: 0;
+  height: 1px;
+  /* adjust the thickness of the underline */
+  background-color: var(--theam-colour);
+  /* change the color of the underline if desired */
+  transition: width 0.2s ease-in-out;
+}
+.nav-section .img-nav .under-line:hover::after {
+  width: 100%;
 }
 .nav-section .btn-nav {
   border: none;
@@ -2024,6 +2043,76 @@ select:focus {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.min-hed .head-section .destop-search-section {
+  /* From uiverse.io by @satyamchaudharydev */
+  /* removing default style of button */
+  /* styling of whole input container */
+  /* styling of Input */
+  /* styling of animated border */
+  /* Hover on Input */
+  /* here is code of animated border */
+  /* styling of close button */
+  /* == you can click the close button to remove text == */
+  /* close button shown when typing */
+  /* sizing svg icons */
+}
+.min-hed .head-section .destop-search-section .form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+.min-hed .head-section .destop-search-section .form {
+  --timing: 0.3s;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #2f2ee9;
+  --border-radius: 5px;
+  --after-border-radius: 1px;
+  position: relative;
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg, #fff);
+  margin-inline: auto;
+  border: 1px solid #ebebeb;
+  margin: 10px 0px;
+}
+.min-hed .head-section .destop-search-section .input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+.min-hed .head-section .destop-search-section input:focus {
+  outline: none;
+}
+.min-hed .head-section .destop-search-section .form:focus-within:before {
+  transform: scale(1);
+}
+.min-hed .head-section .destop-search-section .reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.min-hed .head-section .destop-search-section input:not(:-moz-placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+.min-hed .head-section .destop-search-section input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+.min-hed .head-section .destop-search-section .form svg {
+  width: 17px;
+}
 .min-hed .login-btn-1 {
   display: none;
 }
@@ -2136,9 +2225,26 @@ select:focus {
   color: black;
   font-weight: 600;
   font-size: 15px;
+  position: relative;
 }
 .min-hed .unique-Category:hover {
   color: var(--theam-colour);
+}
+.min-hed .unique-Category::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  /* adjust the distance of the underline from the text */
+  left: 0;
+  width: 0;
+  height: 1px;
+  /* adjust the thickness of the underline */
+  background-color: var(--theam-colour);
+  /* change the color of the underline if desired */
+  transition: width 0.2s ease-in-out;
+}
+.min-hed .unique-Category:hover::after {
+  width: 100%;
 }
 
 /*  ========== min-hed section End ============ */
@@ -2182,6 +2288,7 @@ select:focus {
 .cat-round .Category-head h1 {
   font-size: 30px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 .cat-round .Category-stn {
   display: flex;
@@ -2191,10 +2298,17 @@ select:focus {
 }
 .cat-round .Category-stn .cart-box {
   width: 120px;
+  background-color: #fef9f1;
+  padding: 5px;
+  border-radius: 5px;
+}
+.cat-round .Category-stn .cart-box a .cat-box-img {
+  padding: 10px;
 }
 .cat-round .Category-stn .cart-box a p {
   color: var(--black);
   font-weight: 500;
+  margin: 0;
 }
 .cat-round .Category-stn .cart-box a p:hover {
   color: var(--theam-colour);
