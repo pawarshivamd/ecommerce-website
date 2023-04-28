@@ -471,6 +471,11 @@
                 // margin-top: 3px;
             }
         }
+        .wishlist-m-section{
+            i{
+                color: var(--black);
+            }
+        }
     }
 
     /* =========== mobile-tables-section End =========== */
@@ -526,16 +531,17 @@
 
     .cat-round {
         // background-color:#FEF9F1;
-        margin: 0.5rem 0rem;
+        margin: 1rem 0rem;
 
         .Category-head {
 
             // padding-inline: 50px;
-            // padding: 50px;
+            padding: 10px 0px;
             h1 {
                 font-size: 24px;
                 font-weight: 600;
-                padding-left: 15px;
+                // padding-left: 15px;
+                margin: 0px 0px;
             }
         }
 

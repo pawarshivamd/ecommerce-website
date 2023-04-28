@@ -594,7 +594,7 @@ select:focus {
 
     .login-section {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-evenly;
         align-items: center;
         gap: 10px;
 
@@ -618,7 +618,7 @@ select:focus {
             .login-btn {
                 // background-color: var(--theam-colour);
                 cursor: pointer;
-                border: 1px solid var(--theam-colour);
+                // border: 1px solid var(--theam-colour);
                 border-radius: 5px;
                 padding: 2px 7px;
 
@@ -632,9 +632,9 @@ select:focus {
 
                 &:hover {
                     // background-color: var(--theam-colour);
-                    color: white;
+                    color: var(--theam-colour);
                     // transform: translateX(-100%);
-                    box-shadow: inset 400px 0 0 0 var(--theam-colour);
+                    // box-shadow: inset 400px 0 0 0 var(--theam-colour);
                 }
             }
 
@@ -667,7 +667,7 @@ select:focus {
 
                 .shoping-cart {
                     padding: 2px 7px;
-                    border: 1px solid var(--theam-colour);
+                    // border: 1px solid var(--theam-colour);
                     border-radius: 5px;
                     cursor: pointer;
                     -webkit-transition: ease-out 0.4s;
@@ -676,9 +676,9 @@ select:focus {
 
                     &:hover {
                         // background-color: var(--theam-colour);
-                        color: var(--white);
+                        color: var(--theam-colour);
                         // transform: translateX(-100%);
-                        box-shadow: inset 400px 0 0 0 var(--theam-colour);
+                        // box-shadow: inset 400px 0 0 0 var(--theam-colour);
 
                         i {
                             color: var(--white);
@@ -694,6 +694,31 @@ select:focus {
 
                     }
                 }
+            }
+        }
+        .wishlist-section{
+            display: inline-grid;
+            a{
+                color: var(--black);
+                font-weight: 600;
+                text-decoration: none;
+                font-size: 15px;
+                display: inline-grid;
+                float: left;
+                i{
+                    padding: 2px 7px;
+                    padding-bottom: 5px;
+                    text-align: center;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: ease-out 0.4s;
+                    &:hover{
+                        fill:var(--theam-colour);
+                        stroke: var(--theam-colour);
+                        color: var(--theam-colour);
+                    }
+                }
+
             }
         }
 
@@ -781,6 +806,7 @@ select:focus {
             font-size: 30px;
             font-weight: 600;
             text-transform: uppercase;
+            margin: 0px -30px;
         }
     }
 
@@ -793,6 +819,7 @@ select:focus {
         .cart-box {
             width: 120px;
             background-color:#fef9f1;
+            border: 1px solid var(--theam-colour);
             padding: 5px;
             border-radius: 5px;
             a {

@@ -333,6 +333,9 @@
   .mobile-tables-section .search-section .form svg {
     width: 17px;
   }
+  .mobile-tables-section .wishlist-m-section i {
+    color: var(--black);
+  }
   /* =========== mobile-tables-section End =========== */
   /* ================= banner ============== */
   .banner-wrapper {
@@ -370,12 +373,15 @@
   }
   /* ========== mobile-slider-section End ============*/
   .cat-round {
-    margin: 0.5rem 0rem;
+    margin: 1rem 0rem;
+  }
+  .cat-round .Category-head {
+    padding: 10px 0px;
   }
   .cat-round .Category-head h1 {
     font-size: 24px;
     font-weight: 600;
-    padding-left: 15px;
+    margin: 0px 0px;
   }
   .cat-round .Category-stn {
     gap: 19px;
